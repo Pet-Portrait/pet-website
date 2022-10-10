@@ -14,7 +14,6 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-google-gtag",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
