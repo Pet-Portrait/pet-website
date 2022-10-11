@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
     'prettier',
   ],
   overrides: [],
@@ -23,6 +24,8 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed'],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-unresolved': 'off', // ESlint doesn't understand relative paths
     'react/jsx-sort-props': 'error',
     'no-console': [
       'error',
