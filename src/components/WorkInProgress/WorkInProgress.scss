@@ -1,0 +1,32 @@
+.work-in-progress {
+  flex: 1;
+
+  &__content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  footer {
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__copy {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+}
