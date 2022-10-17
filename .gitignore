@@ -1,4 +1,8 @@
 node_modules/
 .cache/
-public
+!public/
+public/*
+!public/admin/
+public/admin/*
+!public/admin/config.yml
 src/gatsby-types.d.ts
