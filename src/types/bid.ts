@@ -1,5 +1,5 @@
 interface RawBid {
-  name: string;
+  title: string;
   artist: string;
   type: string;
   url: string;

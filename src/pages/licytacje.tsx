@@ -1,4 +1,6 @@
+import BidsList from 'components/BidsList/BidsList';
 import { graphql, PageProps } from 'gatsby';
+import React from 'react';
 import { Bid } from 'types/bid';
 import { WithNodes } from 'types/utils';
 
@@ -11,10 +13,8 @@ const BidsPage = ({ data }: PageProps<Query>) => {
     ...node.frontmatter,
     id: node.id,
   }));
-  // eslint-disable-next-line no-console
-  console.log(bids);
 
-  return null;
+  return <BidsList bids={bids} />;
 };
 
 export default BidsPage;
