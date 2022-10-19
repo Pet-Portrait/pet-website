@@ -24,3 +24,33 @@ collections:
           widget: 'list',
           field: { label: 'Zdjęcie', name: 'image', widget: 'image' },
         }
+  - name: 'bid'
+    label: 'Licytacja'
+    folder: 'cms/bids'
+    create: true
+    slug: '{{name}}'
+    fields:
+      - { label: 'Nazwa', name: 'name', widget: 'string' }
+      - {
+          label: 'Artysta',
+          name: 'artist',
+          widget: 'relation',
+          collection: 'artist',
+          searchFields: ['name'],
+          valueField: 'name',
+          displayFields: ['name'],
+        }
+      - {
+          label: 'Typ',
+          name: 'type',
+          widget: 'select',
+          options: ['Malarstwo', 'Ceramika', 'Plakat', 'Tkactwo'],
+        }
+      - { label: 'Link do licytacji', name: 'url', widget: 'string' }
+      - { label: 'Format', name: 'format', widget: 'string' }
+      - {
+          label: 'Zdjęcia',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Zdjęcie', name: 'image', widget: 'image' },
+        }
