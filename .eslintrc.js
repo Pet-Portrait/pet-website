@@ -46,7 +46,7 @@ module.exports = {
     'simple-import-sort/exports': 'error',
     'import/newline-after-import': 'error',
     'import/no-unresolved': 'off', // ESlint doesn't understand relative paths
-    'react/jsx-sort-props': 'error',
+    'react/jsx-sort-props': ['error', { reservedFirst: true }],
     'no-console': [
       'error',
       {
