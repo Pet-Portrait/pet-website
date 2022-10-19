@@ -3,6 +3,7 @@ node_modules/
 !public/
 public/*
 !public/admin/
+!public/images/
 public/admin/*
 !public/admin/config.yml
 src/gatsby-types.d.ts

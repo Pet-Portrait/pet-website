@@ -11,13 +11,33 @@ module.exports = {
     'plugin:import/recommended',
     'prettier',
   ],
-  overrides: [],
+  overrides: [
+    {
+      files: ['*.graphql'],
+      parser: '@graphql-eslint/eslint-plugin',
+      plugins: ['@graphql-eslint'],
+      rules: {
+        '@graphql-eslint/no-anonymous-operations': 'error',
+        '@graphql-eslint/naming-convention': [
+          'error',
+          {
+            OperationDefinition: {
+              style: 'PascalCase',
+              forbiddenPrefixes: ['Query', 'Mutation', 'Subscription', 'Get'],
+              forbiddenSuffixes: ['Query', 'Mutation', 'Subscription'],
+            },
+          },
+        ],
+      },
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: ['node_modules', 'public', '.cache'],
+  processor: '@graphql-eslint/graphql',
+  ignorePatterns: ['node_modules', 'public', '.cache', '*config.js'],
   plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
 
   rules: {
@@ -26,7 +46,7 @@ module.exports = {
     'simple-import-sort/exports': 'error',
     'import/newline-after-import': 'error',
     'import/no-unresolved': 'off', // ESlint doesn't understand relative paths
-    'react/jsx-sort-props': 'error',
+    'react/jsx-sort-props': ['error', { reservedFirst: true }],
     'no-console': [
       'error',
       {

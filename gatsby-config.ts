@@ -35,6 +35,14 @@ const config: GatsbyConfig = {
       __key: 'images',
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/cms`,
+      },
+    },
+    'gatsby-transformer-remark',
+    {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
