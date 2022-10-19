@@ -5,13 +5,12 @@ public_folder: '/images/uploads'
 publish_mode: editorial_workflow
 local_backend: true
 collections:
-  # EXAMPLE COLLECTION, WILL BE REMOVED SOON
-  - name: 'artist' # Used in routes, e.g., /admin/collections/blog
-    label: 'Artysta' # Used in the UI
-    folder: 'cms/artists' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{name}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: 'artist'
+    label: 'Artysta'
+    folder: 'cms/artists'
+    create: true
+    slug: '{{name}}'
+    fields:
       - { label: 'Imię i nazwisko', name: 'name', widget: 'string' }
       - { label: 'Opis', name: 'body', widget: 'markdown' }
       - { label: 'Zdjęcie profilowe', name: 'avatar', widget: 'image' }

@@ -38,7 +38,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/cms/artists`,
+        path: `${__dirname}/cms`,
       },
     },
     'gatsby-transformer-remark',
