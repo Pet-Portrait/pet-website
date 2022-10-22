@@ -34,6 +34,7 @@ export const pageQuery = graphql`
           avatar
           name
           behance
+          featured
           facebook
           images
           instagram
