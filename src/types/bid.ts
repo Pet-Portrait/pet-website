@@ -4,6 +4,7 @@ interface RawBid {
   type: string;
   url: string;
   format: string;
+  featured: boolean;
   images: string[];
 }
 

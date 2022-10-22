@@ -27,6 +27,7 @@ export const pageQuery = graphql`
         frontmatter {
           name
           artist
+          featured
           type
           url
           format
