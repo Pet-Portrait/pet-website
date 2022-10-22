@@ -48,6 +48,7 @@ collections:
         }
       - { label: 'Link do licytacji', name: 'url', widget: 'string' }
       - { label: 'Format', name: 'format', widget: 'string' }
+      - { label: 'Wyróżnione', name: 'featured', widget: 'boolean' }
       - {
           label: 'Zdjęcia',
           name: 'images',
