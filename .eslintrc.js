@@ -37,7 +37,7 @@ module.exports = {
     sourceType: 'module',
   },
   processor: '@graphql-eslint/graphql',
-  ignorePatterns: ['node_modules', 'public', '.cache', '*config.js'],
+  ignorePatterns: ['node_modules', 'public', '.cache', '*config.js', 'jest-preprocess.js'],
   plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
 
   rules: {
