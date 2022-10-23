@@ -1,4 +1,4 @@
-import ArtistItem from 'components/ArtistItem/ArtistItem';
+import ArtistItem from 'components/artists/ArtistItem/ArtistItem';
 import React from 'react';
 import { Artist } from 'types/artist';
 
