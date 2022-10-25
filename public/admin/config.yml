@@ -14,6 +14,7 @@ collections:
       - { label: 'Imię i nazwisko', name: 'name', widget: 'string' }
       - { label: 'Opis', name: 'body', widget: 'markdown' }
       - { label: 'Zdjęcie profilowe', name: 'avatar', widget: 'image' }
+      - { label: 'Wyróżniony', name: 'featured', widget: 'boolean' }
       - { label: 'Facebook', name: 'facebook', widget: 'string', required: false }
       - { label: 'Instagram', name: 'instagram', widget: 'string', required: false }
       - { label: 'Behance', name: 'behance', widget: 'string', required: false }

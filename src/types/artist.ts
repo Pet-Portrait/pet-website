@@ -4,6 +4,7 @@ export interface RawArtist {
   facebook: string | null;
   images: string[];
   instagram: string | null;
+  featured: boolean;
   name: string;
   web: string | null;
 }
