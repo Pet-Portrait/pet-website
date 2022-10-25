@@ -10,8 +10,8 @@ const BidItem = ({ bid }: Props) => (
     <a href={bid.url} rel="noopener noreferrer" target="_blank">
       <h2>{bid.title}</h2>
       <h3>{bid.artist}</h3>
-      {bid.images.map((image) => (
-        <img key={image} alt="" src={image} />
+      {bid.images.map((image, index) => (
+        <img key={image} alt={`Praca ${bid.artist} "${bid.title}" ${index + 1}`} src={image} />
       ))}
       <p>{bid.format}</p>
       <p>{bid.type}</p>

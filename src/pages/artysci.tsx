@@ -1,4 +1,4 @@
-import ArtistsList from 'components/ArtistsList/ArtistsList';
+import ArtistsList from 'components/artists/ArtistsList/ArtistsList';
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import { Artist } from 'types/artist';

@@ -1,4 +1,4 @@
-import BidItem from 'components/BidItem/BidItem';
+import BidItem from 'components/bids/BidItem/BidItem';
 import React from 'react';
 import { Bid } from 'types/bid';
 

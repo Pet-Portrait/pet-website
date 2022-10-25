@@ -9,10 +9,13 @@ interface Props {
 const ArtistItem = ({ artist }: Props) => (
   <li>
     <h2>{artist.name}</h2>
-    <p dangerouslySetInnerHTML={{ __html: sanitizeHtml(artist.description) }}></p>
+    <div
+      dangerouslySetInnerHTML={{ __html: sanitizeHtml(artist.description) }}
+      data-testid="artist-item-description"
+    />
     <img alt={artist.name} src={artist.avatar} />
-    {artist.images.map((image) => (
-      <img key={image} alt="" src={image} />
+    {artist.images.map((image, index) => (
+      <img key={image} alt={`Praca ${artist.name} ${index + 1}`} src={image} />
     ))}
     {artist.facebook && <a href={artist.facebook}>Facebook</a>}
     {artist.instagram && <a href={artist.instagram}>Instagram</a>}

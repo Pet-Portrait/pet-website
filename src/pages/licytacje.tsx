@@ -1,4 +1,4 @@
-import BidsList from 'components/BidsList/BidsList';
+import BidsList from 'components/bids/BidsList/BidsList';
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import { Bid } from 'types/bid';
