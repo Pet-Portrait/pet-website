@@ -3,7 +3,6 @@ backend:
 media_folder: 'public/images/uploads'
 public_folder: '/images/uploads'
 publish_mode: editorial_workflow
-local_backend: true
 collections:
   - name: 'artist'
     label: 'Artysta'
