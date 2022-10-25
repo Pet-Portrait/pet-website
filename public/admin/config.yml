@@ -30,7 +30,7 @@ collections:
     create: true
     slug: '{{name}}'
     fields:
-      - { label: 'Nazwa', name: 'name', widget: 'string' }
+      - { label: 'Nazwa', name: 'title', widget: 'string' }
       - {
           label: 'Artysta',
           name: 'artist',

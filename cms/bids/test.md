@@ -1,5 +1,5 @@
 ---
-name: Test
+title: Test
 artist: Test testowy
 type: Malarstwo
 url: https://charytatywni.allegro.pl/

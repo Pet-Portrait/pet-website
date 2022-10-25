@@ -26,7 +26,7 @@ const ArtistsPage = ({ data }: PageProps<Query>) => {
 
 export const pageQuery = graphql`
   query ArtistsPage {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/artists/" } }) {
       nodes {
         id
         html
