@@ -3,7 +3,6 @@ backend:
   branch: main
 media_folder: 'public/images/uploads'
 public_folder: '/images/uploads'
-publish_mode: editorial_workflow
 collections:
   - name: 'artist'
     label: 'Artysta'
@@ -29,7 +28,7 @@ collections:
     label: 'Licytacja'
     folder: 'cms/bids'
     create: true
-    slug: '{{name}}'
+    slug: '{{title}}'
     fields:
       - { label: 'Nazwa', name: 'title', widget: 'string' }
       - {
