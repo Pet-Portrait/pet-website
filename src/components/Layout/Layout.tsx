@@ -1,4 +1,4 @@
-import './Layout.scss';
+import 'styles/global.scss';
 
 import React, { FC, ReactNode } from 'react';
 
