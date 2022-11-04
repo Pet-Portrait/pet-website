@@ -70,6 +70,9 @@
     "./src/**/*.{js,jsx,ts,tsx}": [
       "yarn format",
       "yarn lint"
+    ],
+    "./src/**/*.{css,scss}": [
+      "yarn format"
     ]
   }
 }
