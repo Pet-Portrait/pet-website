@@ -11,18 +11,19 @@ interface Props {
   imageTitle: string;
 }
 
-const HeroImage: FC<Props> = ({ artistName }) => (
+const HeroImage: FC<Props> = () => (
   <section className={classes.root}>
-    <img alt="Logo pet portrait" className={classes.logo} src={logo} />
-    <h1>Rzuć groszem dla zwierzaków poprzez licytację sztuki!</h1>
-    <p>
-      Myślę, że warto podać zwycięski skład Kaiserslautern z meczu z Bayernem w sezonie 97/98:
-      Renke, Kadlec, H. Koch (31. Hristov), Kuka, Marschall, Ratinho (75. Reich), Roos, Schjönberg,
-      Schäfer, Sforza, M. Wagner. I jeszcze Ballack.
-    </p>
-    <Button className={classes.button}>Kup bilet na żyletę</Button>
+    <div>
+      <img alt="Logo pet portrait" className={classes.logo} src={logo} />
+      <h1>Rzuć groszem dla zwierzaków poprzez licytację sztuki!</h1>
+      <p className={classes.text}>
+        Myślę, że warto podać zwycięski skład Kaiserslautern z meczu z Bayernem w sezonie 97/98:
+        Renke, Kadlec, H. Koch (31. Hristov), Kuka, Marschall, Ratinho (75. Reich), Roos,
+        Schjönberg, Schäfer, Sforza, M. Wagner. I jeszcze Ballack.
+      </p>
+      <Button className={classes.button}>Kup bilet na żyletę</Button>
+    </div>
     <ImageFactory />
-    {artistName && <p className={classes.artist}>{artistName}</p>}
   </section>
 );
 

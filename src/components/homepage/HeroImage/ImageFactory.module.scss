@@ -1,0 +1,15 @@
+@import 'styles/variables';
+
+.imageWrapper {
+  position: relative;
+}
+
+.artist {
+  opacity: 0.5;
+  transform: rotate(-90deg) translateX(100%);
+  font-weight: 700;
+  position: absolute;
+  transform-origin: right;
+  right: $spacing--2;
+  bottom: $spacing--2;
+}
