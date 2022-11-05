@@ -8,3 +8,4 @@ public/admin/*
 !public/admin/config.yml
 src/gatsby-types.d.ts
 .eslintcache
+.DS_Store
