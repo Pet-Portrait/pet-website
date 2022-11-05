@@ -1,0 +1,30 @@
+@import 'styles/variables';
+
+.root {
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  padding: $spacing--4 $spacing--2 0;
+  background: linear-gradient(#ffffff, #d9e7da);
+  position: relative;
+}
+
+.logo {
+  width: 180px;
+  margin: auto;
+  display: block;
+}
+
+.button {
+  margin: $spacing--4 auto;
+}
+
+.artist {
+  opacity: 0.5;
+  transform: rotate(-90deg) translateX(100%);
+  font-weight: 700;
+  position: absolute;
+  transform-origin: right;
+  right: $spacing--1;
+  bottom: $spacing--2;
+}
