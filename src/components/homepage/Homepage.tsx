@@ -2,15 +2,19 @@ import Layout from 'components/Layout/Layout';
 import React, { FC } from 'react';
 
 import HeroImage from './HeroImage/HeroImage';
+import { HeroImageData } from './HeroImage/queries';
 
-const Homepage: FC = () => (
-  <Layout>
-    <HeroImage
-      artistName="Klaudia Polak"
-      image="../../../images/hero-image.png"
-      imageTitle="Klaudia Polak - Bugs"
-    />
-  </Layout>
-);
+interface Props {
+  heroImages: HeroImageData[];
+}
+const Homepage: FC<Props> = ({ heroImages }) => {
+  const randomImage = heroImages[Math.round(Math.random() * (heroImages.length - 1))];
+
+  return (
+    <Layout>
+      <HeroImage image={randomImage} />
+    </Layout>
+  );
+};
 
 export default Homepage;
