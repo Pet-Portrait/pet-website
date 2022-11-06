@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Bid } from 'types/bid';
 
 interface Props {

@@ -1,6 +1,7 @@
-import ArtistsList from 'components/artists/ArtistsList/ArtistsList';
-import { graphql, PageProps } from 'gatsby';
 import React from 'react';
+import { graphql, PageProps } from 'gatsby';
+
+import ArtistsList from 'components/artists/ArtistsList/ArtistsList';
 import { Artist } from 'types/artist';
 import { WithNodes } from 'types/utils';
 

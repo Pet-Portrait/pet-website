@@ -42,9 +42,26 @@ module.exports = {
 
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
-    'simple-import-sort/imports': 'error',
     'react/self-closing-comp': 'error',
-    'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          // Packages `react` related packages come first.
+          ['^react', '^@?\\w'],
+          // Internal packages.
+          ['^(@|components|hooks|images|pages|types|utils)(/.*|$)'],
+          // Side effect imports.
+          ['^\\u0000'],
+          // Other relative imports. Put same-folder imports and `.` last.
+          ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+          // Parent imports. Put `..` last.
+          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+          // Style imports.
+          ['^.+\\.?(css)$'],
+        ],
+      },
+    ],
     'import/newline-after-import': 'error',
     'import/no-unresolved': 'off', // ESlint doesn't understand relative paths
     'react/jsx-sort-props': ['error', { reservedFirst: true }],
