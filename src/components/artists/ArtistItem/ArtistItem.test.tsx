@@ -1,8 +1,9 @@
-import { render, screen, within } from '@testing-library/react';
 import React from 'react';
+import { render, screen, within } from '@testing-library/react';
+
+import ArtistItem from './ArtistItem';
 
 import { mockedArtist } from '../mocks';
-import ArtistItem from './ArtistItem';
 
 describe('ArtistItem', () => {
   test('should display artist data', () => {

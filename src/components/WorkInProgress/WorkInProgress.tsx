@@ -1,8 +1,9 @@
-import './WorkInProgress.scss';
+import React, { FC } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from 'components/Layout/Layout';
-import { StaticImage } from 'gatsby-plugin-image';
-import React, { FC } from 'react';
+
+import './WorkInProgress.scss';
 
 const WorkInProgress: FC = () => (
   <>

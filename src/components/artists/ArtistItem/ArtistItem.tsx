@@ -1,5 +1,6 @@
 import React from 'react';
 import sanitizeHtml from 'sanitize-html';
+
 import { Artist } from 'types/artist';
 
 interface Props {

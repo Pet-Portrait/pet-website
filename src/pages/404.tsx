@@ -1,6 +1,7 @@
-import WorkInProgress from 'components/WorkInProgress/WorkInProgress';
-import type { HeadFC } from 'gatsby';
 import React from 'react';
+import type { HeadFC } from 'gatsby';
+
+import WorkInProgress from 'components/WorkInProgress/WorkInProgress';
 
 const NotFoundPage = () => <WorkInProgress />;
 

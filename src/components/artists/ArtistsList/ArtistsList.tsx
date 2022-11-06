@@ -1,5 +1,6 @@
-import ArtistItem from 'components/artists/ArtistItem/ArtistItem';
 import React from 'react';
+
+import ArtistItem from 'components/artists/ArtistItem/ArtistItem';
 import { Artist } from 'types/artist';
 
 interface Props {

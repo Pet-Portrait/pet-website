@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
+
+import ArtistsList from './ArtistsList';
 
 import { mockedArtistList } from '../mocks';
-import ArtistsList from './ArtistsList';
 
 describe('ArtistList', () => {
   test('should render list of artists', () => {

@@ -1,5 +1,6 @@
-import BidItem from 'components/bids/BidItem/BidItem';
 import React from 'react';
+
+import BidItem from 'components/bids/BidItem/BidItem';
 import { Bid } from 'types/bid';
 
 interface Props {
