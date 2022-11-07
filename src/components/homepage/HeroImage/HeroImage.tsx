@@ -1,9 +1,11 @@
-import Button from 'components/shared/Button/Button';
-import logo from 'images/logo-black.svg';
 import React, { FC } from 'react';
 
-import * as classes from './HeroImage.module.scss';
+import Button from 'components/shared/Button/Button';
+import logo from 'images/logo-black.svg';
+
 import ImageFactory from './ImageFactory';
+
+import * as classes from './HeroImage.module.scss';
 
 interface Props {
   artistName?: string;
@@ -21,7 +23,9 @@ const HeroImage: FC<Props> = () => (
         Renke, Kadlec, H. Koch (31. Hristov), Kuka, Marschall, Ratinho (75. Reich), Roos,
         Schjönberg, Schäfer, Sforza, M. Wagner. I jeszcze Ballack.
       </p>
-      <Button className={classes.button}>Kup bilet na żyletę</Button>
+      <Button className={classes.button} to="/licytacje">
+        Kup bilet na żyletę
+      </Button>
     </div>
     <ImageFactory />
   </section>

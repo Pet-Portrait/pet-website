@@ -1,5 +1,5 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React, { FC } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import * as classes from './ImageFactory.module.scss';
 

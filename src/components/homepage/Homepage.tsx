@@ -1,5 +1,6 @@
-import Layout from 'components/Layout/Layout';
 import React, { FC } from 'react';
+
+import Layout from 'components/Layout/Layout';
 
 import HeroImage from './HeroImage/HeroImage';
 

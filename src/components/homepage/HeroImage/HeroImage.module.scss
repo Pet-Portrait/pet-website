@@ -8,9 +8,9 @@
   flex-direction: column;
   padding: $spacing--4 $spacing--2 0;
   background: linear-gradient(#ffffff, #d9e7da);
-  display: grid;
 
   @include breakpoint--desktop {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     background: none;
     grid-gap: $spacing--8;
