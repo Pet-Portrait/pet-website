@@ -43,6 +43,7 @@ module.exports = {
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'react/self-closing-comp': 'error',
+    'react/no-unused-prop-types': 'error',
     'simple-import-sort/imports': [
       'error',
       {

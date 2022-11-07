@@ -1,9 +1,5 @@
 @import 'styles/variables';
 
-.imageWrapper {
-  position: relative;
-}
-
 .artist {
   opacity: 0.5;
   transform: rotate(-90deg) translateX(100%);
@@ -12,4 +8,11 @@
   transform-origin: right;
   right: $spacing--2;
   bottom: $spacing--2;
+}
+
+.imageWrapper {
+  will-change: transform;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
 }
