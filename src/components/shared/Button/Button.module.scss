@@ -9,6 +9,13 @@
   color: $text-color--light;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: fit-content;
+  font-size: 1rem;
+  line-height: 1.25;
 
   &:hover {
     background-color: $primary-color--dark;
