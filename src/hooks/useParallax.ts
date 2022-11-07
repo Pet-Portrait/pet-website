@@ -1,13 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { RefObject, useEffect } from 'react';
 
-const useParallax = <RefType extends HTMLElement>() => {
-  const ref = useRef<RefType>(null);
-
+const useParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
   useEffect(() => {
     const SPEED_FACTOR = 25;
 
     const animateImage = (event: MouseEvent) => {
-      if (!ref.current) return;
+      const isTouchDevice = 'ontouchstart' in window;
+
+      if (!ref.current || isTouchDevice) return;
 
       const { left, top, height, width } = ref.current.getBoundingClientRect();
 

@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, useRef } from 'react';
 
 import Button from 'components/shared/Button/Button';
+import useGyroscopicParallax from 'hooks/useGyroscopicParallax';
 import useParallax from 'hooks/useParallax';
 import logo from 'images/logo-black.svg';
 
@@ -9,7 +10,9 @@ import ImageFactory from './ImageFactory';
 import * as classes from './HeroImage.module.scss';
 
 const HeroImage: FC = () => {
-  const imageRef = useParallax<HTMLDivElement>();
+  const imageRef = useRef<HTMLDivElement>(null);
+  useParallax(imageRef);
+  useGyroscopicParallax(imageRef);
 
   return (
     <section className={classes.root}>
