@@ -1,5 +1,7 @@
 import { RefObject, useEffect, useRef } from 'react';
 
+import useRequestAnimationFrame from './useRequestAnimationFrame';
+
 const SPEED_FACTOR_X = 0.2;
 const SPEED_FACTOR_Y = 0.3;
 
@@ -7,17 +9,13 @@ const MOVE_Y_LIMIT = 2;
 
 const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
   const initialPosition = useRef<{ beta: number; gamma: number } | null>(null);
-  const rafTimeout = useRef<number | null>(null);
+  const handleRequestAnimationFrame = useRequestAnimationFrame();
 
   useEffect(() => {
     const animateImage = (event: DeviceOrientationEvent) => {
       const { beta, gamma } = event;
 
-      if (rafTimeout.current) {
-        window.cancelAnimationFrame(rafTimeout.current);
-      }
-
-      rafTimeout.current = window.requestAnimationFrame(() => {
+      handleRequestAnimationFrame(() => {
         if (beta === null || gamma === null || !ref.current) return;
         if (!initialPosition.current) {
           initialPosition.current = { beta, gamma };
