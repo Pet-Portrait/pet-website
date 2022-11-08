@@ -1,6 +1,6 @@
 import { RefObject, useEffect } from 'react';
 
-const SPEED_FACTOR_X = 0.3;
+const SPEED_FACTOR_X = 0.2;
 const SPEED_FACTOR_Y = 0.3;
 
 let initialPosition: { beta: number; gamma: number } | null = null;
@@ -12,8 +12,8 @@ const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefT
   useEffect(() => {
     const animateImage = (event: DeviceOrientationEvent) => {
       const { beta: _beta, gamma: _gamma } = event;
-      let beta = _beta;
-      let gamma = _gamma;
+      const beta = _beta;
+      const gamma = _gamma;
 
       if (rafTimeout) {
         window.cancelAnimationFrame(rafTimeout);
@@ -25,21 +25,21 @@ const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefT
           initialPosition = { beta, gamma };
           prevPosition = { beta, gamma };
         }
-        if (prevPosition) {
-          if (Math.abs(beta - prevPosition.beta) > 3) {
-            beta = prevPosition.beta + 1 * Math.sign(beta - prevPosition.beta);
-          }
-          if (Math.abs(gamma - prevPosition.gamma) > 3) {
-            gamma = prevPosition.gamma + 1 * Math.sign(gamma - prevPosition.gamma);
-          }
-        }
-        prevPosition = { beta, gamma };
+        // if (prevPosition) {
+        //   if (Math.abs(beta - prevPosition.beta) > 3) {
+        //     beta = prevPosition.beta + 1 * Math.sign(beta - prevPosition.beta);
+        //   }
+        //   if (Math.abs(gamma - prevPosition.gamma) > 3) {
+        //     gamma = prevPosition.gamma + 1 * Math.sign(gamma - prevPosition.gamma);
+        //   }
+        // }
+        // prevPosition = { beta, gamma };
 
         const dBeta = beta - initialPosition.beta;
         const dGamma = gamma - initialPosition.gamma;
 
         const moveX = dGamma * SPEED_FACTOR_X;
-        const moveY = dBeta * SPEED_FACTOR_Y;
+        const moveY = Math.min(Math.max(dBeta * SPEED_FACTOR_Y, -5), 5);
         // eslint-disable-next-line no-console
         console.log({
           prevPosition,
