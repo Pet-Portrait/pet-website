@@ -1,15 +1,23 @@
-import { RefObject, useEffect } from 'react';
+import { RefObject, useEffect, useRef } from 'react';
 
-const SPEED_FACTOR_X = 0.2;
-const SPEED_FACTOR_Y = 0.5;
+const SPEED_FACTOR_X = 0.3;
+const SPEED_FACTOR_Y = 0.3;
 
 const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
+  const initialPosition = useRef<{ beta: number; gamma: number } | null>(null);
+
   useEffect(() => {
     const animateImage = (event: DeviceOrientationEvent) => {
       const { beta, gamma } = event;
       if (beta === null || gamma === null || !ref.current) return;
-      const dBeta = Math.abs(beta) - 90;
-      const moveX = gamma * SPEED_FACTOR_X;
+      if (!initialPosition.current) {
+        initialPosition.current = { beta, gamma };
+      }
+
+      const dBeta = Math.abs(beta) - initialPosition.current.beta;
+      const dGamma = gamma - initialPosition.current.gamma;
+
+      const moveX = dGamma * SPEED_FACTOR_X;
       const moveY = dBeta * SPEED_FACTOR_Y;
 
       ref.current.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
