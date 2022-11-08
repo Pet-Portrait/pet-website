@@ -1,9 +1,9 @@
 import { RefObject, useEffect } from 'react';
 
+const SPEED_FACTOR = 25;
+
 const useParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
   useEffect(() => {
-    const SPEED_FACTOR = 25;
-
     const animateImage = (event: MouseEvent) => {
       const isTouchDevice = 'ontouchstart' in window;
 
