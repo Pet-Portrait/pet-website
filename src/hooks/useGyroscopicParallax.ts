@@ -1,24 +1,47 @@
-import { RefObject, useEffect, useRef } from 'react';
+import { RefObject, useEffect } from 'react';
 
 const SPEED_FACTOR_X = 0.3;
 const SPEED_FACTOR_Y = 0.3;
 
-const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
-  const initialPosition = useRef<{ beta: number; gamma: number } | null>(null);
+let initialPosition: { beta: number; gamma: number } | null = null;
+let prevPosition: { beta: number; gamma: number } | null = null;
 
+const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
   useEffect(() => {
     const animateImage = (event: DeviceOrientationEvent) => {
-      const { beta, gamma } = event;
-      if (beta === null || gamma === null || !ref.current) return;
-      if (!initialPosition.current) {
-        initialPosition.current = { beta, gamma };
-      }
+      const { beta: _beta, gamma: _gamma } = event;
+      let beta = _beta;
+      let gamma = _gamma;
 
-      const dBeta = Math.abs(beta) - initialPosition.current.beta;
-      const dGamma = gamma - initialPosition.current.gamma;
+      if (beta === null || gamma === null || !ref.current) return;
+      if (!initialPosition) {
+        initialPosition = { beta, gamma };
+        prevPosition = { beta, gamma };
+      }
+      if (prevPosition) {
+        if (Math.abs(beta - prevPosition.beta) > 3) {
+          beta = prevPosition.beta + 1 * Math.sign(beta - prevPosition.beta);
+        }
+        if (Math.abs(gamma - prevPosition.gamma) > 3) {
+          gamma = prevPosition.gamma + 1 * Math.sign(gamma - prevPosition.gamma);
+        }
+      }
+      prevPosition = { beta, gamma };
+
+      const dBeta = beta - initialPosition.beta;
+      const dGamma = gamma - initialPosition.gamma;
 
       const moveX = dGamma * SPEED_FACTOR_X;
       const moveY = dBeta * SPEED_FACTOR_Y;
+      // eslint-disable-next-line no-console
+      console.log({
+        prevPosition,
+        moveX,
+        moveY,
+        beta,
+        gamma,
+        initialPosition: initialPosition,
+      });
 
       ref.current.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
     };
