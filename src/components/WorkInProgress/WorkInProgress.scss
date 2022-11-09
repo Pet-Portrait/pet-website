@@ -8,7 +8,21 @@
     align-items: center;
     justify-content: center;
   }
-  
+
+  &__logo {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  &__image {
+    @media screen and (max-height: 600px) {
+      width: 300px;
+    }
+  }
+
   &__title {
     font-size: 4rem;
   }
@@ -16,6 +30,7 @@
   &__subtitle {
     font-size: 1rem;
     margin-top: 8px;
+    text-align: center;
   }
 
   footer {
@@ -28,5 +43,4 @@
     font-size: 0.8rem;
     margin-bottom: 8px;
   }
-  
 }

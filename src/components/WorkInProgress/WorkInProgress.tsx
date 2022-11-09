@@ -10,14 +10,22 @@ const WorkInProgress: FC = () => (
     <Layout>
       <div className="work-in-progress">
         <div className="work-in-progress__content">
-          <h1 className="work-in-progress__title">pet portrait</h1>
           <StaticImage
-            alt="Dog in a builder helmet"
-            className="work-in-progress__image"
-            src="../../images/dog-wip.png"
+            alt="Logo pet portrait"
+            className="work-in-progress__logo"
+            placeholder="none"
+            src="../../images/logo.svg"
+            width={200}
           />
+          <div>
+            <StaticImage
+              alt="Dog in a builder helmet"
+              className="work-in-progress__image"
+              src="../../images/dog-wip.png"
+            />
 
-          <h2 className="work-in-progress__subtitle">Work in progress</h2>
+            <h2 className="work-in-progress__subtitle">Work in progress</h2>
+          </div>
         </div>
       </div>
       <footer>
