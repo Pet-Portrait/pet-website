@@ -1,0 +1,80 @@
+@import './variables';
+@import './breakpoints';
+
+@mixin heading-1 {
+  font-size: $heading-1-size--mobile;
+  font-weight: 700;
+  line-height: 1;
+
+  @include breakpoint--desktop {
+    font-size: $heading-1-size--desktop;
+  }
+}
+
+@mixin heading-2 {
+  font-size: $heading-2-size--mobile;
+  font-weight: 700;
+  line-height: 1.33;
+
+  @include breakpoint--desktop {
+    font-size: $heading-2-size--desktop;
+    line-height: 1;
+  }
+}
+
+@mixin heading-3 {
+  font-size: $heading-3-size--mobile;
+  font-weight: 700;
+  line-height: 1.4;
+
+  @include breakpoint--desktop {
+    font-size: $heading-3-size--desktop;
+    line-height: 1.33;
+  }
+}
+
+@mixin text-small {
+  font-size: $body-font-size--small;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+@mixin text-medium {
+  font-size: $body-font-size--medium;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+@mixin text-large {
+  font-size: $body-font-size--large;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1,
+.heading-1 {
+  @include heading-1;
+}
+
+h2,
+.heading-2 {
+  @include heading-2;
+}
+
+h3,
+.heading-3 {
+  @include heading-3;
+}
+
+body,
+.text--medium {
+  @include text-medium;
+}
+
+.text--small {
+  @include text-small;
+}
+
+.text--large {
+  @include text-large;
+}

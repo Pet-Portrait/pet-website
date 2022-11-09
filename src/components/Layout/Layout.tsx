@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 
-import './Layout.scss';
+import 'styles/global.scss';
 
 interface Props {
   children: ReactNode;
