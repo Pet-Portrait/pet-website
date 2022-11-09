@@ -34,8 +34,15 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
+        name: `cms-pages`,
         path: `${__dirname}/cms`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cms-images`,
+        path: `${__dirname}/cms/images`,
       },
     },
     'gatsby-transformer-remark',

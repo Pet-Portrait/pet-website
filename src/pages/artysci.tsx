@@ -32,12 +32,22 @@ export const pageQuery = graphql`
         id
         html
         frontmatter {
-          avatar
+          avatar {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           name
           behance
           featured
           facebook
-          images
+          images {
+            image {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
           instagram
           web
           title

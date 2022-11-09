@@ -1,8 +1,12 @@
 ---
-name: TEst
-avatar: /images/uploads/7a2dce7c-2488-4f7f-84e1-15ba80735b77.jpeg
+name: Test
+avatar: ../images/petportrait-59-1.png
 featured: true
+facebook: asd
+instagram: qwe
+behance: zxc
+web: asd
 images:
-  - /images/uploads/untitled-1-.jpg
+  - image: ../images/312292717_650815189969470_114361926446815360_n.png
 ---
-l﻿orem ipsum
+# a﻿sd

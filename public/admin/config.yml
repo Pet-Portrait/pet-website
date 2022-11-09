@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: 'public/images/uploads'
-public_folder: '/images/uploads'
+media_folder: 'cms/images'
+public_folder: '../images'
 collections:
   - name: 'artist'
     label: 'Artysta'
@@ -18,12 +18,11 @@ collections:
       - { label: 'Instagram', name: 'instagram', widget: 'string', required: false }
       - { label: 'Behance', name: 'behance', widget: 'string', required: false }
       - { label: 'WWW', name: 'web', widget: 'string', required: false }
-      - {
-          label: 'Prace',
-          name: 'images',
-          widget: 'list',
-          field: { label: 'Zdjęcie', name: 'image', widget: 'image' },
-        }
+      - label: 'Prace'
+        name: 'images'
+        widget: 'list'
+        fields:
+          - { label: 'Zdjęcie', name: 'image', widget: 'image' }
   - name: 'bid'
     label: 'Licytacja'
     folder: 'cms/bids'
@@ -49,9 +48,8 @@ collections:
       - { label: 'Link do licytacji', name: 'url', widget: 'string' }
       - { label: 'Format', name: 'format', widget: 'string' }
       - { label: 'Wyróżnione', name: 'featured', widget: 'boolean' }
-      - {
-          label: 'Zdjęcia',
-          name: 'images',
-          widget: 'list',
-          field: { label: 'Zdjęcie', name: 'image', widget: 'image' },
-        }
+      - label: 'Zdjęcia'
+        name: 'images'
+        widget: 'list'
+        fields:
+          - { label: 'Zdjęcie', name: 'image', widget: 'image' }
