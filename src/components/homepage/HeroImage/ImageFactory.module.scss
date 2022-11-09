@@ -1,0 +1,18 @@
+@import 'styles/variables';
+
+.artist {
+  opacity: 0.5;
+  transform: rotate(-90deg) translateX(100%);
+  font-weight: 700;
+  position: absolute;
+  transform-origin: right;
+  right: $spacing--2;
+  bottom: $spacing--2;
+}
+
+.imageWrapper {
+  will-change: transform;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}

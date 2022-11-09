@@ -1,5 +1,5 @@
-import { GatsbyLinkProps, Link } from 'gatsby';
 import React, { ButtonHTMLAttributes, FC } from 'react';
+import { GatsbyLinkProps, Link } from 'gatsby';
 
 import * as classes from './Button.module.scss';
 

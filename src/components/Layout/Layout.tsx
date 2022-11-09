@@ -6,6 +6,6 @@ interface Props {
   children: ReactNode;
 }
 
-const Layout: FC<Props> = ({ children }) => <main className="container">{children}</main>;
+const Layout: FC<Props> = ({ children }) => <main>{children}</main>;
 
 export default Layout;

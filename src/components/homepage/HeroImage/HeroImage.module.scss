@@ -1,0 +1,45 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+@import 'styles/typography';
+
+.root {
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  padding: $spacing--4 $spacing--2 0;
+  background: linear-gradient(#ffffff, #d9e7da);
+  position: relative;
+
+  @include breakpoint--desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: none;
+    grid-gap: $spacing--8;
+    padding: $spacing--8 $spacing--8 0;
+  }
+}
+
+.logo {
+  max-width: 180px;
+  margin: auto;
+  display: block;
+
+  @include breakpoint--desktop {
+    margin: $spacing--8 0 0;
+    max-width: 400px;
+  }
+}
+
+.button {
+  margin: $spacing--4 auto;
+
+  @include breakpoint--desktop {
+    margin: $spacing--8 0 0;
+  }
+}
+
+.text {
+  @include breakpoint--desktop {
+    @include text-large;
+  }
+}
