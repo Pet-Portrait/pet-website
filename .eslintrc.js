@@ -62,6 +62,7 @@ module.exports = {
         ],
       },
     ],
+    'import/named': 'off',
     'import/newline-after-import': 'error',
     'import/no-unresolved': 'off', // ESlint doesn't understand relative paths
     'react/jsx-sort-props': ['error', { reservedFirst: true }],

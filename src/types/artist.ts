@@ -1,8 +1,10 @@
+import { ImageDataLike } from 'gatsby-plugin-image';
+
 export interface RawArtist {
-  avatar: string;
+  avatar: ImageDataLike;
   behance: string | null;
   facebook: string | null;
-  images: string[];
+  images: { image: ImageDataLike }[];
   instagram: string | null;
   featured: boolean;
   name: string;
