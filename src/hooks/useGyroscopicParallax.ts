@@ -39,7 +39,7 @@ const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefT
     return () => {
       window.removeEventListener('deviceorientation', animateImage);
     };
-  }, []);
+  }, [handleRequestAnimationFrame, ref]);
 };
 
 export default useGyroscopicParallax;
