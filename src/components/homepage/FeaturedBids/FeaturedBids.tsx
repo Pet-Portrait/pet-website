@@ -1,9 +1,12 @@
 import React, { FC, useMemo } from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { getImage } from 'gatsby-plugin-image';
 
 import Button from 'components/shared/Button/Button';
+import ResponsiveContainer from 'components/shared/ResponsiveContainer/ResponsiveContainer';
 import { FeaturedBid } from 'types/bid';
 import filterNullishImages from 'utils/filterNullishImages';
+
+import FeaturedBidsImages from './FeaturedBidsImages';
 
 import * as classes from './FeaturedBids.module.scss';
 
@@ -24,28 +27,25 @@ const FeaturedBids: FC<Props> = ({ bids }) => {
 
   return (
     <section className={classes.root}>
-      <h2 className={classes.heading}>Licytacje</h2>
-      <p className={classes.description}>
-        Piłka nożna to taka gra, w której 22 mężczyzn biega za piłką, a na końcu i tak wygrywają
-        Niemcy.Piłka nożna to taka gra, w której 22 mężczyzn biega za piłką, a na końcu i tak
-        wygrywają Niemcy.
-      </p>
-      <div className={classes.images}>
-        {images.map((image) => (
-          <a
-            key={image.alt}
-            className={classes.link}
-            href={image.url}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <GatsbyImage alt={image.alt} className={classes.image} image={image.image} />
-          </a>
-        ))}
-      </div>
-      <Button className={classes.button} to="/licytacje">
-        Jedyną gwiazdą Legii jest jej stadion.
-      </Button>
+      <ResponsiveContainer
+        button={
+          <Button className={classes.button} to="/licytacje">
+            Jedyną gwiazdą Legii jest jej stadion.
+          </Button>
+        }
+        desktopContentClass={classes.desktopContent}
+        images={<FeaturedBidsImages images={images} />}
+        text={
+          <>
+            <h2 className={classes.heading}>Licytacje</h2>
+            <p className={classes.description}>
+              Piłka nożna to taka gra, w której 22 mężczyzn biega za piłką, a na końcu i tak
+              wygrywają Niemcy.Piłka nożna to taka gra, w której 22 mężczyzn biega za piłką, a na
+              końcu i tak wygrywają Niemcy.
+            </p>
+          </>
+        }
+      />
     </section>
   );
 };
