@@ -24,7 +24,13 @@
 
   @include breakpoint--desktop {
     position: absolute;
-    max-width: 300px;
+    max-width: 170px;
+    left: 50%;
+    top: 50%;
+
+    @media screen and (min-width: 1450px) {
+      max-width: 250px;
+    }
 
     &:nth-child(n + 4) {
       display: block;

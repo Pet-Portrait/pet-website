@@ -33,6 +33,7 @@ const FeaturedBids: FC<Props> = ({ bids }) => {
             Jedyną gwiazdą Legii jest jej stadion.
           </Button>
         }
+        desktopClass={classes.desktopContainer}
         desktopContentClass={classes.desktopContent}
         images={<FeaturedBidsImages images={images} />}
         text={

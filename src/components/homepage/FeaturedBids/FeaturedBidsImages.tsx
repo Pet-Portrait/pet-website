@@ -20,19 +20,22 @@ const FeaturedBidsImages: FC<Props> = ({ images }) => {
   useEffect(() => {
     const setImagesPosition = () => {
       if (!isDesktop || !wrapperRef.current?.children) return;
+
       const angle = 360 / wrapperRef.current.children.length - 1;
-      const CIRCLE_RADIUS = 300;
+      const imageWidth = wrapperRef.current.children[0].clientWidth;
+
+      const CIRCLE_RADIUS = imageWidth * 1.2;
 
       (Array.from(wrapperRef.current.children) as HTMLAnchorElement[]).forEach(
         (imageRef, index) => {
           if (!imageRef) return;
           if (index === 0) {
-            imageRef.style.transform = `translate(50%, 50%) rotate(0deg)`;
+            imageRef.style.transform = `translate(-50%, -50%) rotate(0deg)`;
             return;
           }
 
           const rotation = angle * (index - 1);
-          imageRef.style.transform = `translate(50%, 50%) rotate(${rotation}deg) translate(${CIRCLE_RADIUS}px) rotate(${-rotation}deg)`;
+          imageRef.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) translate(${CIRCLE_RADIUS}px) rotate(${-rotation}deg)`;
         },
       );
     };
