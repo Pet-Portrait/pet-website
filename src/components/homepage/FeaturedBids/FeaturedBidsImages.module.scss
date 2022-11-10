@@ -1,0 +1,42 @@
+@import 'styles/breakpoints';
+@import 'styles/variables';
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $spacing--1 $spacing--2;
+}
+
+.link {
+  &:first-child,
+  &:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+
+  &:nth-child(n + 5) {
+    display: none;
+  }
+
+  overflow: hidden;
+  border-radius: 25px;
+
+  @include breakpoint--tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $spacing--2 $spacing--3;
+
+    &:nth-child(n + 4) {
+      display: block;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
