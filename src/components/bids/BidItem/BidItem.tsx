@@ -1,16 +1,15 @@
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import React from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { Bid } from 'types/bid';
+import filterNullishImages from 'utils/filterNullishImages';
 
 interface Props {
   bid: Bid;
 }
 
 const BidItem = ({ bid }: Props) => {
-  const images = bid.images
-    .map((image) => getImage(image.image))
-    .filter((image): image is IGatsbyImageData => !!image);
+  const images = filterNullishImages(bid.images.map((image) => getImage(image.image)));
 
   return (
     <li>

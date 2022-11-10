@@ -1,0 +1,63 @@
+@import 'styles/breakpoints';
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.root {
+  padding: $spacing--8 $spacing--2;
+
+  @include breakpoint--desktop {
+    @include desktop-layout;
+  }
+}
+
+.heading {
+  margin-bottom: $spacing--1;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $spacing--1 $spacing--2;
+}
+
+.description {
+  margin-bottom: $spacing--4;
+}
+
+.link {
+  &:first-child,
+  &:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+
+  &:nth-child(n + 5) {
+    display: none;
+  }
+
+  overflow: hidden;
+  border-radius: 25px;
+
+  @include breakpoint--tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $spacing--2 $spacing--3;
+
+    &:nth-child(n + 4) {
+      display: block;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.button {
+  margin: $spacing--3 auto 0;
+}
