@@ -8,10 +8,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: $spacing--8;
+    height: 100%;
   }
 }
 
 .mobile {
+  height: 100%;
+
   @include breakpoint--desktop {
     display: none;
   }

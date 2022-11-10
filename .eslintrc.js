@@ -38,11 +38,13 @@ module.exports = {
   },
   processor: '@graphql-eslint/graphql',
   ignorePatterns: ['node_modules', 'public', '.cache', '*config.js', 'jest-preprocess.js'],
-  plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'react-hooks'],
 
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'react/self-closing-comp': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
     'react/no-unused-prop-types': 'error',
     'simple-import-sort/imports': [
       'error',

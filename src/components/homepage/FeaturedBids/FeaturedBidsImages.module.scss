@@ -5,9 +5,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: $spacing--1 $spacing--2;
+  position: relative;
 }
 
 .link {
+  overflow: hidden;
+  border-radius: 25px;
+  transition: transform 0.25s ease-in-out;
+
   &:first-child,
   &:nth-child(4) {
     grid-column: 1 / -1;
@@ -17,12 +22,9 @@
     display: none;
   }
 
-  overflow: hidden;
-  border-radius: 25px;
-
-  @include breakpoint--tablet {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: $spacing--2 $spacing--3;
+  @include breakpoint--desktop {
+    position: absolute;
+    max-width: 300px;
 
     &:nth-child(n + 4) {
       display: block;

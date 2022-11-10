@@ -29,7 +29,7 @@ const useParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
     return () => {
       window.removeEventListener('mousemove', animateImage);
     };
-  }, []);
+  }, [ref]);
 
   return ref;
 };
