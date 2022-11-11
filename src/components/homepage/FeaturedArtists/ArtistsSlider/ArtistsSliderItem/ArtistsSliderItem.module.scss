@@ -1,0 +1,16 @@
+@import 'styles/variables';
+
+.root {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.image {
+  border-radius: 25px;
+  max-width: 155px;
+}
+
+.name {
+  margin-top: $spacing--1;
+}

@@ -1,7 +1,7 @@
 ---
 name: Test
 avatar: ../images/monia-es..jpg
-featured: true
+featured: false
 facebook: asd
 instagram: qwe
 behance: zxc
