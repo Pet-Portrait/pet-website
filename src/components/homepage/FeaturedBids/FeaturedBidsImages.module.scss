@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: $spacing--1 $spacing--2;
   position: relative;
+  min-height: 600px;
 }
 
 .link {
