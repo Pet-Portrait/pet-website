@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react';
 
+import isBrowser from 'utils/isBrowser';
+
 const displaySize = {
   TABLET: 768,
   DESKTOP: 1024,
 };
 
 const useResponsive = () => {
-  const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
+  const [currentWidth, setCurrentWidth] = useState(isBrowser() ? window.innerWidth : 0);
 
   useEffect(() => {
+    setCurrentWidth(window.innerWidth);
     const handleResize = () => setCurrentWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
 
