@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef } from 'react';
+import React, { FC, useCallback, useRef } from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 import useIntersectionObserver from 'hooks/useIntersectionObserver';
@@ -15,11 +15,10 @@ interface Props {
 const FeaturedBidsImages: FC<Props> = ({ images }) => {
   const { isDesktop } = useResponsive();
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const isInView = useIntersectionObserver(wrapperRef, { threshold: 0.4 });
 
-  useEffect(() => {
-    const setImagesPosition = () => {
-      if (!isDesktop || !wrapperRef.current?.children) return;
+  const setImagesPosition = useCallback(
+    ([entry]: IntersectionObserverEntry[]) => {
+      if (!isDesktop || !wrapperRef.current?.children || !entry.isIntersecting) return;
 
       const angle = 360 / wrapperRef.current.children.length - 1;
       const imageWidth = wrapperRef.current.children[0].clientWidth;
@@ -38,10 +37,11 @@ const FeaturedBidsImages: FC<Props> = ({ images }) => {
           imageRef.style.transform = `translate(-50%, -50%) rotate(${rotation}deg) translate(${CIRCLE_RADIUS}px) rotate(${-rotation}deg)`;
         },
       );
-    };
+    },
+    [isDesktop],
+  );
 
-    if (isInView) setImagesPosition();
-  }, [isDesktop, isInView]);
+  useIntersectionObserver(wrapperRef, setImagesPosition, { threshold: 0.4 });
 
   return (
     <div ref={wrapperRef} className={classes.images}>

@@ -1,36 +1,24 @@
-import { RefObject, useEffect, useState } from 'react';
+import { RefObject, useEffect } from 'react';
 
-interface Args extends IntersectionObserverInit {
-  freezeOnceVisible?: boolean;
-}
-
-function useIntersectionObserver(
+const useIntersectionObserver = (
   elementRef: RefObject<Element>,
-  { threshold, root, rootMargin, freezeOnceVisible }: Args,
-): boolean {
-  const [isInView, setIsInView] = useState(false);
-
-  const frozen = isInView && freezeOnceVisible;
+  callback: (entires: IntersectionObserverEntry[]) => void,
+  options?: IntersectionObserverInit,
+): void => {
+  const { threshold, root, rootMargin } = options || {};
 
   useEffect(() => {
-    const updateEntry = ([entry]: IntersectionObserverEntry[]): void => {
-      setIsInView(entry.isIntersecting);
-    };
-
     const node = elementRef?.current;
     const hasIOSupport = !!window.IntersectionObserver;
 
-    if (!hasIOSupport || frozen || !node) return;
+    if (!hasIOSupport || !node) return;
 
-    const observerParams = { threshold, root, rootMargin };
-    const observer = new IntersectionObserver(updateEntry, observerParams);
+    const observer = new IntersectionObserver(callback, { root, rootMargin, threshold });
 
     observer.observe(node);
 
     return () => observer.disconnect();
-  }, [root, rootMargin, frozen, elementRef, threshold]);
-
-  return isInView;
-}
+  }, [root, rootMargin, elementRef, threshold, callback]);
+};
 
 export default useIntersectionObserver;
