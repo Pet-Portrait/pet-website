@@ -3,7 +3,7 @@
 @import 'styles/typography';
 
 .root {
-  height: calc(100vh);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: $spacing--4 $spacing--2 0;
