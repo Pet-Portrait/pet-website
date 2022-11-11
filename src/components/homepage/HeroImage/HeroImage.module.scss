@@ -4,37 +4,37 @@
 
 .root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: $spacing--4 $spacing--2 0;
-  background: linear-gradient(#ffffff, #d9e7da);
-  position: relative;
-
-  @include breakpoint--desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: none;
-    grid-gap: $spacing--8;
-    padding: $spacing--8 $spacing--8 0;
-  }
+  display: grid;
 }
 
-.logo {
-  max-width: 180px;
-  margin: auto;
-  display: block;
+.background {
+  grid-area: 1/1;
+}
 
-  @include breakpoint--desktop {
-    margin: $spacing--8 0 0;
-    max-width: 400px;
-  }
+.grid {
+  grid-area: 1/1;
+  display: grid;
+  grid-gap: $spacing--8;
+  padding: $spacing--8 $spacing--8 0;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content {
+  justify-self: center;
+  align-self: center;
+}
+
+.heading {
+  color: $primary-color;
+  margin: 120px 0 $spacing--2;
 }
 
 .button {
   margin: $spacing--4 auto;
 
   @include breakpoint--desktop {
-    margin: $spacing--8 0 0;
+    margin: $spacing--4 0 0;
   }
 }
 
