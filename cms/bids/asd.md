@@ -1,10 +1,10 @@
 ---
-title: asd
+title: asds
 artist: Test
 type: Malarstwo
 url: qwe
-format: zxc
+format: zxcsasd
 featured: true
 images:
-  - image: ../images/petportrait-59-1.png
+  - image: ../images/monia-es..jpg
 ---
