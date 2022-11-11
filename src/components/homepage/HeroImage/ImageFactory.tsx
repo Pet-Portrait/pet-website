@@ -26,7 +26,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
         <>
           <div ref={ref} className={classes.imageWrapper}>
             <StaticImage
-              alt="Klaudia Polak - Bugs"
+              alt='Klaudia Polak - "Bugs"'
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
@@ -41,7 +41,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
         <>
           <div ref={ref} className={classes.imageWrapper}>
             <StaticImage
-              alt="Klaudia Polak - Bugs"
+              alt='Dorota Piechocińska - "Jo ma chart"'
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
@@ -56,7 +56,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
         <>
           <div ref={ref} className={classes.imageWrapper}>
             <StaticImage
-              alt="Klaudia Polak - Bugs"
+              alt='Dorota Piechocińska - "Chart ducha"'
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
@@ -71,7 +71,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
         <>
           <div ref={ref} className={`${classes.imageWrapper} ${classes.cat}`}>
             <StaticImage
-              alt="Klaudia Polak - Bugs"
+              alt='Klaudia Polak - "Fioletowy Ocelot"'
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
@@ -86,7 +86,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
         <>
           <div ref={ref} className={classes.imageWrapper}>
             <StaticImage
-              alt="Klaudia Polak - Bugs"
+              alt='Małgorzata Nowak - "Gwizdna Kicia"'
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
