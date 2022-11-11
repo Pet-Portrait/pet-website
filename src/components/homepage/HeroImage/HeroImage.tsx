@@ -1,7 +1,8 @@
-import React, { FC, useRef } from 'react';
+import React, { FC, useRef, useState } from 'react';
 
 import Button from 'components/shared/Button/Button';
 import useGyroscopicParallax from 'hooks/useGyroscopicParallax';
+import useIntersectionObserver from 'hooks/useIntersectionObserver';
 import useParallax from 'hooks/useParallax';
 import logo from 'images/logo-black.svg';
 
@@ -11,8 +12,16 @@ import * as classes from './HeroImage.module.scss';
 
 const HeroImage: FC = () => {
   const imageRef = useRef<HTMLDivElement>(null);
-  useParallax(imageRef);
-  useGyroscopicParallax(imageRef);
+  const [isParallaxEnabled, setIsParallaxEnabled] = useState(true);
+  useIntersectionObserver(
+    imageRef,
+    ([entry]) => {
+      setIsParallaxEnabled(entry.isIntersecting);
+    },
+    { threshold: 0.9 },
+  );
+  useParallax(imageRef, { enabled: isParallaxEnabled });
+  useGyroscopicParallax(imageRef, { enabled: isParallaxEnabled });
 
   return (
     <section className={classes.root}>
