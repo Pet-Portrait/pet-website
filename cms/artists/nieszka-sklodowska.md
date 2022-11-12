@@ -1,12 +1,12 @@
 ---
-name: "Nieszka Skłodowska"
-avatar: 
+name: Nieszka Skłodowska
+avatar: ../images/nieszka_skłodowska-agnieszka-skłodowska.jpg
 featured: false
-facebook: 
+facebook: null
 instagram: https://instagram.com/odnies
-behance: 
-web:
-images:
+behance: null
+web: null
+images: null
 ---
 Od dwóch lat moje działania skupione są wokół kolażu, co stało się dla mnie polem do wielu eksperymentów. W moich pracach ogromną wagę przykładam do faktur i kolorów. Eksploruję materiały z domeny publicznej i łączę je z rysunkiem, fotografiami oraz skanami, tworząc wielowarstwowe struktury.
 
