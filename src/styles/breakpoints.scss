@@ -1,6 +1,7 @@
 $mobile-size: 576px;
 $tablet-size: 768px;
 $desktop-size: 1024px;
+$desktop-l-size: 1366px;
 
 @mixin breakpoint--mobile {
   @media (max-width: #{$mobile-size}) {
@@ -16,6 +17,12 @@ $desktop-size: 1024px;
 
 @mixin breakpoint--desktop {
   @media (min-width: #{$desktop-size}) {
+    @content;
+  }
+}
+
+@mixin breakpoint--desktop-l {
+  @media (min-width: #{$desktop-l-size}) {
     @content;
   }
 }

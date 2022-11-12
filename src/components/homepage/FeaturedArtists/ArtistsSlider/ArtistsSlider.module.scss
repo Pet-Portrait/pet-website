@@ -1,0 +1,7 @@
+@import 'styles/breakpoints';
+
+.root {
+  @include breakpoint--desktop {
+    display: none;
+  }
+}

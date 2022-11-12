@@ -10,6 +10,8 @@
     grid-gap: $spacing--8;
     height: 100%;
     width: 100%;
+    max-width: 1920px;
+    margin: auto;
   }
 }
 
@@ -24,4 +26,6 @@
 
 .desktopContent {
   max-width: 350px;
+  align-self: center;
+  justify-self: center;
 }

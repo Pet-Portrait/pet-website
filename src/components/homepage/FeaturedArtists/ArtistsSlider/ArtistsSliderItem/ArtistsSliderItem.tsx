@@ -7,18 +7,13 @@ interface Props {
   avatar: ImageDataLike;
   name: string;
   id: string;
-  setArtistIdInModal: (id: string) => void;
+  onClick: (id: string) => void;
 }
 
-const ArtistsSliderItem: FC<Props> = ({
-  avatar,
-  id,
-  name,
-  setArtistIdInModal: setArtistInModal,
-}) => {
+const ArtistsSliderItem: FC<Props> = ({ avatar, id, name, onClick }) => {
   const image = getImage(avatar);
 
-  const handleClick = () => setArtistInModal(id);
+  const handleClick = () => onClick(id);
 
   if (!image) return null;
   return (

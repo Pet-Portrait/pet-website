@@ -31,3 +31,8 @@
 .description {
   margin-bottom: $spacing--2;
 }
+
+.desktopContainer {
+  grid-gap: 0;
+  grid-template-columns: 40% 60%;
+}

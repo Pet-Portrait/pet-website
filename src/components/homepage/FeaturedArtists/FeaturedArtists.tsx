@@ -5,6 +5,7 @@ import Button from 'components/shared/Button/Button';
 import ResponsiveContainer from 'components/shared/ResponsiveContainer/ResponsiveContainer';
 import { Artist } from 'types/artist';
 
+import ArtistsGrid from './ArtistsGrid/ArtistsGrid';
 import ArtistsSlider from './ArtistsSlider/ArtistsSlider';
 
 import * as classes from './FeaturedArtists.module.scss';
@@ -25,6 +26,11 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
     setArtistIdInModal('');
   };
 
+  const handleOpenModal = (id: string) => {
+    setArtistIdInModal(id);
+    setIsModalOpen(true);
+  };
+
   const artistInModal = artists.find((artist) => artist.id === artistIdInModal);
   return (
     <section className={classes.root}>
@@ -34,14 +40,12 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
             Truskawka na torcie
           </Button>
         }
+        desktopClass={classes.desktopContainer}
         images={
-          <ArtistsSlider
-            artists={artists}
-            setArtistIdInModal={(id) => {
-              setArtistIdInModal(id);
-              setIsModalOpen(true);
-            }}
-          />
+          <>
+            <ArtistsSlider artists={artists} onSlideClick={handleOpenModal} />
+            <ArtistsGrid artists={artists} onArtistClick={handleOpenModal} />
+          </>
         }
         text={
           <div className={classes.text}>
