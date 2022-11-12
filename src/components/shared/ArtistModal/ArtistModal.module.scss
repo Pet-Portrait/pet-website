@@ -3,17 +3,23 @@
 .overlay {
   position: fixed;
   inset: 0px;
-  background-color: rgba($background-color, 0.1);
+  background-color: rgba(#fff, 0.5);
   z-index: 1;
   transition: transform 0.4s ease-in-out;
 }
 
 .modal {
   position: absolute;
-  inset: $spacing--2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: $background-color;
   overflow: auto;
   border-radius: 4px;
   outline: none;
   padding: $spacing--2;
+  max-width: 1024px;
+  max-height: 700px;
+  height: calc(100% - $spacing--2);
+  width: calc(100% - $spacing--4);
 }

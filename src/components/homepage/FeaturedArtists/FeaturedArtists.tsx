@@ -18,6 +18,8 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
   const [artistIdInModal, setArtistIdInModal] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const artistInModal = artists.find((artist) => artist.id === artistIdInModal);
+
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -31,7 +33,6 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
     setIsModalOpen(true);
   };
 
-  const artistInModal = artists.find((artist) => artist.id === artistIdInModal);
   return (
     <section className={classes.root}>
       <ResponsiveContainer

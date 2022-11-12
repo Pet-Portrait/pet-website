@@ -3,7 +3,6 @@ backend:
   branch: main
 media_folder: 'cms/images'
 public_folder: '../images'
-local_backend: true
 collections:
   - name: 'artist'
     label: 'Artysta'

@@ -20,6 +20,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease-in-out;
+  border-radius: 25px;
 
   @include breakpoint--desktop-l {
     max-width: 220px;
