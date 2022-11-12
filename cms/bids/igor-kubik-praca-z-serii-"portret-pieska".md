@@ -1,5 +1,5 @@
 ---
-title: "Praca z serii "Portret pieska""
+title: 'Praca z serii "Portret pieska"'
 artist: "Igor Kubik"
 image:
 type: "Inne"

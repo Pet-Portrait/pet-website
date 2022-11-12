@@ -1,5 +1,5 @@
 ---
-title: ""PSIA KREW", czarka ceramiczna"
+title: '"PSIA KREW", czarka ceramiczna'
 artist: "Monika Sikorska (MONIfaktura)"
 image:
 type: "Ceramika"

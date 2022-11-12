@@ -1,5 +1,5 @@
 ---
-title: "Broszka ceramiczna "Psia krew""
+title: 'Broszka ceramiczna "Psia krew"'
 artist: "MONIfaktura (Monika Sikorska)"
 image:
 type: "Ceramika"

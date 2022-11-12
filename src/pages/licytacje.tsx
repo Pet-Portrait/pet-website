@@ -26,7 +26,7 @@ export const pageQuery = graphql`
       nodes {
         id
         frontmatter {
-          name
+          title
           artist
           type
           url

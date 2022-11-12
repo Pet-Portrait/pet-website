@@ -1,5 +1,5 @@
 ---
-title: ""Snowman""
+title: "Snowman"
 artist: "Monika Chlebek"
 image:
 type: "Inne"

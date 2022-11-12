@@ -1,5 +1,5 @@
 ---
-title: ""Dog Mermaids""
+title: "Dog Mermaids"
 artist: "Nadia Kubczak"
 image:
 type: "Grafika"
