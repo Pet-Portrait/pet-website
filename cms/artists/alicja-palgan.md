@@ -1,5 +1,5 @@
 ---
-name: Alicja Pałgan
+name: "Alicja Pałgan"
 avatar: 
 featured: false
 facebook: 

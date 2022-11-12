@@ -1,5 +1,5 @@
 ---
-name: Jeleniara
+name: "Jeleniara"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Imię, nazwisko plus pseudonim Bazgramsobie
+name: "Imię, nazwisko plus pseudonim Bazgramsobie"
 avatar: 
 featured: false
 facebook: 

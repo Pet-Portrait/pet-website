@@ -1,5 +1,5 @@
 ---
-name: Nadia Kubczak
+name: "Nadia Kubczak"
 avatar: 
 featured: false
 facebook: 

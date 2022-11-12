@@ -1,5 +1,5 @@
 ---
-name: Karol Banach
+name: "Karol Banach"
 avatar: 
 featured: false
 facebook: 

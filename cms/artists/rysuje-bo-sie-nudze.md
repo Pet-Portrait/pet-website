@@ -1,5 +1,5 @@
 ---
-name: Rysuję Bo Się Nudzę
+name: "Rysuję Bo Się Nudzę"
 avatar: 
 featured: false
 facebook: 

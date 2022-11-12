@@ -1,5 +1,5 @@
 ---
-name: Cynamon Studio
+name: "Cynamon Studio"
 avatar: 
 featured: false
 facebook: 

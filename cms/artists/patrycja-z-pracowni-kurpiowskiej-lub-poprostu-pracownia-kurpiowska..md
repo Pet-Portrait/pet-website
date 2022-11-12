@@ -1,5 +1,5 @@
 ---
-name: Patrycja z Pracowni Kurpiowskiej lub poprostu Pracownia Kurpiowska.
+name: "Patrycja z Pracowni Kurpiowskiej lub poprostu Pracownia Kurpiowska."
 avatar: 
 featured: false
 facebook: https://facebook.com/PracowniaKurpiowska

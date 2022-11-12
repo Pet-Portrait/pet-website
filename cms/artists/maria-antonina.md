@@ -1,5 +1,5 @@
 ---
-name: Maria Antonina
+name: "Maria Antonina"
 avatar: 
 featured: false
 facebook: 

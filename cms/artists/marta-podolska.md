@@ -1,5 +1,5 @@
 ---
-name: Marta Podolska
+name: "Marta Podolska"
 avatar: 
 featured: false
 facebook: 

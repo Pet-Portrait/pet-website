@@ -1,5 +1,5 @@
 ---
-name: Klaudia Kozińska
+name: "Klaudia Kozińska"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Pani Czapla
+name: "Pani Czapla"
 avatar: 
 featured: false
 facebook: 

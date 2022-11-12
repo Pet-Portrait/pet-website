@@ -1,5 +1,5 @@
 ---
-name: Neszka Szatkowska
+name: "Neszka Szatkowska"
 avatar: 
 featured: false
 facebook: 

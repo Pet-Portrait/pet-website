@@ -1,5 +1,5 @@
 ---
-name: Klaudia Zabłocka
+name: "Klaudia Zabłocka"
 avatar: 
 featured: false
 facebook: 

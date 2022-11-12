@@ -31,11 +31,9 @@ export const pageQuery = graphql`
           type
           url
           format
-          images {
-            image {
-              childImageSharp {
-                gatsbyImageData
-              }
+          image {
+            childImageSharp {
+              gatsbyImageData
             }
           }
         }

@@ -1,5 +1,5 @@
 ---
-name: Kordecka.art
+name: "Kordecka.art"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Dorota Bujak 
+name: "Dorota Bujak "
 avatar: 
 featured: false
 facebook: 

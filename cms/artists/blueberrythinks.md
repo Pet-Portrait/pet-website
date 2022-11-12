@@ -1,5 +1,5 @@
 ---
-name: BLUEBERRYTHINKS
+name: "BLUEBERRYTHINKS"
 avatar: 
 featured: false
 facebook: 

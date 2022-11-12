@@ -1,5 +1,5 @@
 ---
-name: Joanna Gębal
+name: "Joanna Gębal"
 avatar: 
 featured: false
 facebook: 

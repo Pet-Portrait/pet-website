@@ -1,5 +1,5 @@
 ---
-name: Kasia Walentynowicz
+name: "Kasia Walentynowicz"
 avatar: 
 featured: false
 facebook: https://facebook.com/kasiawalentynowiczillustration

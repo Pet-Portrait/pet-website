@@ -1,5 +1,5 @@
 ---
-name: Magda Danaj Porysunki
+name: "Magda Danaj Porysunki"
 avatar: 
 featured: false
 facebook: 

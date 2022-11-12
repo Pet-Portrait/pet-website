@@ -1,5 +1,5 @@
 ---
-name: Lubek
+name: "Lubek"
 avatar: 
 featured: false
 facebook: 

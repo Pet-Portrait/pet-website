@@ -1,5 +1,5 @@
 ---
-name: Alina Tyshchuk
+name: "Alina Tyshchuk"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Kasia Worek
+name: "Kasia Worek"
 avatar: 
 featured: false
 facebook: 

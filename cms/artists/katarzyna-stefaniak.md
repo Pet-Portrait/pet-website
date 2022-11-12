@@ -1,5 +1,5 @@
 ---
-name: Katarzyna Stefaniak
+name: "Katarzyna Stefaniak"
 avatar: 
 featured: false
 facebook: 

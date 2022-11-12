@@ -1,5 +1,5 @@
 ---
-name: MONIfaktura
+name: "MONIfaktura"
 avatar: 
 featured: false
 facebook: https://facebook.com/MONIfaktura

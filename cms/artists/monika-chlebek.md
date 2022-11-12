@@ -1,5 +1,5 @@
 ---
-name: Monika Chlebek
+name: "Monika Chlebek"
 avatar: 
 featured: false
 facebook: 

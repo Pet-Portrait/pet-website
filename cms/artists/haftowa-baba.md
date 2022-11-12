@@ -1,5 +1,5 @@
 ---
-name: Haftowa Baba
+name: "Haftowa Baba"
 avatar: 
 featured: false
 facebook: 

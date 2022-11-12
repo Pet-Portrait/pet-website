@@ -1,5 +1,5 @@
 ---
-name: Natka Biegalska
+name: "Natka Biegalska"
 avatar: 
 featured: false
 facebook: 

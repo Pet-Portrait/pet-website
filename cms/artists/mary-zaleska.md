@@ -1,5 +1,5 @@
 ---
-name: Mary Zaleska
+name: "Mary Zaleska"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Łukasz Kuleta | W Wirażu Kolażu
+name: "Łukasz Kuleta | W Wirażu Kolażu"
 avatar: 
 featured: false
 facebook: 

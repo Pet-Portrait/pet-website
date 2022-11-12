@@ -1,5 +1,5 @@
 ---
-name: koszmarne mazaje
+name: "koszmarne mazaje"
 avatar: 
 featured: false
 facebook: 

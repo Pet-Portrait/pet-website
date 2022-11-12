@@ -1,5 +1,5 @@
 ---
-name: KURZ ceramika
+name: "KURZ ceramika"
 avatar: 
 featured: false
 facebook: https://facebook.com/

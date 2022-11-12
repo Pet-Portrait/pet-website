@@ -1,5 +1,5 @@
 ---
-name: naczyniaki ceramika
+name: "naczyniaki ceramika"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Anna Jeziorska
+name: "Anna Jeziorska"
 avatar: 
 featured: false
 facebook: 

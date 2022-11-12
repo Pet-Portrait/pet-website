@@ -1,5 +1,5 @@
 ---
-name: Karolina Ciepielewska
+name: "Karolina Ciepielewska"
 avatar: 
 featured: false
 facebook: 

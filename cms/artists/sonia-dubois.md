@@ -1,5 +1,5 @@
 ---
-name: Sonia Dubois
+name: "Sonia Dubois"
 avatar: 
 featured: false
 facebook: 

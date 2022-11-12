@@ -1,5 +1,5 @@
 ---
-name: Kinga Offert
+name: "Kinga Offert"
 avatar: 
 featured: false
 facebook: 

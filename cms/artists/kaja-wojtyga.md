@@ -1,5 +1,5 @@
 ---
-name: kaja wojtyga
+name: "kaja wojtyga"
 avatar: 
 featured: false
 facebook: 

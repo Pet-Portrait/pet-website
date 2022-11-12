@@ -1,5 +1,5 @@
 ---
-name: Pangzi Ceramics
+name: "Pangzi Ceramics"
 avatar: 
 featured: false
 facebook: 

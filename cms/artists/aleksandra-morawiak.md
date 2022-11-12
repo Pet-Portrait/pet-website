@@ -1,5 +1,5 @@
 ---
-name: Aleksandra Morawiak
+name: "Aleksandra Morawiak"
 avatar: 
 featured: false
 facebook: 

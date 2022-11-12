@@ -1,5 +1,5 @@
 ---
-name: Aleksandra Stanglewicz
+name: "Aleksandra Stanglewicz"
 avatar: 
 featured: false
 facebook: 

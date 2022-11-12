@@ -1,5 +1,5 @@
 ---
-name: Michał Stępień
+name: "Michał Stępień"
 avatar: 
 featured: false
 facebook: https://facebook.com/Mi.Stepien

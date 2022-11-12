@@ -1,5 +1,5 @@
 ---
-name: Kaffka
+name: "Kaffka"
 avatar: 
 featured: false
 facebook: 

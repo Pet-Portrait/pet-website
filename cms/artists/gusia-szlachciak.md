@@ -1,5 +1,5 @@
 ---
-name: Gusia Szlachciak
+name: "Gusia Szlachciak"
 avatar: 
 featured: false
 facebook: https://facebook.com/gusiaszlachciak

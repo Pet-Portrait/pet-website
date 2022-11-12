@@ -1,5 +1,5 @@
 ---
-name: Nora Potwora
+name: "Nora Potwora"
 avatar: 
 featured: false
 facebook: 

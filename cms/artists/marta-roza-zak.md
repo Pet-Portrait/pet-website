@@ -1,5 +1,5 @@
 ---
-name: Marta Róża Żak
+name: "Marta Róża Żak"
 avatar: 
 featured: false
 facebook: 

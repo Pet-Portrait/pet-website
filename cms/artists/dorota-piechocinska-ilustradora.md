@@ -1,5 +1,5 @@
 ---
-name: Dorota Piechocińska ilustraDORA
+name: "Dorota Piechocińska ilustraDORA"
 avatar: 
 featured: false
 facebook: https://facebook.com/ilustradoradorailustra

@@ -1,5 +1,5 @@
 ---
-name: Klaudia Polak
+name: "Klaudia Polak"
 avatar: 
 featured: false
 facebook: 

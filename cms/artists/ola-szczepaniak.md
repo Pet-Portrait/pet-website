@@ -1,5 +1,5 @@
 ---
-name: Ola Szczepaniak
+name: "Ola Szczepaniak"
 avatar: 
 featured: false
 facebook: 

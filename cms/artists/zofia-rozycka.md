@@ -1,5 +1,5 @@
 ---
-name: Zofia Różycka
+name: "Zofia Różycka"
 avatar: 
 featured: false
 facebook: 

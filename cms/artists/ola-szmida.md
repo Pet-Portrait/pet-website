@@ -1,5 +1,5 @@
 ---
-name: ola szmida
+name: "ola szmida"
 avatar: 
 featured: false
 facebook: 

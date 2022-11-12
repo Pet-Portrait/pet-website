@@ -1,5 +1,5 @@
 ---
-name: SOIL 
+name: "SOIL "
 avatar: 
 featured: false
 facebook: 

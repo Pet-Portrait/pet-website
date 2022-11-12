@@ -1,5 +1,5 @@
 ---
-name: OTOOKA
+name: "OTOOKA"
 avatar: 
 featured: false
 facebook: 

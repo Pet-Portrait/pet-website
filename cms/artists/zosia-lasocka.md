@@ -1,5 +1,5 @@
 ---
-name: Zosia Lasocka
+name: "Zosia Lasocka"
 avatar: 
 featured: false
 facebook: 

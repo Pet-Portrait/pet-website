@@ -1,5 +1,5 @@
 ---
-name: Paulina Adamowska
+name: "Paulina Adamowska"
 avatar: 
 featured: false
 facebook: 

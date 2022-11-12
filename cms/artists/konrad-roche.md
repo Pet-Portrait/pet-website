@@ -1,5 +1,5 @@
 ---
-name: konrad roche
+name: "konrad roche"
 avatar: 
 featured: false
 facebook: 

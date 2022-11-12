@@ -1,5 +1,5 @@
 ---
-name: Sylwester Kluszczyński
+name: "Sylwester Kluszczyński"
 avatar: 
 featured: false
 facebook: 

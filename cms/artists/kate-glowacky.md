@@ -1,5 +1,5 @@
 ---
-name: kate glowacky
+name: "kate glowacky"
 avatar: 
 featured: false
 facebook: https://facebook.com/www.glows.design

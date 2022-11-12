@@ -38,7 +38,7 @@ fs.createReadStream(path.resolve(__dirname, 'artists.csv'))
       fs.writeFile(
         path.resolve(__dirname, '..', 'cms', 'artists', `${artist.fileName}.md`),
         `---
-name: ${artist.nick}
+name: "${artist.nick}"
 avatar: 
 featured: false
 facebook: ${artist.facebook}

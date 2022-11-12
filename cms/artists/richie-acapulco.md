@@ -1,5 +1,5 @@
 ---
-name: Richie Acapulco
+name: "Richie Acapulco"
 avatar: 
 featured: false
 facebook: 

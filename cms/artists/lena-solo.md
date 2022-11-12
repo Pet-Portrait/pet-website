@@ -1,5 +1,5 @@
 ---
-name: Lena Solo
+name: "Lena Solo"
 avatar: 
 featured: false
 facebook: https://facebook.com/

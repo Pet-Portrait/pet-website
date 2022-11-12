@@ -1,5 +1,5 @@
 ---
-name: Magda Wolna
+name: "Magda Wolna"
 avatar: 
 featured: false
 facebook: 

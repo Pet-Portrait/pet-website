@@ -1,5 +1,5 @@
 ---
-name: Adela Madej
+name: "Adela Madej"
 avatar: 
 featured: false
 facebook: 

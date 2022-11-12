@@ -1,5 +1,5 @@
 ---
-name: Karolina Woźniak
+name: "Karolina Woźniak"
 avatar: 
 featured: false
 facebook: 

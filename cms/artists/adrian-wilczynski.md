@@ -1,5 +1,5 @@
 ---
-name: Adrian Wilczyński
+name: "Adrian Wilczyński"
 avatar: 
 featured: false
 facebook: 

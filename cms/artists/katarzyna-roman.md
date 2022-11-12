@@ -1,5 +1,5 @@
 ---
-name: Katarzyna Roman
+name: "Katarzyna Roman"
 avatar: 
 featured: false
 facebook: https://facebook.com/

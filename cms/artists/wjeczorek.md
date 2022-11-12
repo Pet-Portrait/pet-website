@@ -1,5 +1,5 @@
 ---
-name: wjeczorek
+name: "wjeczorek"
 avatar: 
 featured: false
 facebook: 

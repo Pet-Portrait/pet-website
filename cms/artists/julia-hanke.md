@@ -1,5 +1,5 @@
 ---
-name: Julia Hanke
+name: "Julia Hanke"
 avatar: 
 featured: false
 facebook: 

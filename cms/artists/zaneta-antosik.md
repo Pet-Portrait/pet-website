@@ -1,5 +1,5 @@
 ---
-name: żaneta antosik
+name: "żaneta antosik"
 avatar: 
 featured: false
 facebook: https://facebook.com/

@@ -1,5 +1,5 @@
 ---
-name: Ewa Ziembicka na insta @ewaziembicka
+name: "Ewa Ziembicka na insta @ewaziembicka"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Marta Chmielecka
+name: "Marta Chmielecka"
 avatar: 
 featured: false
 facebook: 

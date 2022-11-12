@@ -1,5 +1,5 @@
 ---
-name: Weronika Kuc
+name: "Weronika Kuc"
 avatar: 
 featured: false
 facebook: 

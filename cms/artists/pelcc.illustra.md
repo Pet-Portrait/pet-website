@@ -1,5 +1,5 @@
 ---
-name: pelcc.illustra
+name: "pelcc.illustra"
 avatar: 
 featured: false
 facebook: 

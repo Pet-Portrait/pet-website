@@ -1,5 +1,5 @@
 ---
-name: Hanna Ilczyszyn
+name: "Hanna Ilczyszyn"
 avatar: 
 featured: false
 facebook: 

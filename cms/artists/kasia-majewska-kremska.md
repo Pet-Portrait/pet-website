@@ -1,5 +1,5 @@
 ---
-name: Kasia Majewska-Kremska
+name: "Kasia Majewska-Kremska"
 avatar: 
 featured: false
 facebook: 

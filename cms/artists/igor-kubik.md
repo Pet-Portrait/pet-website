@@ -1,5 +1,5 @@
 ---
-name: Igor Kubik
+name: "Igor Kubik"
 avatar: 
 featured: false
 facebook: 

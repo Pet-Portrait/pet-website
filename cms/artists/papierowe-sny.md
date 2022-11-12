@@ -1,5 +1,5 @@
 ---
-name: Papierowe Sny
+name: "Papierowe Sny"
 avatar: 
 featured: false
 facebook: 

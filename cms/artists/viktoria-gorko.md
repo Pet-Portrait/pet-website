@@ -1,5 +1,5 @@
 ---
-name: Viktoria Górko
+name: "Viktoria Górko"
 avatar: 
 featured: false
 facebook: 

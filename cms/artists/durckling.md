@@ -1,5 +1,5 @@
 ---
-name: Durckling
+name: "Durckling"
 avatar: 
 featured: false
 facebook: 

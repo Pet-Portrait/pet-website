@@ -1,5 +1,5 @@
 ---
-name: Hania Kmieć
+name: "Hania Kmieć"
 avatar: 
 featured: false
 facebook: https://facebook.com/hahaniutek

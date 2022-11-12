@@ -1,5 +1,5 @@
 ---
-name: Monika Ostrowska
+name: "Monika Ostrowska"
 avatar: 
 featured: false
 facebook: 

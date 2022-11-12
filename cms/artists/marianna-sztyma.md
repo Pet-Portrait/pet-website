@@ -1,5 +1,5 @@
 ---
-name: Marianna Sztyma
+name: "Marianna Sztyma"
 avatar: 
 featured: false
 facebook: https://facebook.com/

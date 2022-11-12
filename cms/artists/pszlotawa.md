@@ -1,5 +1,5 @@
 ---
-name: Pszlotawa
+name: "Pszlotawa"
 avatar: 
 featured: false
 facebook: 

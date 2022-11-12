@@ -1,5 +1,5 @@
 ---
-name: Kamila Okrutny
+name: "Kamila Okrutny"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Zosia Jędruszczak
+name: "Zosia Jędruszczak"
 avatar: 
 featured: false
 facebook: 

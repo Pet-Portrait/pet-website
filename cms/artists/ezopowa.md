@@ -1,5 +1,5 @@
 ---
-name: Ezopowa
+name: "Ezopowa"
 avatar: 
 featured: false
 facebook: 

@@ -1,5 +1,5 @@
 ---
-name: Justyna Bojczuk
+name: "Justyna Bojczuk"
 avatar: 
 featured: false
 facebook: 

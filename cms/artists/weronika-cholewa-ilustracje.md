@@ -1,5 +1,5 @@
 ---
-name: Weronika Cholewa ilustracje 
+name: "Weronika Cholewa ilustracje "
 avatar: 
 featured: false
 facebook: https://facebook.com/WeronikaCholewaIlustracje

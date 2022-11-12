@@ -1,5 +1,5 @@
 ---
-name: Marysia Panas
+name: "Marysia Panas"
 avatar: 
 featured: false
 facebook: 

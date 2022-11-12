@@ -1,5 +1,5 @@
 ---
-name: Paula Dudek
+name: "Paula Dudek"
 avatar: 
 featured: false
 facebook: 

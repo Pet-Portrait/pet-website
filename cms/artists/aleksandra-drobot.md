@@ -1,5 +1,5 @@
 ---
-name: Aleksandra Drobot
+name: "Aleksandra Drobot"
 avatar: 
 featured: false
 facebook: 

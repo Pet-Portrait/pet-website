@@ -1,5 +1,5 @@
 ---
-name: Kasia Kozakiewicz
+name: "Kasia Kozakiewicz"
 avatar: 
 featured: false
 facebook: 

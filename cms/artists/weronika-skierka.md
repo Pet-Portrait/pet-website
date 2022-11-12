@@ -1,5 +1,5 @@
 ---
-name: Weronika Skierka
+name: "Weronika Skierka"
 avatar: 
 featured: false
 facebook: 

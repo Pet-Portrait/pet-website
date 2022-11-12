@@ -1,5 +1,5 @@
 ---
-name: Pola Melnyczuk
+name: "Pola Melnyczuk"
 avatar: 
 featured: false
 facebook: 

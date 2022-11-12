@@ -1,5 +1,5 @@
 ---
-name: Agata Małecka
+name: "Agata Małecka"
 avatar: 
 featured: false
 facebook: 

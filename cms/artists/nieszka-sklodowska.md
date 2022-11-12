@@ -1,5 +1,5 @@
 ---
-name: Nieszka Skłodowska
+name: "Nieszka Skłodowska"
 avatar: 
 featured: false
 facebook: 

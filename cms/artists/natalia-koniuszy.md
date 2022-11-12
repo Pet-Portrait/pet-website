@@ -1,5 +1,5 @@
 ---
-name: Natalia Koniuszy
+name: "Natalia Koniuszy"
 avatar: 
 featured: false
 facebook: 

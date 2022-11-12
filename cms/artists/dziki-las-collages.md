@@ -1,5 +1,5 @@
 ---
-name: Dziki las collages 
+name: "Dziki las collages "
 avatar: 
 featured: false
 facebook: 

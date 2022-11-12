@@ -1,5 +1,5 @@
 ---
-name: Sisterhood
+name: "Sisterhood"
 avatar: 
 featured: false
 facebook: 
