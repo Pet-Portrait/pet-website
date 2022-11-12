@@ -6,7 +6,7 @@ interface RawBid {
   type: string;
   url: string;
   format: string;
-  images: { image: ImageDataLike }[];
+  image: ImageDataLike;
 }
 
 export interface Bid extends RawBid {
