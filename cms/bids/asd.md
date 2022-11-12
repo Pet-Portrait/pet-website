@@ -6,5 +6,5 @@ url: qwe
 format: zxc
 featured: true
 images:
-  - image: ../images/petportrait-59-1.png
+  - image: ../images/małgorzata-nowak-designaur-.jpeg
 ---
