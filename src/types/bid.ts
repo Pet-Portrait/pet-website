@@ -12,9 +12,3 @@ interface RawBid {
 export interface Bid extends RawBid {
   id: string;
 }
-
-export interface FeaturedBid {
-  title: string;
-  url: string;
-  images: { image: ImageDataLike }[];
-}
