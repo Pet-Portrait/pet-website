@@ -1,5 +1,5 @@
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import React from 'react';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import sanitizeHtml from 'sanitize-html';
 
 import { Artist } from 'types/artist';
@@ -10,7 +10,7 @@ interface Props {
 
 const ArtistItem = ({ artist }: Props) => {
   const images = artist.images
-    .map((image) => getImage(image.image))
+    ?.map((image) => getImage(image.image))
     .filter((image): image is IGatsbyImageData => !!image);
   const avatar = getImage(artist.avatar);
 
@@ -23,7 +23,7 @@ const ArtistItem = ({ artist }: Props) => {
       />
       {avatar && <GatsbyImage alt={artist.name} image={avatar} />}
 
-      {images.map((image, index) => (
+      {images?.map((image, index) => (
         <GatsbyImage key={index} alt={`Praca ${artist.name} ${index + 1}`} image={image} />
       ))}
       {artist.facebook && <a href={artist.facebook}>Facebook</a>}

@@ -5,7 +5,6 @@ import ArtistItem from './ArtistItem';
 
 import { mockedArtist } from '../mocks';
 
-
 // TODO: Fix mocked images
 describe.skip('ArtistItem', () => {
   test('should display artist data', () => {
