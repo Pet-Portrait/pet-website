@@ -7,19 +7,22 @@ interface Props {
   avatar: ImageDataLike;
   name: string;
   id: string;
+  setArtistIdInModal: (id: string) => void;
 }
 
-const ArtistsSliderItem: FC<Props> = ({ avatar, id, name }) => {
+const ArtistsSliderItem: FC<Props> = ({
+  avatar,
+  id,
+  name,
+  setArtistIdInModal: setArtistInModal,
+}) => {
   const image = getImage(avatar);
-  const openModal = () => {
-    // eslint-disable-next-line no-console
-    console.log(`Open modal with artist id: ${id}`);
-  };
+
+  const handleClick = () => setArtistInModal(id);
 
   if (!image) return null;
-
   return (
-    <button className={classes.root} onClick={openModal}>
+    <button className={classes.root} onClick={handleClick}>
       <figure>
         <GatsbyImage alt={name} className={classes.image} image={image} />
         <figcaption className={classes.name}>{name}</figcaption>

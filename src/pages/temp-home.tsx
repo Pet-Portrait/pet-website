@@ -11,16 +11,16 @@ interface Query {
   artists: WithNodes<ArtistQuery[]>;
 }
 
-const IndexPage: FC<PageProps<Query>> = ({ data }) => (
-  <Homepage
-    artists={data.artists.nodes.map((node) => ({
-      ...node.frontmatter,
-      description: node.html,
-      id: node.id,
-    }))}
-    bids={data.bids.nodes.map((node) => node.frontmatter)}
-  />
-);
+const IndexPage: FC<PageProps<Query>> = ({ data }) => {
+  const artists = data.artists.nodes.map((node) => ({
+    ...node.frontmatter,
+    description: node.html,
+    id: node.id,
+  }));
+  const bids = data.bids.nodes.map((node) => node.frontmatter);
+
+  return <Homepage artists={artists} bids={bids} />;
+};
 
 export default IndexPage;
 

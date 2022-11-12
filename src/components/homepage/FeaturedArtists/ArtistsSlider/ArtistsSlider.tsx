@@ -10,6 +10,7 @@ import './slider.scss';
 
 interface Props {
   artists: Artist[];
+  setArtistIdInModal: (id: string) => void;
 }
 const sliderSettings: SwiperProps = {
   spaceBetween: 16,
@@ -19,11 +20,16 @@ const sliderSettings: SwiperProps = {
   touchEventsTarget: 'container',
 };
 
-const ArtistsSlider: FC<Props> = ({ artists }) => (
+const ArtistsSlider: FC<Props> = ({ artists, setArtistIdInModal }) => (
   <Swiper {...sliderSettings}>
     {artists.map((artist) => (
       <SwiperSlide key={artist.id}>
-        <ArtistsSliderItem avatar={artist.avatar} id={artist.id} name={artist.name} />
+        <ArtistsSliderItem
+          avatar={artist.avatar}
+          id={artist.id}
+          name={artist.name}
+          setArtistIdInModal={setArtistIdInModal}
+        />
       </SwiperSlide>
     ))}
   </Swiper>

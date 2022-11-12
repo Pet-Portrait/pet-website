@@ -1,6 +1,9 @@
+@import 'styles/variables';
+
 .swiper-slide {
   width: auto;
 }
+
 .swiper {
-  overflow: unset;
+  padding-left: $spacing--2;
 }
