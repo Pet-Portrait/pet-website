@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
-=======
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
->>>>>>> 6a8f2b3 (PET-71 Add bids section for mobile)
 import sanitizeHtml from 'sanitize-html';
 
 import { Artist } from 'types/artist';

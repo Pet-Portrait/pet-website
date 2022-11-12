@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { graphql, PageProps } from 'gatsby';
+import { BasicBidQuery } from 'queries/bid';
 
 import Homepage from 'components/homepage/Homepage';
-import { FeaturedBid } from 'types/bid';
 import { WithNodes } from 'types/utils';
 
 interface Query {
-  allMarkdownRemark: WithNodes<{ frontmatter: FeaturedBid }[]>;
+  allMarkdownRemark: WithNodes<BasicBidQuery[]>;
 }
 
 const IndexPage: FC<PageProps<Query>> = ({ data }) => (
@@ -21,17 +21,7 @@ export const query = graphql`
       filter: { fileAbsolutePath: { regex: "/bids/" }, frontmatter: { featured: { eq: true } } }
     ) {
       nodes {
-        frontmatter {
-          images {
-            image {
-              childImageSharp {
-                gatsbyImageData(placeholder: BLURRED)
-              }
-            }
-          }
-          title
-          url
-        }
+        ...BasicBid
       }
     }
   }
