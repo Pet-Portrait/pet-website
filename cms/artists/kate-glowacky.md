@@ -1,5 +1,5 @@
 ---
-name: kate glowacky
+name: Kate Glowacky
 avatar: ../images/katarzyna-głowacka-prof.jpg
 featured: false
 facebook: https://facebook.com/www.glows.design
