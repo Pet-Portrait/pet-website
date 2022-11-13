@@ -7,7 +7,8 @@ import useIntersectionObserver from 'hooks/useIntersectionObserver';
 import useParallax from 'hooks/useParallax';
 
 import ImageFactory from './ImageFactory';
-import LogoIcon from './LogoIcon';
+
+import LogoIcon from '../../shared/LogoIcon/LogoIcon';
 
 import * as classes from './HeroImage.module.scss';
 
@@ -36,7 +37,7 @@ const HeroImage: FC = () => {
       />
       <div className={classes.grid}>
         <div className={classes.content}>
-          <LogoIcon />
+          <LogoIcon className={classes.logo} />
           <h1 className={classes.heading}>Rzuć groszem dla zwierzaków poprzez licytację sztuki!</h1>
           <p className={classes.text}>
             Myślę, że warto podać zwycięski skład Kaiserslautern z meczu z Bayernem w sezonie 97/98:
