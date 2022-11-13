@@ -1,11 +1,14 @@
 ---
-name: "naczyniaki ceramika"
-avatar: 
+name: naczyniaki ceramika
+avatar: ../images/maria-jagłowska-prof-1.png
 featured: false
-facebook: 
+facebook: null
 instagram: https://instagram.com/naczyniaki_ceramika
-behance: 
-web:
+behance: null
+web: https://naczyniakiceramika.pl/
 images:
+  - image: ../images/maria-jagłowska-1-.jpg
+  - image: ../images/maria-jagłowska-2-.jpg
+  - image: ../images/maria-jagłowska.jpg
 ---
-jednoosobowa pracownia, tworząca ręcznie malowaną, wesołą ceramikę
+Jednoosobowa pracownia, tworząca ręcznie malowaną, wesołą ceramikę.
