@@ -1,5 +1,6 @@
 @import 'styles/variables';
 @import 'styles/breakpoints';
+@import 'styles/mixins';
 
 .root {
   display: none;
@@ -21,6 +22,8 @@
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease-in-out;
   border-radius: 25px;
+
+  @include zoom-image;
 
   @include breakpoint--desktop-l {
     max-width: 220px;

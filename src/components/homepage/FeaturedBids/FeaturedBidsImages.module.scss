@@ -1,3 +1,4 @@
+@import 'styles/mixins';
 @import 'styles/breakpoints';
 @import 'styles/variables';
 
@@ -10,9 +11,10 @@
 }
 
 .link {
-  overflow: hidden;
   border-radius: 25px;
   transition: transform 0.25s ease-in-out;
+
+  @include zoom-image;
 
   &:first-child,
   &:nth-child(4) {
@@ -36,16 +38,5 @@
     &:nth-child(n + 4) {
       display: block;
     }
-  }
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-
-  transition: transform 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
   }
 }

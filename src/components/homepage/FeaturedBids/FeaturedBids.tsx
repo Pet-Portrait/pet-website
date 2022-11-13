@@ -4,7 +4,6 @@ import { BasicBid } from 'queries/bid';
 
 import Button from 'components/shared/Button/Button';
 import ResponsiveContainer from 'components/shared/ResponsiveContainer/ResponsiveContainer';
-import filterNullishImages from 'utils/filterNullishImages';
 
 import FeaturedBidsImages from './FeaturedBidsImages';
 
@@ -19,7 +18,7 @@ const FeaturedBids: FC<Props> = ({ bids }) => {
     () =>
       bids.map((bid) => ({
         alt: bid.title,
-        image: filterNullishImages(bid.images.map((image) => getImage(image.image)))[0],
+        image: getImage(bid.image),
         url: bid.url,
       })),
     [bids],

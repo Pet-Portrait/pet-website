@@ -53,7 +53,9 @@ const FeaturedBidsImages: FC<Props> = ({ images }) => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <GatsbyImage alt={image.alt} className={classes.image} image={image.image} />
+          {image.image && (
+            <GatsbyImage alt={image.alt} className={classes.image} image={image.image} />
+          )}
         </a>
       ))}
     </div>

@@ -2,6 +2,6 @@ import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface FeaturedImage {
   alt: string;
-  image: IGatsbyImageData;
+  image?: IGatsbyImageData;
   url: string;
 }
