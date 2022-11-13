@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+local_backend: true
 media_folder: 'cms/images'
 public_folder: '../images'
 collections:
@@ -27,7 +28,7 @@ collections:
     label: 'Licytacja'
     folder: 'cms/bids'
     create: true
-    slug: '{{title}}'
+    slug: '{{artist}}-{{title}}'
     fields:
       - { label: 'Nazwa', name: 'title', widget: 'string' }
       - {
@@ -39,17 +40,8 @@ collections:
           valueField: 'name',
           displayFields: ['name'],
         }
-      - {
-          label: 'Typ',
-          name: 'type',
-          widget: 'select',
-          options: ['Malarstwo', 'Ceramika', 'Plakat', 'Tkactwo'],
-        }
-      - { label: 'Link do licytacji', name: 'url', widget: 'string' }
+      - { label: 'Zdjęcie', name: 'image', widget: 'image' }  
+      - { label: 'Technika', name: 'type', widget: 'string' }
+      - { label: 'Link do licytacji', name: 'url', widget: 'string', required: false }
       - { label: 'Format', name: 'format', widget: 'string' }
       - { label: 'Wyróżnione', name: 'featured', widget: 'boolean' }
-      - label: 'Zdjęcia'
-        name: 'images'
-        widget: 'list'
-        fields:
-          - { label: 'Zdjęcie', name: 'image', widget: 'image' }

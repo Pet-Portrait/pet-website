@@ -22,7 +22,7 @@ const ArtistItem = ({ artist }: Props) => {
       />
       {avatar && <GatsbyImage alt={artist.name} image={avatar} />}
 
-      {images.map((image, index) => (
+      {images?.map((image, index) => (
         <GatsbyImage key={index} alt={`Praca ${artist.name} ${index + 1}`} image={image} />
       ))}
       {artist.facebook && <a href={artist.facebook}>Facebook</a>}

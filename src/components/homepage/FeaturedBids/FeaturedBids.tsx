@@ -1,9 +1,9 @@
 import React, { FC, useMemo } from 'react';
 import { getImage } from 'gatsby-plugin-image';
+import { BasicBid } from 'queries/bid';
 
 import Button from 'components/shared/Button/Button';
 import ResponsiveContainer from 'components/shared/ResponsiveContainer/ResponsiveContainer';
-import { FeaturedBid } from 'types/bid';
 import filterNullishImages from 'utils/filterNullishImages';
 
 import FeaturedBidsImages from './FeaturedBidsImages';
@@ -11,7 +11,7 @@ import FeaturedBidsImages from './FeaturedBidsImages';
 import * as classes from './FeaturedBids.module.scss';
 
 interface Props {
-  bids: FeaturedBid[];
+  bids: BasicBid[];
 }
 
 const FeaturedBids: FC<Props> = ({ bids }) => {

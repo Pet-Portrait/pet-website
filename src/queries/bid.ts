@@ -1,12 +1,14 @@
 import { graphql } from 'gatsby';
 import { ImageDataLike } from 'gatsby-plugin-image';
 
+export interface BasicBid {
+  images: { image: ImageDataLike }[];
+  title: string;
+  url: string;
+}
+
 export interface BasicBidQuery {
-  frontmatter: {
-    images: { image: ImageDataLike }[];
-    title: string;
-    url: string;
-  };
+  frontmatter: BasicBid;
 }
 
 export const basicBidQuery = graphql`

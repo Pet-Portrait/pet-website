@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
+import { BasicBid } from 'queries/bid';
 
 import Layout from 'components/Layout/Layout';
 import { Artist } from 'types/artist';
-import { FeaturedBid } from 'types/bid';
 
 import FeaturedArtists from './FeaturedArtists/FeaturedArtists';
 import FeaturedBids from './FeaturedBids/FeaturedBids';
 import HeroImage from './HeroImage/HeroImage';
 
 interface Props {
-  bids: FeaturedBid[];
+  bids: BasicBid[];
   artists: Artist[];
 }
 
