@@ -1,9 +1,9 @@
 ---
-title: "Frajda"
-artist: "Aleksandra Stanglewicz"
-image:
-type: "Malarstwo"
-url:
-format: "A4"
+title: Frajda
+artist: Aleksandra Stanglewicz
+image: ../images/frajda-portret_aleksandra-stanglewicz-aleksandra-stanglewicz.jpg
+type: Malarstwo
+url: null
+format: A4
 featured: false
 ---
