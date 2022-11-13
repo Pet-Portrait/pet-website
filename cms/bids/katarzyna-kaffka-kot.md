@@ -1,9 +1,9 @@
 ---
-title: "Kot"
-artist: "Katarzyna Kaffka"
-image:
-type: "Grafika"
-url:
-format: "50x70cm"
+title: Kot
+artist: Kaffka
+image: ../images/katarzyna_kaffka_petportrait_kot-katarzyna-kaffka.png
+type: Grafika
+url: null
+format: 50x70cm
 featured: false
 ---
