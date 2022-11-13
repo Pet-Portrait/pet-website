@@ -1,5 +1,5 @@
 ---
-name: Pracownia Kurpiowska.
+name: Pracownia Kurpiowska
 avatar: ../images/patrycja-dombrowska-priof.jpg
 featured: false
 facebook: https://facebook.com/PracowniaKurpiowska
