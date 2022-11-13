@@ -1,9 +1,9 @@
 ---
-title: "Śpiące baranki / Sleeping lambs"
-artist: "Magdalena Pelc / pelcc.illustra"
-image:
-type: "Grafika"
-url:
-format: "30x40 cm"
+title: Śpiące baranki / Sleeping lambs
+artist: pelcc.illustra
+image: ../images/magdalena-pelc-śpiące-baranki-magdalena-pelc.png
+type: Grafika
+url: null
+format: 30x40 cm
 featured: false
 ---
