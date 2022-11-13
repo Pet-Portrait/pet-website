@@ -4,7 +4,7 @@ avatar: ../images/ewa-ziembicka-p.jpg
 featured: false
 facebook: null
 instagram: https://www.instagram.com/ewaziembicka
-behance: null
+behance: https://www.behance.net/ewaziembicka
 web: https://www.ziembicka.com/
 images:
   - image: ../images/ewa-ziembicka-1-.png
