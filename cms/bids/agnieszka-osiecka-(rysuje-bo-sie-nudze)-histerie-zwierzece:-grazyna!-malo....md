@@ -1,9 +1,9 @@
 ---
 title: "HISTERIE ZWIERZĘCE: GRAŻYNA! MAŁO..."
-artist: "Agnieszka Osiecka (RYSUJĘ BO SIĘ NUDZĘ)"
-image:
-type: "Grafika"
-url:
-format: "40x50"
+artist: Rysuję Bo Się Nudzę
+image: ../images/grażyna-mało...-40x50-360dpi-cmyk-klasyczna-rysujebosienudze-rysuję-bo-się-nudzę.png
+type: Grafika
+url: null
+format: 40x50 cm
 featured: false
 ---
