@@ -1,9 +1,9 @@
 ---
-title: "Dog Person"
-artist: "Ola szmida"
-image:
-type: "Grafika"
-url:
-format: "A3+"
+title: Dog Person
+artist: Ola Szmida
+image: ../images/42db35e1-9395-4ca5-8cb1-2da6f2a11ab2-aleksandra-szmida.jpeg
+type: Grafika
+url: null
+format: A3+
 featured: false
 ---
