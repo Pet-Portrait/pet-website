@@ -9,6 +9,7 @@ web: https://glows.design/
 images:
   - image: ../images/katarzyna-głowacka-1-.jpg
   - image: ../images/katarzyna-głowacka.jpg
+  - image: ../images/katarzyna-głowackap.jpg
 ---
 Jest absolwentką Akademii Sztuk Pięknych w Warszawie, na wydziale Rzeźby. Zajmuje się szeroko pojętą sztuką wizualną; projektowaniem graficznym, fotografią i malarstwem abstrakcyjnym.
 
