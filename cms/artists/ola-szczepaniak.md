@@ -9,6 +9,7 @@ web: null
 images:
   - image: ../images/ola-szczepaniak-1-.jpg
   - image: ../images/ola-szczepaniak.jpg
+  - image: ../images/la-szczepaniak.jpg
 ---
 Ilustratorka, graficzka. Absolwentka Wydziału Grafiki Akademii Sztuk Pięknych w Warszawie. Tworzy kompozycje, często na pograniczu abstrakcji, w których najważniejszą rolę gra kolor i faktura. 
 
