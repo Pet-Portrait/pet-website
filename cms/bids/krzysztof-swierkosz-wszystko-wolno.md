@@ -1,9 +1,9 @@
 ---
-title: "Wszystko Wolno"
-artist: "Krzysztof Świerkosz"
-image:
-type: "Grafika"
-url:
-format: "30x40cm"
+title: Wszystko Wolno
+artist: Krzysiek
+image: ../images/wolno-01-krzy-chu.jpg
+type: Grafika
+url: null
+format: 30x40cm
 featured: false
 ---
