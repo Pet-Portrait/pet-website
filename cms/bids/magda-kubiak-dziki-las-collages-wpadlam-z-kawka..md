@@ -1,9 +1,9 @@
 ---
-title: "Wpadłam z kawką."
-artist: "Magda Kubiak/ Dziki las collages"
-image:
-type: "Grafika"
-url:
-format: "50x70"
+title: Wpadłam z kawką
+artist: "Dziki las collages "
+image: ../images/magda-kubiak-wpadłam-z-kawka-magda-kubiak.jpg
+type: Grafika
+url: null
+format: 50x70 cm
 featured: false
 ---
