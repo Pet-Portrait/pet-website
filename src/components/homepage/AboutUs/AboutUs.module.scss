@@ -2,7 +2,11 @@
 @import 'styles/breakpoints';
 
 .root {
-  padding: $spacing--8 $spacing--2;
+  padding: $spacing--8 $spacing--2 0;
+
+  @include breakpoint--desktop {
+    min-height: 100vh;
+  }
 }
 
 .heading {
