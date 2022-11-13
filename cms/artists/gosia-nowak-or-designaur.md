@@ -11,4 +11,4 @@ images:
   - image: ../images/małgorzata-nowak-designaur-.jpeg
   - image: ../images/małgorzata-nowak-designaur-1-.jpeg
 ---
-Ilustratorka i projektantka graficzna. Gosia lubi wszystko co magiczne, tajemnicze i trochę straszne. Rysuje to, co podobałoby się jej kiedy miała 10 lat. Inspirują ją baśnie, las, gotyckie opowieści i własne przygody. Uczy się rozpoznawać ptaki.
+Ilustratorka i projektantka graficzna. Gosia lubi wszystko, co magiczne, tajemnicze i trochę straszne. Rysuje to, co podobałoby się jej kiedy miała 10 lat. Inspirują ją baśnie, las, gotyckie opowieści i własne przygody. Uczy się rozpoznawać ptaki.
