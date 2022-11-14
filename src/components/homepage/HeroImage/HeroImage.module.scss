@@ -4,17 +4,40 @@
 
 .root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+}
+
+.backgroundMobile {
+  grid-area: 1/1;
+  margin: 0 auto;
+
+  @include breakpoint--desktop {
+    display: none;
+  }
+}
+
+.backgroundDesktop {
+  grid-area: 1/1;
+  display: none;
+
+  @include breakpoint--desktop {
+    display: inline-block;
+  }
+}
+
+.container {
   padding: $spacing--4 $spacing--2 0;
-  background: linear-gradient(#ffffff, #d9e7da);
   position: relative;
+  grid-area: 1/1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include breakpoint--desktop {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: none;
     grid-gap: $spacing--8;
+    grid-template-columns: 1fr 1fr;
     padding: $spacing--8 $spacing--8 0;
   }
 }
@@ -25,8 +48,34 @@
   display: block;
 
   @include breakpoint--desktop {
-    margin: $spacing--8 0 0;
-    max-width: 400px;
+    max-width: 250px;
+    position: absolute;
+    left: $spacing--8;
+    top: $spacing--4;
+  }
+}
+
+.content {
+  justify-self: center;
+  align-self: center;
+
+  @media screen and (min-width: $desktop-size) and (max-height: 850px) {
+    align-self: end;
+    margin-bottom: $spacing--4;
+  }
+}
+
+.heading {
+  color: $primary-color;
+  margin: $spacing--6 0 $spacing--2;
+
+  @include breakpoint--desktop {
+    margin: 200px 0 $spacing--2;
+    font-size: 2rem;
+  }
+
+  @include breakpoint--desktop-l {
+    font-size: $heading-1-size--desktop;
   }
 }
 
@@ -34,7 +83,7 @@
   margin: $spacing--4 auto;
 
   @include breakpoint--desktop {
-    margin: $spacing--8 0 0;
+    margin: $spacing--4 0 0;
   }
 }
 
