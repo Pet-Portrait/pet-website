@@ -2,9 +2,10 @@
 @import 'styles/breakpoints';
 
 .root {
-  padding: $spacing--8 $spacing--2 0;
+  padding: $spacing--8 $spacing--2 $spacing--4;
 
   @include breakpoint--desktop {
+    padding: $spacing--8 $spacing--8;
     min-height: 100vh;
   }
 }
@@ -34,5 +35,5 @@
 }
 
 .desktopContent {
-  justify-self: end;
+  justify-self: start;
 }
