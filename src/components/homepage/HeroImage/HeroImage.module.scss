@@ -59,7 +59,7 @@
   justify-self: center;
   align-self: center;
 
-  @media screen and (min-width: $desktop-size) and (max-height: 1000px) {
+  @media screen and (min-width: $desktop-size) and (max-height: 850px) {
     align-self: end;
     margin-bottom: $spacing--4;
   }
