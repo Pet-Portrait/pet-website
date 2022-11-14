@@ -7,7 +7,8 @@ import Homepage from 'components/homepage/Homepage';
 import { WithNodes } from 'types/utils';
 
 interface Query {
-  bids: WithNodes<BasicBidQuery[]>;
+  verticalBidsImage: WithNodes<BasicBidQuery[]>;
+  horizontalBidsImage: WithNodes<BasicBidQuery[]>;
   artists: WithNodes<ArtistQuery[]>;
 }
 
@@ -17,7 +18,11 @@ const IndexPage: FC<PageProps<Query>> = ({ data }) => {
     description: node.html,
     id: node.id,
   }));
-  const bids = data.bids.nodes.map((node) => node.frontmatter);
+
+  const bids = {
+    vertical: data.verticalBidsImage.nodes.map((node) => node.frontmatter),
+    horizontal: data.horizontalBidsImage.nodes.map((node) => node.frontmatter),
+  };
 
   return <Homepage artists={artists} bids={bids} />;
 };
@@ -26,8 +31,27 @@ export default IndexPage;
 
 export const query = graphql`
   query Homepage {
-    bids: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/bids/" }, frontmatter: { featured: { eq: true } } }
+    horizontalBidsImage: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "/bids/" }
+        frontmatter: {
+          featured: { eq: true }
+          image: { childImageSharp: { resize: { aspectRatio: { gt: 1 } } } }
+        }
+      }
+    ) {
+      nodes {
+        ...BasicBid
+      }
+    }
+    verticalBidsImage: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "/bids/" }
+        frontmatter: {
+          featured: { eq: true }
+          image: { childImageSharp: { resize: { aspectRatio: { lt: 1 } } } }
+        }
+      }
     ) {
       nodes {
         ...BasicBid

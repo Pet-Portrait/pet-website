@@ -1,20 +1,38 @@
 import React, { FC, useCallback, useRef } from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { BidImages } from 'queries/bid';
 
 import useIntersectionObserver from 'hooks/useIntersectionObserver';
 import useResponsive from 'hooks/useResponsive';
-
-import { FeaturedImage } from '../Homepage.types';
+import { Orientation } from 'types/utils';
 
 import * as classes from './FeaturedBidsImages.module.scss';
 
 interface Props {
-  images: FeaturedImage[];
+  bids: BidImages;
 }
 
-const FeaturedBidsImages: FC<Props> = ({ images }) => {
+const FeaturedBidsImages: FC<Props> = ({ bids }) => {
   const { isDesktop } = useResponsive();
   const wrapperRef = useRef<HTMLDivElement>(null);
+
+  const verticalImages = bids.vertical.map((bid) => ({
+    ...bid,
+    orientation: Orientation.VERTICAL,
+    image: getImage(bid.image),
+  }));
+  const horizontalImages = bids.horizontal.map((bid) => ({
+    ...bid,
+    orientation: Orientation.HORIZONTAL,
+    image: getImage(bid.image),
+  }));
+  const slicedVerticalImages = verticalImages.slice(
+    0,
+    verticalImages.length % 2 === 0 ? verticalImages.length : verticalImages.length - 1,
+  );
+
+  const [firstImage, ...restImages] = horizontalImages;
+  const images = [firstImage, ...slicedVerticalImages, ...restImages];
 
   const setImagesPosition = useCallback(
     ([entry]: IntersectionObserverEntry[]) => {
@@ -47,14 +65,16 @@ const FeaturedBidsImages: FC<Props> = ({ images }) => {
     <div ref={wrapperRef} className={classes.images}>
       {images.map((image) => (
         <a
-          key={image.alt}
-          className={classes.link}
+          key={image.title}
+          className={`${classes.link} ${
+            image.orientation === Orientation.HORIZONTAL ? classes.imageHorizontal : ''
+          }`}
           href={image.url}
           rel="noopener noreferrer"
           target="_blank"
         >
           {image.image && (
-            <GatsbyImage alt={image.alt} className={classes.image} image={image.image} />
+            <GatsbyImage alt={image.title} className={classes.image} image={image.image} />
           )}
         </a>
       ))}

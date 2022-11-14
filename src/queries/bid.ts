@@ -11,6 +11,11 @@ export interface BasicBidQuery {
   frontmatter: BasicBid;
 }
 
+export interface BidImages {
+  horizontal: BasicBid[];
+  vertical: BasicBid[];
+}
+
 export const basicBidQuery = graphql`
   fragment BasicBid on MarkdownRemark {
     frontmatter {

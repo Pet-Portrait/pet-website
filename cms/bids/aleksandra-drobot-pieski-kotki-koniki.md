@@ -5,5 +5,5 @@ image: ../images/pieski-kotki-koniki_aleksandra-drobot-ola-“love_me_2times”-
 type: Grafika
 url: null
 format: 50x70 cm
-featured: false
+featured: true
 ---

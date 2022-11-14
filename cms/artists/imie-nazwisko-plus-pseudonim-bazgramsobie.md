@@ -1,5 +1,5 @@
 ---
-name: Imię, nazwisko plus pseudonim Bazgramsobie
+name: Monika Smetaniuk, Bazgramsobie
 avatar: ../images/monika-smetaniuk-bazgram-sobie.jpg
 featured: true
 facebook: null
