@@ -29,13 +29,21 @@ const HeroImage: FC = () => {
     <section className={classes.root}>
       <StaticImage
         alt=""
-        className={classes.background}
-        layout="constrained"
-        objectPosition="left"
-        placeholder="blurred"
-        src="../../../images/backgrounds/hero.png"
+        className={classes.backgroundMobile}
+        layout="fixed"
+        placeholder="tracedSVG"
+        src="../../../images/backgrounds/hero-blob-mobile.png"
       />
-      <div className={classes.grid}>
+      <StaticImage
+        alt=""
+        className={classes.backgroundDesktop}
+        height={350}
+        layout="fixed"
+        objectPosition="top left"
+        placeholder="tracedSVG"
+        src="../../../images/backgrounds/hero-blob-desktop.png"
+      />
+      <div className={classes.container}>
         <div className={classes.content}>
           <LogoIcon className={classes.logo} />
           <h1 className={classes.heading}>Rzuć groszem dla zwierzaków poprzez licytację sztuki!</h1>

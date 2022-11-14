@@ -7,22 +7,45 @@
   display: grid;
 }
 
-.background {
+.backgroundMobile {
   grid-area: 1/1;
+  margin: 0 auto;
+
+  @include breakpoint--desktop {
+    display: none;
+  }
 }
 
-.grid {
+.backgroundDesktop {
   grid-area: 1/1;
-  display: grid;
-  grid-gap: $spacing--8;
-  padding: $spacing--8 $spacing--8 0;
+  display: none;
+
+  @include breakpoint--desktop {
+    display: inline-block;
+  }
+}
+
+.container {
+  padding: $spacing--4 $spacing--2 0;
   position: relative;
-  grid-template-columns: 1fr 1fr;
+  grid-area: 1/1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint--desktop {
+    display: grid;
+    grid-gap: $spacing--8;
+    grid-template-columns: 1fr 1fr;
+    padding: $spacing--8 $spacing--8 0;
+  }
 }
 
 .logo {
   max-width: 180px;
   margin: auto;
+  display: block;
 
   @include breakpoint--desktop {
     max-width: 250px;
@@ -35,11 +58,25 @@
 .content {
   justify-self: center;
   align-self: center;
+
+  @media screen and (min-width: $desktop-size) and (max-height: 1000px) {
+    align-self: end;
+    margin-bottom: $spacing--4;
+  }
 }
 
 .heading {
   color: $primary-color;
-  margin: 120px 0 $spacing--2;
+  margin: $spacing--6 0 $spacing--2;
+
+  @include breakpoint--desktop {
+    margin: 200px 0 $spacing--2;
+    font-size: 2rem;
+  }
+
+  @include breakpoint--desktop-l {
+    font-size: $heading-1-size--desktop;
+  }
 }
 
 .button {
