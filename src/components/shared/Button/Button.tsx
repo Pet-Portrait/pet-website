@@ -18,7 +18,7 @@ const Button: FC<ButtonProps | LinkProps> = ({ children, className, to, ...props
   }
 
   return (
-    <button className={classNames} {...(props as ButtonProps)}>
+    <button className={classNames} type="button" {...(props as ButtonProps)}>
       {children}
     </button>
   );

@@ -14,10 +14,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingIds: ['G-HD508LEWDT'],
-        pluginConfig: {
-          head: false,
-        },
+        trackingIds: ['GT-NB9ZHZJ'],
       },
     },
     'gatsby-plugin-sharp',

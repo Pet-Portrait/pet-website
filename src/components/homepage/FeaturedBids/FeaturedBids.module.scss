@@ -2,10 +2,13 @@
 @import 'styles/variables';
 
 .root {
-  padding: $spacing--8 $spacing--2;
-  min-height: 100vh;
+  padding: $spacing--8 $spacing--2 0;
   display: flex;
   align-items: center;
+
+  @include breakpoint--desktop {
+    min-height: 100vh;
+  }
 }
 
 .heading {

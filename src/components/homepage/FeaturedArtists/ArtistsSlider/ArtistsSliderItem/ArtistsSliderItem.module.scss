@@ -1,0 +1,23 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.image {
+  border-radius: 25px;
+  max-width: 155px;
+  // TODO: Check perfect ratio
+  aspect-ratio: 9/16;
+
+  @include breakpoint--tablet {
+    max-width: 250px;
+  }
+}
+
+.name {
+  margin-top: $spacing--1;
+}

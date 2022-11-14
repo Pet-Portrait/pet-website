@@ -1,0 +1,88 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+@import 'styles/typography';
+
+.root {
+  background-color: $accent-color-1;
+  padding: $spacing--2 $spacing--2 $spacing--1;
+  color: $text-color--light;
+
+  @include breakpoint--desktop {
+    padding: $spacing--2 $spacing--8 $spacing--1;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: $spacing--3 $spacing--3;
+
+  @include breakpoint--desktop {
+    grid-gap: $spacing--8 $spacing--3;
+  }
+}
+
+.blob {
+  margin-bottom: -2px;
+}
+
+.blobMobile {
+  @include breakpoint--tablet {
+    display: none;
+  }
+}
+
+.blobDesktop {
+  display: none;
+
+  @include breakpoint--tablet {
+    display: block;
+  }
+}
+
+.logo {
+  max-width: 150px;
+
+  @include breakpoint--tablet {
+    max-width: 250px;
+    margin-right: $spacing--4;
+  }
+}
+
+.heading {
+  @include heading-3;
+  margin-bottom: $spacing--1;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  margin-bottom: $spacing--1;
+}
+
+.link {
+  text-decoration: none;
+  color: $text-color--light;
+  margin-bottom: $spacing--1;
+}
+
+.socialsWrapper {
+  width: fit-content;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy {
+  margin-top: $spacing--3;
+
+  @include breakpoint--tablet {
+    text-align: center;
+  }
+}

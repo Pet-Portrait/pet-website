@@ -1,0 +1,59 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+@import 'styles/mixins';
+
+.root {
+  display: none;
+
+  @include breakpoint--desktop {
+    display: block;
+    position: relative;
+    min-height: 700px;
+  }
+}
+
+.artist {
+  position: absolute;
+  max-width: 185px;
+  border: none;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 25px;
+
+  @include zoom-image;
+
+  @include breakpoint--desktop-l {
+    max-width: 220px;
+  }
+}
+
+.visible {
+  .artist {
+    &:nth-child(1) {
+      transform: translate(-155%, -80%) scale(0.93);
+    }
+
+    &:nth-child(2) {
+      transform: translate(55%, -100%) scale(0.95);
+    }
+
+    &:nth-child(3) {
+      transform: translate(-50%, -50%) scale(0.98);
+    }
+
+    &:nth-child(4) {
+      transform: translate(-160%, 35%) scale(0.9);
+    }
+
+    &:nth-child(5) {
+      transform: translate(60%, 20%) scale(0.92);
+    }
+  }
+}
+
+.image {
+  border-radius: 25px;
+}
