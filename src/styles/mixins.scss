@@ -1,0 +1,14 @@
+@mixin zoom-image {
+  overflow: hidden;
+
+  & > * {
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  padding: $spacing--8 $spacing--2 0;
+
+  @include breakpoint--desktop {
+    min-height: 100vh;
+  }
+}
+
+.heading {
+  margin-bottom: $spacing--1;
+
+  @include breakpoint--desktop {
+    margin-bottom: $spacing--3;
+  }
+}
+
+.description {
+  margin-bottom: $spacing--4;
+}
+
+.button {
+  margin: $spacing--3 auto 0;
+
+  @include breakpoint--desktop {
+    margin-top: $spacing--6;
+  }
+}
+
+.image {
+  border-radius: 25px;
+}
+
+.desktopContent {
+  justify-self: end;
+}

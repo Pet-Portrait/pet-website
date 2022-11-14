@@ -8,9 +8,17 @@ const SPEED_FACTOR_Y = 0.1;
 const MOVE_Y_LIMIT = 2;
 const MOVE_X_LIMIT = 5;
 
-const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
+interface ParallaxOptions {
+  enabled?: boolean;
+}
+
+const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(
+  ref: RefType,
+  options?: ParallaxOptions,
+) => {
   const initialPosition = useRef<{ beta: number; gamma: number } | null>(null);
   const handleRequestAnimationFrame = useRequestAnimationFrame();
+  const { enabled = true } = options || {};
 
   useEffect(() => {
     const animateImage = (event: DeviceOrientationEvent) => {
@@ -34,12 +42,16 @@ const useGyroscopicParallax = <RefType extends RefObject<HTMLElement>>(ref: RefT
       });
     };
 
-    window.addEventListener('deviceorientation', animateImage);
+    if (enabled) {
+      window.addEventListener('deviceorientation', animateImage);
+    } else {
+      window.removeEventListener('deviceorientation', animateImage);
+    }
 
     return () => {
       window.removeEventListener('deviceorientation', animateImage);
     };
-  }, []);
+  }, [enabled, handleRequestAnimationFrame, ref]);
 };
 
 export default useGyroscopicParallax;

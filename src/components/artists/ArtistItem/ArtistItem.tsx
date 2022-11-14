@@ -1,17 +1,16 @@
 import React from 'react';
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import sanitizeHtml from 'sanitize-html';
 
 import { Artist } from 'types/artist';
+import filterNullishImages from 'utils/filterNullishImages';
 
 interface Props {
   artist: Artist;
 }
 
 const ArtistItem = ({ artist }: Props) => {
-  const images = artist.images
-    ?.map((image) => getImage(image.image))
-    .filter((image): image is IGatsbyImageData => !!image);
+  const images = filterNullishImages(artist.images.map((image) => getImage(image.image)));
   const avatar = getImage(artist.avatar);
 
   return (

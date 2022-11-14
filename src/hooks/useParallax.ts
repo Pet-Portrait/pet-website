@@ -2,7 +2,16 @@ import { RefObject, useEffect } from 'react';
 
 const SPEED_FACTOR = 25;
 
-const useParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
+interface ParallaxOptions {
+  enabled?: boolean;
+}
+
+const useParallax = <RefType extends RefObject<HTMLElement>>(
+  ref: RefType,
+  options?: ParallaxOptions,
+) => {
+  const { enabled = true } = options || {};
+
   useEffect(() => {
     const animateImage = (event: MouseEvent) => {
       const isTouchDevice = 'ontouchstart' in window;
@@ -24,12 +33,16 @@ const useParallax = <RefType extends RefObject<HTMLElement>>(ref: RefType) => {
       ref.current.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
     };
 
-    window.addEventListener('mousemove', animateImage);
+    if (enabled) {
+      window.addEventListener('mousemove', animateImage);
+    } else {
+      window.removeEventListener('mousemove', animateImage);
+    }
 
     return () => {
       window.removeEventListener('mousemove', animateImage);
     };
-  }, []);
+  }, [enabled, ref]);
 
   return ref;
 };
