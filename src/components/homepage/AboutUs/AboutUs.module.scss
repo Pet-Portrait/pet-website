@@ -1,10 +1,8 @@
-@import 'styles/breakpoints';
 @import 'styles/variables';
+@import 'styles/breakpoints';
 
 .root {
   padding: $spacing--8 $spacing--2 0;
-  display: flex;
-  align-items: center;
 
   @include breakpoint--desktop {
     min-height: 100vh;
@@ -27,16 +25,14 @@
   margin: $spacing--3 auto 0;
 
   @include breakpoint--desktop {
-    margin: $spacing--6 0 0 auto;
+    margin-top: $spacing--6;
   }
 }
 
-.desktopContainer {
-  grid-gap: 0;
-  grid-template-columns: 40% 60%;
+.image {
+  border-radius: 25px;
 }
 
 .desktopContent {
-  align-self: center;
-  justify-self: center;
+  justify-self: end;
 }

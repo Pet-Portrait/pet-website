@@ -4,6 +4,8 @@ import { BasicBid } from 'queries/bid';
 import Layout from 'components/Layout/Layout';
 import { Artist } from 'types/artist';
 
+import AboutUs from './AboutUs/AboutUs';
+import AdoptionDogs from './AdoptionDogs/AdoptionDogs';
 import FeaturedArtists from './FeaturedArtists/FeaturedArtists';
 import FeaturedBids from './FeaturedBids/FeaturedBids';
 import HeroImage from './HeroImage/HeroImage';
@@ -18,6 +20,8 @@ const Homepage: FC<Props> = ({ bids, artists }) => (
     <HeroImage />
     <FeaturedBids bids={bids} />
     <FeaturedArtists artists={artists} />
+    <AboutUs />
+    <AdoptionDogs />
   </Layout>
 );
 
