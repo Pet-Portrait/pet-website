@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import LogoIcon from 'components/shared/LogoIcon/LogoIcon';
@@ -63,14 +64,14 @@ const Footer: FC = () => (
             </Link>
           </li>
           <li className={classes.listItem}>
-            <a
+            <OutboundLink
               className={classes.link}
               href="https://rasowykundel.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Strona fundacji
-            </a>
+            </OutboundLink>
           </li>
           <li className={classes.listItem}>
             <Link className={classes.link} to="/TODO">
@@ -81,16 +82,16 @@ const Footer: FC = () => (
         <ul className={classes.list}>
           <li className={classes.heading}>Kontakt</li>
           <li className={classes.listItem}>
-            <a className={classes.link} href="mailto:petxportrait@gmail.com">
+            <OutboundLink className={classes.link} href="mailto:petxportrait@gmail.com">
               petxportrait@gmail.com
-            </a>
+            </OutboundLink>
           </li>
         </ul>
         <div className={classes.socialsWrapper}>
           <h3>Pozostań z nami!</h3>
           <ul className={classes.socials}>
             <li className={classes.listItem}>
-              <a
+              <OutboundLink
                 href="https://www.facebook.com/petxportrait"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -100,10 +101,10 @@ const Footer: FC = () => (
                   placeholder="tracedSVG"
                   src="../../../images/facebook.png"
                 />
-              </a>
+              </OutboundLink>
             </li>
             <li className={classes.listItem}>
-              <a
+              <OutboundLink
                 href="https://www.instagram.com/petxportrait/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -113,16 +114,16 @@ const Footer: FC = () => (
                   placeholder="tracedSVG"
                   src="../../../images/instagram.png"
                 />
-              </a>
+              </OutboundLink>
             </li>
             <li className={classes.listItem}>
-              <a href="mailto:petxportrait@gmail.com">
+              <OutboundLink href="mailto:petxportrait@gmail.com">
                 <StaticImage
                   alt="Facebook"
                   placeholder="tracedSVG"
                   src="../../../images/envelope.png"
                 />
-              </a>
+              </OutboundLink>
             </li>
           </ul>
         </div>
