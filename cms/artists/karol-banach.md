@@ -1,7 +1,7 @@
 ---
 name: Karol Banach
 avatar: ../images/karol-banach.jpg
-featured: false
+featured: true
 facebook: null
 instagram: https://instagram.com/banachkarol
 behance: null

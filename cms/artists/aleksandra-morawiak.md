@@ -1,7 +1,7 @@
 ---
 name: Aleksandra Morawiak
 avatar: ../images/aleksandra-morawiak.jpg
-featured: false
+featured: true
 facebook: null
 instagram: https://instagram.com/aleksandramorawiak
 behance: null

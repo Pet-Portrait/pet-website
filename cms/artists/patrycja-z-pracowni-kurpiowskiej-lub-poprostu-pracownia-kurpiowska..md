@@ -1,7 +1,7 @@
 ---
 name: Pracownia Kurpiowska
 avatar: ../images/patrycja-dombrowska-priof.jpg
-featured: false
+featured: true
 facebook: https://facebook.com/PracowniaKurpiowska
 instagram: https://instagram.com/pracownia_kurpiowska
 behance: null

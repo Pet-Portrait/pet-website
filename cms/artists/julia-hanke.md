@@ -1,7 +1,7 @@
 ---
 name: Julia Hanke
 avatar: ../images/julia-hanke.jpg
-featured: false
+featured: true
 facebook: null
 instagram: https://instagram.com/julia_hanke
 behance: null

@@ -5,5 +5,5 @@ image: ../images/happydog-01-adela-madej.png
 type: "Grafika"
 url: https://charytatywni.allegro.pl/
 format: "A2"
-featured: false
+featured: true
 ---

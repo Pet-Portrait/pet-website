@@ -1,7 +1,7 @@
 ---
 name: Imię, nazwisko plus pseudonim Bazgramsobie
 avatar: ../images/monika-smetaniuk-bazgram-sobie.jpg
-featured: false
+featured: true
 facebook: null
 instagram: https://instagram.com/bazgramsobie
 behance: null

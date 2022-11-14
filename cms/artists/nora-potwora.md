@@ -1,7 +1,7 @@
 ---
 name: Nora Potwora
 avatar: ../images/norapotwora-jpg.jpg
-featured: false
+featured: true
 facebook: null
 instagram: https://instagram.com/norapotwora
 behance: https://behance.net/norapotwora
