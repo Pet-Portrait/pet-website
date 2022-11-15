@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
 
+import FacebookIcon from 'components/icons/FacebookIcon';
+import InstagramIcon from 'components/icons/InstagramIcon';
 import LogoIcon from 'components/shared/LogoIcon/LogoIcon';
 
 import * as classes from './Footer.module.scss';
@@ -96,11 +98,7 @@ const Footer: FC = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <StaticImage
-                  alt="Facebook"
-                  placeholder="tracedSVG"
-                  src="../../../images/facebook.png"
-                />
+                <FacebookIcon className={classes.socialIcon} />
               </OutboundLink>
             </li>
             <li className={classes.listItem}>
@@ -109,11 +107,7 @@ const Footer: FC = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <StaticImage
-                  alt="Instagram"
-                  placeholder="tracedSVG"
-                  src="../../../images/instagram.png"
-                />
+                <InstagramIcon className={classes.socialIcon} />
               </OutboundLink>
             </li>
             <li className={classes.listItem}>
