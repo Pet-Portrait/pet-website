@@ -3,8 +3,8 @@ name: Magda Wolna
 avatar: ../images/magda-wolna_sabinka-pet-portrait.jpg
 featured: false
 facebook: null
-instagram: https://instagram.com/magdawolna
-behance: https://behance.net/magdawolna
+instagram: https://www.instagram.com/magdawolna
+behance: https://www.behance.net/magdawolna
 web: http://magdawolna.com/
 images:
   - image: ../images/sabinka.jpg
