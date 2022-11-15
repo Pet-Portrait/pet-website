@@ -10,7 +10,7 @@ interface Props {
 }
 
 const ArtistItem = ({ artist }: Props) => {
-  const images = filterNullishImages(artist.images.map((image) => getImage(image.image)));
+  const images = filterNullishImages(artist.images?.map((image) => getImage(image.image)) || []);
   const avatar = getImage(artist.avatar);
 
   return (
