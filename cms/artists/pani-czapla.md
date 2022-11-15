@@ -1,12 +1,15 @@
 ---
-name: "Pani Czapla"
-avatar: 
+name: Pani Czapla
+avatar: ../images/aneta-czapla.jpg
 featured: false
-facebook: 
+facebook: null
 instagram: https://instagram.com/pani_czapla
-behance: 
-web:
+behance: null
+web: http://paniczapla.pl/
 images:
+  - image: ../images/o-rozmaitym.jpg
+  - image: ../images/o-rozmaitym-1-.jpg
+  - image: ../images/o-rozmaitym-2-.jpg
 ---
 Cześć!
 Mam na imię Aneta i tworzę kolaże.
