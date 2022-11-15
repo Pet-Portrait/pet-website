@@ -1,12 +1,15 @@
 ---
-name: "MONIfaktura"
-avatar: 
+name: MONIfaktura
+avatar: ../images/_monika-sikorska-monifaktura.jpg
 featured: false
 facebook: https://facebook.com/MONIfaktura
 instagram: https://instagram.com/monifaktura_com
-behance: 
-web:
+behance: null
+web: https://monifaktura.com/pl/
 images:
+  - image: ../images/monia-es..jpg
+  - image: ../images/monia-es.-1-.jpg
+  - image: ../images/monia-es.-2-.jpg
 ---
 MONIfaktura to studio ceramiczne z Wrocławia, gdzie powstaje w 100% ręcznie ceramika użytkowa, stołowa. 
 
@@ -16,4 +19,4 @@ Dostrzegajmy piękno w nieoczywistym, zachwycajmy się niedoskonałym!
 
 MONIfakturę wyróżniają żywe barwy, które nawet minimalistycznym formom nadają wyjątkowego charakteru. Dbam o to, by naczynia nie tylko miały ciekawy design, dobre wykonanie, ale były także bezpieczne i wygodne w użyciu. 
 
-Wszystkiego ceramicznego!" :-)
+Wszystkiego ceramicznego! :-)
