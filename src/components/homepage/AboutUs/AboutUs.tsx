@@ -4,10 +4,15 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Button from 'components/shared/Button/Button';
 import ResponsiveContainer from 'components/shared/ResponsiveContainer/ResponsiveContainer';
 
+import blobDesktop from '../../../images/backgrounds/background-about-us.svg';
+import blobMobile from '../../../images/backgrounds/background-about-us-mobile.svg';
+
 import * as classes from './AboutUs.module.scss';
 
 const AboutUs: FC = () => (
   <section className={classes.root}>
+    <img alt="" className={classes.backgroundMobile} src={blobMobile} />
+    <img alt="" className={classes.backgroundDesktop} src={blobDesktop} />
     <ResponsiveContainer
       button={
         <Button className={classes.button} to="/o-nas">

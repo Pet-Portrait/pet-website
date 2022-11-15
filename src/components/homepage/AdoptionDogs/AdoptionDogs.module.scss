@@ -3,10 +3,41 @@
 
 .root {
   padding: $spacing--8 $spacing--2 $spacing--4;
+  position: relative;
+  display: flex;
+  align-items: center;
 
   @include breakpoint--desktop {
     padding: $spacing--8 $spacing--8;
     min-height: 100vh;
+  }
+}
+
+.backgroundMobile {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -$spacing--4;
+  max-height: 150%;
+
+  z-index: -1;
+
+  @include breakpoint--desktop {
+    display: none;
+  }
+}
+
+.backgroundDesktop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  display: none;
+
+  @include breakpoint--desktop {
+    display: block;
   }
 }
 
@@ -31,6 +62,7 @@
 }
 
 .image {
+  width: 100%;
   border-radius: 25px;
 }
 

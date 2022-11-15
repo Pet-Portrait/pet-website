@@ -7,6 +7,9 @@ import ResponsiveContainer from 'components/shared/ResponsiveContainer/Responsiv
 
 import FeaturedBidsImages from './FeaturedBidsImages';
 
+import blobDesktop from '../../../images/backgrounds/background-bids.svg';
+import blobMobile from '../../../images/backgrounds/background-bids-mobile.svg';
+
 import * as classes from './FeaturedBids.module.scss';
 
 interface Props {
@@ -26,6 +29,8 @@ const FeaturedBids: FC<Props> = ({ bids }) => {
 
   return (
     <section className={classes.root}>
+      <img alt="" className={classes.backgroundMobile} src={blobMobile} />
+      <img alt="" className={classes.backgroundDesktop} src={blobDesktop} />
       <ResponsiveContainer
         button={
           <Button className={classes.button} to="/licytacje">

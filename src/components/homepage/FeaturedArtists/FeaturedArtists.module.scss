@@ -5,9 +5,37 @@
   padding: $spacing--8 0 0;
   display: flex;
   align-items: center;
+  position: relative;
 
   @include breakpoint--desktop {
     min-height: 100vh;
+  }
+}
+
+.backgroundMobile {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -$spacing--4;
+  z-index: -1;
+  height: 100%;
+
+  @include breakpoint--desktop {
+    display: none;
+  }
+}
+
+.backgroundDesktop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  display: none;
+
+  @include breakpoint--desktop {
+    display: block;
   }
 }
 
