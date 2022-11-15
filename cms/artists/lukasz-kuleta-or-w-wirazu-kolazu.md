@@ -3,7 +3,7 @@ name: Łukasz Kuleta | W Wirażu Kolażu
 avatar: ../images/łukasz-kuleta.jpg
 featured: false
 facebook: null
-instagram: https://instagram.com/wwirazukolazu
+instagram: https://www.instagram.com/wwirazukolazu
 behance: null
 web: https://wwirazukolazu.pl/
 images:
