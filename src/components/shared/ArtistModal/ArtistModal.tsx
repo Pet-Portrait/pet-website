@@ -37,7 +37,12 @@ const ArtistModal: FC<Props> = ({ artist, isOpen, setIsOpen, ...props }) => {
       className={classes.modal}
       overlayClassName={classes.overlay}
     >
-      <button className={classes.closeButton} onClick={handleClose} type="button">
+      <button
+        aria-label="Zamknij informacje o artyście"
+        className={classes.closeButton}
+        onClick={handleClose}
+        type="button"
+      >
         <img alt="" src={closeIcon} />
       </button>
       <div className={classes.content}>
@@ -61,22 +66,22 @@ const ArtistModal: FC<Props> = ({ artist, isOpen, setIsOpen, ...props }) => {
       </div>
       <div className={classes.socials}>
         {artist.facebook && (
-          <a href={artist.facebook}>
+          <a aria-label="Facebook" href={artist.facebook}>
             <FacebookIcon className={classes.socialIcon} />
           </a>
         )}
         {artist.instagram && (
-          <a href={artist.instagram}>
+          <a aria-label="Instagram" href={artist.instagram}>
             <InstagramIcon className={classes.socialIcon} />
           </a>
         )}
         {artist.behance && (
-          <a href={artist.behance}>
+          <a aria-label="Behanace" href={artist.behance}>
             <BehanceIcon className={classes.socialIcon} />
           </a>
         )}
         {artist.web && (
-          <a href={artist.web}>
+          <a aria-label="Strona internetowa" href={artist.web}>
             <WebIcon className={classes.socialIcon} />
           </a>
         )}
