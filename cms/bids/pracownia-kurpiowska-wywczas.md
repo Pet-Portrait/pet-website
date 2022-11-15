@@ -5,5 +5,5 @@ image: ../images/wywczas-a3-pet-portrait.jpg
 type: Grafika
 url: null
 format: A3
-featured: false
+featured: true
 ---
