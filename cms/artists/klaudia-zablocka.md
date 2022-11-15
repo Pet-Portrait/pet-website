@@ -3,7 +3,7 @@ name: Klaudia Zabłocka
 avatar: ../images/klaudia-zabłocka.png
 featured: false
 facebook: null
-instagram: https://instagram.com/zablocka.klaudia
+instagram: https://www.instagram.com/zablocka.klaudia
 behance: null
 web: null
 images:
