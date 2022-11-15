@@ -8,6 +8,9 @@ import { Artist } from 'types/artist';
 import ArtistsGrid from './ArtistsGrid/ArtistsGrid';
 import ArtistsSlider from './ArtistsSlider/ArtistsSlider';
 
+import blobDesktop from '../../../images/backgrounds/background-artists.svg';
+import blobMobile from '../../../images/backgrounds/background-artists-mobile.svg';
+
 import * as classes from './FeaturedArtists.module.scss';
 
 interface Props {
@@ -35,6 +38,8 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
 
   return (
     <section className={classes.root}>
+      <img alt="" className={classes.backgroundMobile} src={blobMobile} />
+      <img alt="" className={classes.backgroundDesktop} src={blobDesktop} />
       <ResponsiveContainer
         button={
           <Button className={classes.button} to="/artysci">
