@@ -1,4 +1,5 @@
 @import 'styles/variables';
+@import 'styles/breakpoints';
 
 .overlay {
   position: fixed;
@@ -15,11 +16,71 @@
   transform: translate(-50%, -50%);
   background-color: $background-color;
   overflow: auto;
-  border-radius: 4px;
+  box-shadow: 0 16px 32px rgba(#000, 0.1);
+  border-radius: 25px;
   outline: none;
   padding: $spacing--2;
   max-width: 1024px;
   max-height: 700px;
   height: calc(100% - $spacing--2);
   width: calc(100% - $spacing--4);
+
+  @include breakpoint--desktop {
+    padding: $spacing--4;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: $spacing--1;
+  right: $spacing--1;
+  padding: $spacing--1;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.heading {
+  margin-left: $spacing--4;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  max-width: 150px;
+  border-radius: 25px;
+}
+
+.description {
+  margin-top: $spacing--4;
+  flex: 1;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: $spacing--2;
+  margin: $spacing--4 0;
+}
+
+.image {
+  border-radius: 25px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: $spacing--2;
+}
+
+.socialIcon {
+  width: 40px;
+  color: $text-color;
+}
+
+.button {
+  margin: $spacing--4 auto 0;
 }
