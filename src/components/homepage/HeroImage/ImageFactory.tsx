@@ -10,10 +10,13 @@ interface Props {
 const HERO_IMAGE_ID = 'HERO_IMAGE_ID';
 
 const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
-  const [imageId, setImageId] = useState(sessionStorage.getItem(HERO_IMAGE_ID));
+  const [imageId, setImageId] = useState('');
 
   useEffect(() => {
-    if (sessionStorage.getItem(HERO_IMAGE_ID)) return;
+    if (sessionStorage.getItem(HERO_IMAGE_ID)) {
+      setImageId(sessionStorage.getItem(HERO_IMAGE_ID) || '');
+      return;
+    }
 
     const newImageId = Math.floor(Math.random() * 6 + 1).toString();
     setImageId(newImageId);
