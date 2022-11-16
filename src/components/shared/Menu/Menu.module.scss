@@ -1,0 +1,68 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  position: fixed;
+  bottom: $spacing--2;
+  width: 330px;
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  height: $spacing--6;
+  padding: 0 $spacing--2;
+  border-radius: 12px;
+  background-color: $text-color;
+  color: $text-color--light;
+  border: none;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  cursor: pointer;
+  transition: width 0.2s 0.2s ease-in, background-color 0.2s ease-out;
+}
+
+.buttonActive {
+  width: calc(100% - $spacing--2);
+  background-color: #3e3e3e;
+  transition: width 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.list {
+  transform-origin: center 100%;
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in;
+  list-style: none;
+  background-color: $text-color;
+  padding: $spacing--3 $spacing--3 calc($spacing--8 + $spacing--2);
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+  bottom: -$spacing--1;
+  left: 0;
+  z-index: -1;
+}
+
+.listActive {
+  transform: scaleY(1);
+  transition: transform 0.2s 0.2s ease-out;
+}
+
+.listItem {
+  margin-bottom: $spacing--2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  font-weight: 700;
+  color: $text-color--light;
+  text-decoration: none;
+  padding: $spacing--1 0;
+}
