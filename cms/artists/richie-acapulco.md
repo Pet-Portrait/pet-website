@@ -3,7 +3,7 @@ name: Richie Acapulco
 avatar: ../images/agnieszka-kożuchowska.jpg
 featured: false
 facebook: null
-instagram: https://instagram.com/richieacapulco
+instagram: https://www.instagram.com/richieacapulco
 behance: null
 web: null
 images:
