@@ -27,28 +27,6 @@ const Menu: FC = () => {
 
   return (
     <div className={`${classes.root} ${isVisible ? classes.isVisible : ''}`}>
-      <ul className={`${classes.list} ${isActive ? classes.listActive : ''}`}>
-        <li className={classes.listItem}>
-          <Link className={classes.link} to="/">
-            Licytacje
-          </Link>
-        </li>
-        <li className={classes.listItem}>
-          <Link className={classes.link} to="/">
-            Artystki i Artyści
-          </Link>
-        </li>
-        <li className={classes.listItem}>
-          <Link className={classes.link} to="/o-nas">
-            Kim jesteśmy
-          </Link>
-        </li>
-        <li className={classes.listItem}>
-          <Link className={classes.link} to="/psiaki-adopcyjne">
-            Psiaki adopcyjne
-          </Link>
-        </li>
-      </ul>
       <button
         className={`${classes.button} ${isActive ? classes.buttonActive : ''}`}
         onClick={handleClick}
@@ -57,6 +35,28 @@ const Menu: FC = () => {
         Menu
         <Hamburger isOpen={isActive} />
       </button>
+      <ul className={`${classes.list} ${isActive ? classes.listActive : ''}`}>
+        <li className={classes.listItem}>
+          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/licytacje">
+            Licytacje
+          </Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/artysci">
+            Artystki i Artyści
+          </Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/o-nas">
+            Kim jesteśmy
+          </Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/psiaki-adopcyjne">
+            Psiaki adopcyjne
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };

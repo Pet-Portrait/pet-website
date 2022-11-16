@@ -14,8 +14,8 @@ interface Props {
 const Layout: FC<Props> = ({ children }) => (
   <main>
     <Header />
-    {children}
     <Menu />
+    {children}
     <Footer />
   </main>
 );

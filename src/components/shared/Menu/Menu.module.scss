@@ -9,6 +9,7 @@
   left: 50%;
   transform: translate(-50%, calc(100% + $spacing--2));
   transition: transform 0.2s ease-out;
+  z-index: 1;
 }
 
 .isVisible {
