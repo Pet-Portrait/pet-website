@@ -1,6 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 
+import useResponsive from 'hooks/useResponsive';
+
 import Hamburger from './Hamburger/Hamburger';
 
 import * as classes from './Menu.module.scss';
@@ -10,6 +12,7 @@ const TIME_TO_APPEAR_IN_MS = 1000;
 const Menu: FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const { isDesktop } = useResponsive();
 
   const handleClick = () => {
     setIsActive((prevIsActive) => !prevIsActive);
@@ -37,22 +40,52 @@ const Menu: FC = () => {
       </button>
       <ul className={`${classes.list} ${isActive ? classes.listActive : ''}`}>
         <li className={classes.listItem}>
-          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/licytacje">
+          <Link
+            activeClassName={classes.activeLink}
+            className={classes.link}
+            tabIndex={isActive || isDesktop ? 0 : -1}
+            to="/temp-home"
+          >
+            Strona główna
+          </Link>
+        </li>
+        <li className={classes.listItem}>
+          <Link
+            activeClassName={classes.activeLink}
+            className={classes.link}
+            tabIndex={isActive || isDesktop ? 0 : -1}
+            to="/licytacje"
+          >
             Licytacje
           </Link>
         </li>
         <li className={classes.listItem}>
-          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/artysci">
+          <Link
+            activeClassName={classes.activeLink}
+            className={classes.link}
+            tabIndex={isActive || isDesktop ? 0 : -1}
+            to="/artysci"
+          >
             Artystki i Artyści
           </Link>
         </li>
         <li className={classes.listItem}>
-          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/o-nas">
+          <Link
+            activeClassName={classes.activeLink}
+            className={classes.link}
+            tabIndex={isActive || isDesktop ? 0 : -1}
+            to="/o-nas"
+          >
             Kim jesteśmy
           </Link>
         </li>
         <li className={classes.listItem}>
-          <Link className={classes.link} tabIndex={isActive ? 0 : -1} to="/psiaki-adopcyjne">
+          <Link
+            activeClassName={classes.activeLink}
+            className={classes.link}
+            tabIndex={isActive || isDesktop ? 0 : -1}
+            to="/psiaki-adopcyjne"
+          >
             Psiaki adopcyjne
           </Link>
         </li>
