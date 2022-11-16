@@ -2,9 +2,9 @@
 name: "Zuzanna Skórska "
 avatar: ../images/_zuzanna-skórska.jpeg
 featured: false
-facebook: https://facebook.com/skorskazuzanna
-instagram: https://instagram.com/zuzannaskorska
-behance: https://behance.net/skorska
+facebook: https://www.facebook.com/skorskazuzanna
+instagram: https://www.instagram.com/zuzannaskorska
+behance: https://www.behance.net/skorska
 web: null
 images:
   - image: ../images/zuzanna-skórska.jpeg
