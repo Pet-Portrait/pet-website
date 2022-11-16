@@ -3,8 +3,8 @@ name: żaneta antosik
 avatar: ../images/fotka-zaneta-antosik-1-zaneta-antosik.jpg
 featured: false
 facebook: https://www.facebook.com/AntosikZaneta/
-instagram: https://instagram.com/zanetaantosik
-behance: https://behance.net/zanetaantosik
+instagram: https://www.instagram.com/zanetaantosik
+behance: https://www.behance.net/zanetaantosik
 web: null
 images:
   - image: ../images/żaneta-antosik.jpg
