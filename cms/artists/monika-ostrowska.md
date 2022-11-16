@@ -3,7 +3,7 @@ name: Monika Ostrowska
 avatar: ../images/monika_ostrowska-monika-ostrowska.jpg
 featured: false
 facebook: null
-instagram: https://instagram.com/monika_ostrowska_collages
+instagram: https://www.instagram.com/monika_ostrowska_collages
 behance: null
 web: null
 images:
