@@ -3,7 +3,7 @@ name: Monika Chlebek
 avatar: ../images/monika-chlebek.jpg
 featured: false
 facebook: null
-instagram: https://instagram.com/monikachlebek
+instagram: https://www.instagram.com/monikachlebek
 behance: null
 web: null
 images:
