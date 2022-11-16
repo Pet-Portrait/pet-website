@@ -3,7 +3,7 @@ name: Alicja Pałgan
 avatar: ../images/zdj_alicja_palgan-alicja-palgan.jpg
 featured: false
 facebook: null
-instagram: https://instagram.com/apalgan
+instagram: https://www.instagram.com/apalgan
 behance: null
 web: null
 images:
