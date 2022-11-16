@@ -1,11 +1,8 @@
 @import 'styles/variables';
 
-$line-width: 3px;
-$space-between: 10px;
-
 .root {
-  width: 30px;
-  height: 23px;
+  width: 14px;
+  height: 12px;
   position: relative;
   cursor: pointer;
 }
@@ -13,7 +10,7 @@ $space-between: 10px;
 .line {
   display: block;
   position: absolute;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background-color: $text-color--light;
   border-radius: 9px;
@@ -27,12 +24,12 @@ $space-between: 10px;
   }
 
   &:nth-child(2) {
-    top: 10px;
+    top: 5px;
     transition: width 0.25s ease-in-out;
   }
 
   &:nth-child(3) {
-    top: 20px;
+    top: 10px;
   }
 }
 
@@ -41,7 +38,7 @@ $space-between: 10px;
     &:nth-child(1) {
       transform: rotate(45deg);
       top: 0px;
-      left: 6px;
+      left: 4px;
     }
 
     &:nth-child(2) {
@@ -51,8 +48,8 @@ $space-between: 10px;
 
     &:nth-child(3) {
       transform: rotate(-45deg);
-      top: 21px;
-      left: 6px;
+      top: 10px;
+      left: 4px;
     }
   }
 }
