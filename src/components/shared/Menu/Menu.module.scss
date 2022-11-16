@@ -7,7 +7,12 @@
   width: 330px;
   max-width: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, calc(100% + $spacing--2));
+  transition: transform 0.2s ease-out;
+}
+
+.isVisible {
+  transform: translate(-50%, 0);
 }
 
 .button {
