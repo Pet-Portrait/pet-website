@@ -1,12 +1,15 @@
 ---
-name: "atogrzywa"
-avatar: 
+name: atogrzywa
+avatar: ../images/magda-chołaścińska.jpg
 featured: false
 facebook: https://facebook.com/atogrzywa
 instagram: https://instagram.com/atogrzywa
-behance: 
-web:
+behance: null
+web: https://www.atogrzywa.com/
 images:
+  - image: ../images/magda-chołaścińska-1-.jpg
+  - image: ../images/magda-chołaścińska-2-.jpg
+  - image: ../images/magda-chołaścińska-3-.jpg
 ---
 Nazywam się Magda Chołaścińska i jestem graficzką i ilustratorką mieszkającą w Poznaniu. Z wykształcenia jestem architektem. Ukończyłam dwie uczelnie - Zachodniopomorski Uniwersytet Technologiczny w Szczecinie i Copenhagen School of Design and Technology.
 
