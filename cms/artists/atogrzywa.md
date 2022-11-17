@@ -13,8 +13,6 @@ images:
 ---
 Nazywam się Magda Chołaścińska i jestem graficzką i ilustratorką mieszkającą w Poznaniu. Z wykształcenia jestem architektem. Ukończyłam dwie uczelnie - Zachodniopomorski Uniwersytet Technologiczny w Szczecinie i Copenhagen School of Design and Technology.
 
- 
-
 W życiu postawiłam jednak na rozwój swojej największej pasji jaką jest grafika i ilustracja. Przez ponad 6 lat zdobywałam doświadczenie jako grafik w agencjach reklamowych, a od ponad 4 lat prowadzę własną firmę!
 
 ​
