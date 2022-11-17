@@ -1,12 +1,15 @@
 ---
-name: "Marta Chmielecka"
-avatar: 
+name: Marta Chmielecka
+avatar: ../images/o_mnie-marta-chmielecka.jpg
 featured: false
-facebook: 
-instagram: 
-behance: 
-web:
+facebook: https://www.facebook.com/people/Ilustracje-Marta-Chmielecka/100067089962986/
+instagram: https://www.instagram.com/marta.chmielecka/
+behance: null
+web: https://martachmielecka.pl/
 images:
+  - image: ../images/marta-chmielecka.jpg
+  - image: ../images/marta-chmielecka-1-.jpg
+  - image: ../images/marta-chmielecka-2-.jpg
 ---
 
 
