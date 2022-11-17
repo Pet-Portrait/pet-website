@@ -1,12 +1,15 @@
 ---
-name: "Ewuwua"
-avatar: 
+name: Ewuwua
+avatar: ../images/ewuwua_ewa_siarkiewicz_-pet-portrait.jpg
 featured: false
 facebook: https://facebook.com/ewuwua
 instagram: https://instagram.com/ewuwua
-behance: 
-web:
+behance: null
+web: https://ewuwua.pl/
 images:
+  - image: ../images/diana-spaniele-i-charty-pet-portrait.jpg
+  - image: ../images/tworczosc-pet-portrait.jpeg
+  - image: ../images/ewuwua.jpeg
 ---
 Nazywam się Ewa Siarkiewicz i od ponad dwudziestu lat mieszkam i tworzę w Warszawie. Projektuję i maluję obrazy, plakaty, ilustracje, grafiki. Sama siebie najczęściej nazywam rysowniczką.
 
