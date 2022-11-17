@@ -1,11 +1,14 @@
 ---
-name: "Durckling"
-avatar: 
+name: Durckling
+avatar: ../images/wiktoria-janik.jpg
 featured: false
-facebook: 
+facebook: null
 instagram: https://instagram.com/durckling
-behance: 
-web:
+behance: null
+web: null
 images:
+  - image: ../images/wiktoria-janik-1-.jpg
+  - image: ../images/wiktoria-janik-2-.jpg
+  - image: ../images/wiktoria-janik-3-.jpg
 ---
 Studentka archeologii i antropologii kulturowej na UJ. Malarka-amatorka, głównie nie mogąca wygrzebać się z farb olejnych i aspirująca artystka. 
