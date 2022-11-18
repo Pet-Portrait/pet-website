@@ -1,9 +1,9 @@
 ---
 title: '"PSIA KREW", czarka ceramiczna'
-artist: "Monika Sikorska (MONIfaktura)"
-image:
-type: "Ceramika"
-url:
-format: "8 x 9 cm"
+artist: MONIfaktura
+image: ../images/monifaktura_monika-sikorska-monia-es..jpg
+type: Ceramika
+url: null
+format: 8 x 9 cm
 featured: false
 ---
