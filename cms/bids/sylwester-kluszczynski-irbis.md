@@ -1,9 +1,9 @@
 ---
-title: "Irbis"
-artist: "Sylwester Kluszczyński"
-image:
-type: "Grafika"
-url:
-format: "50cm x 70cm"
+title: Irbis
+artist: Sylwester Kluszczyński
+image: ../images/sylwester-kluszczyński-sylwester-kluszczyński.jpg
+type: Grafika
+url: null
+format: 50cm x 70cm
 featured: false
 ---
