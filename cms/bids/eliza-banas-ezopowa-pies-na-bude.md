@@ -1,9 +1,9 @@
 ---
-title: "Pies na budę"
-artist: "Eliza Banaś/ ezopowa"
-image:
-type: "Grafika"
-url:
-format: "A2 (420x594mm)"
+title: Pies na budę
+artist: Ezopowa
+image: ../images/eliza-banaś-eliza-banaś.jpg
+type: Grafika
+url: null
+format: A2 (420x594mm)
 featured: false
 ---
