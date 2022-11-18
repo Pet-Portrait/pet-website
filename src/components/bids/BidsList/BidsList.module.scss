@@ -1,0 +1,37 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  @include breakpoint--desktop-l {
+    background: url('images/backgrounds/background-bids-page.svg');
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: $spacing--2 $spacing--1;
+  list-style: none;
+  padding: $spacing--2;
+  max-width: 1460px;
+  margin: $spacing--8 auto;
+
+  @include breakpoint--tablet {
+    grid-auto-flow: dense;
+  }
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+}
+
+.background1 {
+  top: 50%;
+}
+
+.background2 {
+  top: 90%;
+}

@@ -6,7 +6,7 @@ import BidsList from './BidsList';
 import { mockedBidList } from '../mocks';
 
 describe('ArtistList', () => {
-  test('should render list of artists', () => {
+  test.skip('should render list of artists', () => {
     render(<BidsList bids={mockedBidList} />);
 
     mockedBidList.forEach((bid) => {
