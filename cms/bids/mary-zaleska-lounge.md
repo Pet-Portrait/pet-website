@@ -1,9 +1,9 @@
 ---
-title: "Lounge"
-artist: "Mary Zaleska"
-image:
-type: "Grafika"
-url:
-format: "40x50 cm"
+title: Lounge
+artist: Mary Zaleska
+image: ../images/petportrait-2022-kopia-mary-zaleska.jpg
+type: Grafika
+url: null
+format: 40x50 cm
 featured: false
 ---
