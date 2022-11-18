@@ -1,9 +1,9 @@
 ---
-title: "Pierwszy człowiek i psy Ulgena"
-artist: "Dorota Bujak"
-image:
-type: "Grafika"
-url:
-format: "50x70 cm"
+title: Pierwszy człowiek i psy Ulgena
+artist: "Dorota Bujak "
+image: ../images/dorota-bujak-dorota-bujak.jpg
+type: Grafika
+url: null
+format: 50x70 cm
 featured: false
 ---
