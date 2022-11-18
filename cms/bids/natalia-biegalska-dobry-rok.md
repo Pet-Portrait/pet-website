@@ -1,6 +1,6 @@
 ---
 title: Dobry Rok
-artist: Natalia Biegalska
+artist: Natka Biegalska
 image: ../images/img_2121-natalia-biegalska.jpeg
 type: Inne
 url: null
