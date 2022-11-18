@@ -5,5 +5,5 @@ image: ../images/klaudia-zabłocka_30x40cm-klaudia-zabłocka.jpg
 type: Grafika
 url: null
 format: 30x40 cm
-featured: true
+featured: false
 ---
