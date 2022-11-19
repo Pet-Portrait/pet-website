@@ -1,5 +1,5 @@
 ---
-name: żaneta antosik
+name: Żaneta Antosik
 avatar: ../images/fotka-zaneta-antosik-1-zaneta-antosik.jpg
 featured: false
 facebook: https://www.facebook.com/AntosikZaneta/
