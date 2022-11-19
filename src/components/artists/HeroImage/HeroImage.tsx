@@ -9,10 +9,10 @@ const HeroImage: FC = () => (
   <section className={classes.root}>
     <div className={classes.container}>
       <div className={classes.content}>
-        <h1 className={classes.heading}>Weź udział w licytacji i wesprzyj bezdomne zwierzaki!</h1>
+        <h1 className={classes.heading}>Poznaj naszych artystów</h1>
         <p>
-          XXX - tyle dzieł polskich Artystów i Artystek znajdziesz na tegorocznym Pet Portrait.
-          Grafiki, ilustracje, obrazy, hafty, ceramiki - psygarnij coś dla siebie!
+          Poznajcie naszych tegorocznych Artystów i Artystki - XXX osób o wielkich sercach i
+          prawdziwym morzu talentu.
         </p>
       </div>
       <StaticImage
