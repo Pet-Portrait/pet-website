@@ -55,7 +55,7 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
         }
         text={
           <div className={classes.text}>
-            <h2 className={classes.heading}>Artyści</h2>
+            <h2 className={classes.heading}>Artystki i Artyści</h2>
             <p className={classes.description}>
               Poznajcie naszych tegorocznych Artystów i Artystki - XXX osób o wielkich sercach i
               prawdziwym morzu talentu.
