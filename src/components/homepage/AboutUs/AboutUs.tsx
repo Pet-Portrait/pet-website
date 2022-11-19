@@ -16,7 +16,7 @@ const AboutUs: FC = () => (
     <ResponsiveContainer
       button={
         <Button className={classes.button} to="/o-nas">
-          Ryba śmierdzi od głowy
+          Dowiedz się więcej o Pet Portrait
         </Button>
       }
       desktopContentClass={classes.desktopContent}
@@ -27,8 +27,8 @@ const AboutUs: FC = () => (
         <div className={classes.text}>
           <h2 className={classes.heading}>O nas</h2>
           <p className={classes.description}>
-            W środowisku niesportowym PZPN ma fatalną opinię. Widziałem wyniki badań i żartowałem,
-            że tylko Osama bin Laden ma gorsze notowania. Nawet PiS-owi bardziej się ufa.
+            Pet Portrait to inicjatywa stworzona z pasji do sztuki i miłości do zwierząt. Pomaganie
+            zwierzętom uznajemy za nasz psi obowiązek. A to tylko jedna z naszych cech!
           </p>
         </div>
       }

@@ -43,7 +43,7 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
       <ResponsiveContainer
         button={
           <Button className={classes.button} to="/artysci">
-            Truskawka na torcie
+            Sprawdź wszystkich artystów
           </Button>
         }
         desktopClass={classes.desktopContainer}
@@ -57,9 +57,8 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
           <div className={classes.text}>
             <h2 className={classes.heading}>Artyści</h2>
             <p className={classes.description}>
-              Piłka nożna to prosta gra. Dwudziestu dwóch mężczyzn ściga piłkę przez 90 minut, a na
-              końcu Niemcy już nie zawsze wygrywają. Poprzednia wersja ogranicza się tylko do
-              historii.
+              Poznajcie naszych tegorocznych Artystów i Artystki - XXX osób o wielkich sercach i
+              prawdziwym morzu talentu.
             </p>
           </div>
         }

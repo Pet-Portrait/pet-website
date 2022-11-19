@@ -22,7 +22,7 @@ const FeaturedBids: FC<Props> = ({ bids }) => (
     <ResponsiveContainer
       button={
         <Button className={classes.button} to="/licytacje">
-          Jedyną gwiazdą Legii jest jej stadion.
+          Zobacz wszystkie licytacje
         </Button>
       }
       desktopClass={classes.desktopContainer}
@@ -32,9 +32,8 @@ const FeaturedBids: FC<Props> = ({ bids }) => (
         <>
           <h2 className={classes.heading}>Licytacje</h2>
           <p className={classes.description}>
-            Piłka nożna to taka gra, w której 22 mężczyzn biega za piłką, a na końcu i tak wygrywają
-            Niemcy.Piłka nożna to taka gra, w której 22 mężczyzn biega za piłką, a na końcu i tak
-            wygrywają Niemcy.
+            XXX - tyle dzieł polskich Artystów i Artystek znajdziesz na tegorocznym Pet Portrait.
+            Grafiki, ilustracje, obrazy, hafty, ceramiki - psygarnij coś dla siebie!
           </p>
         </>
       }

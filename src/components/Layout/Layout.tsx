@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import LogoIcon from 'components/shared/LogoIcon/LogoIcon';
@@ -19,7 +20,7 @@ const Layout: FC<Props> = ({ children }) => (
       className={classes.backgroundMobile}
       layout="fixed"
       placeholder="tracedSVG"
-      src="../../../images/backgrounds/hero-blob-mobile.png"
+      src="../../images/backgrounds/hero-blob-mobile.png"
     />
     <StaticImage
       alt=""
@@ -28,9 +29,11 @@ const Layout: FC<Props> = ({ children }) => (
       layout="fixed"
       objectPosition="top left"
       placeholder="tracedSVG"
-      src="../../../images/backgrounds/hero-blob-desktop.png"
+      src="../../images/backgrounds/hero-blob-desktop.png"
     />
-    <LogoIcon className={classes.logo} />
+    <Link to="/">
+      <LogoIcon className={classes.logo} />
+    </Link>
     {children}
     <Footer />
   </main>

@@ -26,14 +26,26 @@ const HeroImage: FC = () => {
     <section className={classes.root}>
       <div className={classes.container}>
         <div className={classes.content}>
-          <h1 className={classes.heading}>Rzuć groszem dla zwierzaków poprzez licytację sztuki!</h1>
-          <p className={classes.text}>
-            Myślę, że warto podać zwycięski skład Kaiserslautern z meczu z Bayernem w sezonie 97/98:
-            Renke, Kadlec, H. Koch (31. Hristov), Kuka, Marschall, Ratinho (75. Reich), Roos,
-            Schjönberg, Schäfer, Sforza, M. Wagner. I jeszcze Ballack.
-          </p>
+          <h1 className={classes.heading}>Wylicytuj sztukę dla zwierzaka!</h1>
+          <div className={classes.text}>
+            <p>
+              Weź udział w III edycji Pet Portrait III edycji Pet Portrait i pomóż nam wesprzeć
+              schroniska dla zwierząt
+            </p>
+            <p>
+              <strong>Licytuj</strong> prace XXX polskich Artystów i Artystek na Allegro
+              Charytatywni | 21 XI - 26 XI 2022
+            </p>
+            <p>
+              <strong>Oglądaj</strong> stacjonarnie wystawę w Elektrowni Powiśle | 21 XI - 26 XI
+              2022
+            </p>
+            <p>
+              <strong> Pomagaj</strong> bezdomnym zwierzakom | zawsze
+            </p>
+          </div>
           <Button className={classes.button} to="/licytacje">
-            Kup bilet na żyletę
+            Weź udział w licytacji
           </Button>
         </div>
         <ImageFactory ref={imageRef} />
