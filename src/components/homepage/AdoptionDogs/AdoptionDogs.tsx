@@ -16,7 +16,7 @@ const AdoptionDogs: FC = () => (
     <ResponsiveContainer
       button={
         <Button className={classes.button} to="/psiaki-adopcyjne">
-          Jedyną gwiazdą Legii jest jej stadion.
+          Zaadoptuj psiaka
         </Button>
       }
       desktopContentClass={classes.desktopContent}
@@ -27,7 +27,7 @@ const AdoptionDogs: FC = () => (
         <div className={classes.text}>
           <h2 className={classes.heading}>Psiaki adopcyjne</h2>
           <p className={classes.description}>
-            Powinni zmienić nazwę na Polski Związek Piłki Nienormalnej
+            Cały dochód z akcji przejdzie na fundacje Rasowy Kundel.
           </p>
         </div>
       }

@@ -24,14 +24,16 @@ export const artistQuery = graphql`
       images {
         image {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED)
+            # TODO: For further investigation. Quick fix to not fetch huge images
+            gatsbyImageData(placeholder: BLURRED, width: 400)
           }
         }
       }
       name
       avatar {
         childImageSharp {
-          gatsbyImageData(placeholder: BLURRED)
+          # TODO: For further investigation. Quick fix to not fetch huge images
+          gatsbyImageData(placeholder: BLURRED, width: 700)
         }
       }
       featured
