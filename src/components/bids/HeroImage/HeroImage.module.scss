@@ -1,5 +1,72 @@
 @import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  display: grid;
+  min-height: 100vh;
+}
+
+.container {
+  align-items: center;
+  max-width: $max-container-width;
+  margin: auto;
+  padding: $spacing--2 $spacing--2 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint--desktop {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+}
+
+.content {
+  margin-top: $top-spacing;
+
+  @media screen and (min-width: $desktop-size) and (max-height: 850px) {
+    align-self: end;
+    margin-bottom: $spacing--4;
+  }
+}
 
 .heading {
   color: $primary-color;
+
+  @include breakpoint--desktop {
+    font-size: 2rem;
+  }
+
+  @include breakpoint--desktop-l {
+    font-size: $heading-1-size--desktop;
+  }
+}
+
+.image {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  margin-top: $spacing--2;
+}
+
+.blob {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: translateY(50%);
+  z-index: -1;
+  max-width: 50%;
+
+  @include breakpoint--desktop {
+    display: block;
+  }
+
+  @media screen and (max-height: 850px) {
+    display: none;
+  }
 }

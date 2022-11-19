@@ -16,7 +16,7 @@
 }
 .content {
   color: $text-color--light;
-  max-width: 1460px;
+  max-width: $max-container-width;
   margin: auto;
 }
 

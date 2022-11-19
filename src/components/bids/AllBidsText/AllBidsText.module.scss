@@ -1,7 +1,7 @@
 @import 'styles/variables';
 
 .root {
-  max-width: 1460px;
+  max-width: $max-container-width;
   margin: $spacing--8 auto;
   padding: $spacing--2;
 }

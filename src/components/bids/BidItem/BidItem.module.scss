@@ -37,10 +37,14 @@
   border-radius: 25px;
   @include zoom-image;
   flex: 1;
+  mask-image: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .image {
   border-radius: 25px;
+  mask-image: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .caption {

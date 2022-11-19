@@ -13,7 +13,7 @@
   grid-gap: $spacing--2 $spacing--1;
   list-style: none;
   padding: $spacing--2;
-  max-width: 1460px;
+  max-width: $max-container-width;
   margin: $spacing--8 auto;
 
   @include breakpoint--tablet {
