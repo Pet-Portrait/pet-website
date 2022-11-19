@@ -1,0 +1,11 @@
+@import 'styles/variables';
+
+.root {
+  max-width: $max-container-width;
+  margin: $spacing--8 auto;
+  padding: $spacing--2;
+}
+
+.button {
+  margin: $spacing--4 auto;
+}

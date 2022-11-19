@@ -1,5 +1,4 @@
 import React, { FC, useRef, useState } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
 import Button from 'components/shared/Button/Button';
 import useGyroscopicParallax from 'hooks/useGyroscopicParallax';
@@ -7,8 +6,6 @@ import useIntersectionObserver from 'hooks/useIntersectionObserver';
 import useParallax from 'hooks/useParallax';
 
 import ImageFactory from './ImageFactory';
-
-import LogoIcon from '../../shared/LogoIcon/LogoIcon';
 
 import * as classes from './HeroImage.module.scss';
 
@@ -27,25 +24,8 @@ const HeroImage: FC = () => {
 
   return (
     <section className={classes.root}>
-      <StaticImage
-        alt=""
-        className={classes.backgroundMobile}
-        layout="fixed"
-        placeholder="tracedSVG"
-        src="../../../images/backgrounds/hero-blob-mobile.png"
-      />
-      <StaticImage
-        alt=""
-        className={classes.backgroundDesktop}
-        height={350}
-        layout="fixed"
-        objectPosition="top left"
-        placeholder="tracedSVG"
-        src="../../../images/backgrounds/hero-blob-desktop.png"
-      />
       <div className={classes.container}>
         <div className={classes.content}>
-          <LogoIcon className={classes.logo} />
           <h1 className={classes.heading}>Rzuć groszem dla zwierzaków poprzez licytację sztuki!</h1>
           <p className={classes.text}>
             Myślę, że warto podać zwycięski skład Kaiserslautern z meczu z Bayernem w sezonie 97/98:

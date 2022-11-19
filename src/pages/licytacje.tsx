@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, PageProps } from 'gatsby';
 
-import BidsList from 'components/bids/BidsList/BidsList';
+import Bids from 'components/bids/Bids';
 import { Bid } from 'types/bid';
 import { WithNodes } from 'types/utils';
 
@@ -15,7 +15,7 @@ const BidsPage = ({ data }: PageProps<Query>) => {
     id: node.id,
   }));
 
-  return <BidsList bids={bids} />;
+  return <Bids bids={bids} />;
 };
 
 export default BidsPage;
@@ -33,7 +33,8 @@ export const pageQuery = graphql`
           format
           image {
             childImageSharp {
-              gatsbyImageData
+              # TODO: For further investigation. Quick fix to not fetch huge images
+              gatsbyImageData(width: 700)
             }
           }
         }

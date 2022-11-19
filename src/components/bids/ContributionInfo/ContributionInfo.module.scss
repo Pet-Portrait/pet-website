@@ -1,0 +1,34 @@
+@import 'styles/variables';
+
+.image {
+  margin-bottom: -$spacing--1;
+}
+
+.wrapper {
+  background-color: $primary-color;
+  padding: $spacing--2 $spacing--2 180px;
+  margin-bottom: -220px;
+
+  @media screen and (min-width: 1920px) {
+    padding: $spacing--2 $spacing--2 10vw;
+    margin-bottom: -15vw;
+  }
+}
+.content {
+  color: $text-color--light;
+  max-width: $max-container-width;
+  margin: auto;
+}
+
+.heading {
+  margin-bottom: $spacing--2;
+}
+
+.button {
+  margin: $spacing--8 auto;
+  background-color: $accent-color-1;
+
+  &:hover {
+    background-color: darken($accent-color-1, 10%);
+  }
+}
