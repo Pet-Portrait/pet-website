@@ -1,0 +1,42 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.backgroundMobile {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include breakpoint--desktop {
+    display: none;
+  }
+}
+
+.backgroundDesktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+
+  @include breakpoint--desktop {
+    display: inline-block;
+  }
+}
+
+.logo {
+  max-width: 180px;
+  margin: auto;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: $spacing--2;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include breakpoint--desktop {
+    max-width: 250px;
+    left: $spacing--8;
+    top: $spacing--4;
+    transform: none;
+  }
+}
