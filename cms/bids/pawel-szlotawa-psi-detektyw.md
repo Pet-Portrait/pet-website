@@ -1,9 +1,9 @@
 ---
-title: "Psi detektyw"
-artist: "Paweł Szlotawa"
-image:
-type: "Inne"
-url:
-format: "50x70"
+title: Psi detektyw
+artist: Pszlotawa
+image: ../images/pszlotawa-podglad-50x70-druk-pet-portrait.png
+type: Inne
+url: null
+format: 50x70 cm
 featured: false
 ---
