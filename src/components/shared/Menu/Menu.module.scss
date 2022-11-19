@@ -1,0 +1,117 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  position: fixed;
+  bottom: $spacing--2;
+  width: 330px;
+  max-width: 100%;
+  left: 50%;
+  transform: translate(-50%, calc(100% + $spacing--2));
+  transition: transform 0.2s ease-out;
+  z-index: 2;
+
+  @include breakpoint--desktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 68px;
+  }
+}
+
+.isVisible {
+  transform: translate(-50%, 0);
+}
+
+.button {
+  height: $spacing--6;
+  padding: 0 $spacing--2;
+  border-radius: 12px;
+  background-color: $text-color;
+  color: $text-color--light;
+  border: none;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+  transition: width 0.2s 0.2s ease-in, background-color 0.2s ease-out;
+
+  @include breakpoint--desktop {
+    display: none;
+  }
+}
+
+.buttonActive {
+  width: calc(100% - $spacing--2);
+  background-color: #3e3e3e;
+  transition: width 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.list {
+  transform-origin: center 100%;
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in;
+  list-style: none;
+  background-color: $text-color;
+  padding: $spacing--3 $spacing--3 calc($spacing--8 + $spacing--2);
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+  bottom: -$spacing--1;
+  left: 0;
+  z-index: -1;
+
+  @include breakpoint--desktop {
+    display: flex;
+    transform: translateX(-50%);
+    width: unset;
+    justify-content: space-between;
+    padding: $spacing--1;
+    align-items: center;
+    background-color: rgba($text-color, 0.5);
+    margin: auto;
+    left: 50%;
+    gap: $spacing--1;
+  }
+}
+
+.listActive {
+  transform: scaleY(1);
+  transition: transform 0.2s 0.2s ease-out;
+}
+
+.listItem {
+  margin-bottom: $spacing--2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint--desktop {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  font-weight: 700;
+  color: $text-color--light;
+  text-decoration: none;
+  padding: $spacing--1 0;
+  white-space: nowrap;
+
+  @include breakpoint--desktop {
+    font-weight: 400;
+    display: block;
+    border-radius: 25px;
+    background-color: #262626;
+    padding: $spacing--2;
+  }
+}
+
+.activeLink {
+  @include breakpoint--desktop {
+    background-color: $text-color;
+  }
+}

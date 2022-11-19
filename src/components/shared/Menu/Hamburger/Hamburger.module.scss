@@ -1,0 +1,55 @@
+@import 'styles/variables';
+
+.root {
+  width: 14px;
+  height: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $text-color--light;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transition: transform 0.25s ease-in-out;
+  transform-origin: left center;
+
+  &:nth-child(1) {
+    top: 0px;
+  }
+
+  &:nth-child(2) {
+    top: 5px;
+    transition: width 0.25s ease-in-out;
+  }
+
+  &:nth-child(3) {
+    top: 10px;
+  }
+}
+
+.isOpen {
+  .line {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      top: 0px;
+      left: 4px;
+    }
+
+    &:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 10px;
+      left: 4px;
+    }
+  }
+}
