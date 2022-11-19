@@ -3,7 +3,7 @@ import React from 'react';
 import { graphql, HeadFC, PageProps } from 'gatsby';
 import { ArtistQuery } from 'queries/artist';
 
-import ArtistsList from 'components/artists/ArtistsList/ArtistsList';
+import Artists from 'components/artists/Artists';
 import Seo from 'components/shared/Seo/Seo';
 import { WithNodes } from 'types/utils';
 
@@ -18,7 +18,7 @@ const ArtistsPage = ({ data }: PageProps<Query>) => {
     id: node.id,
   }));
 
-  return <ArtistsList artists={artists} />;
+  return <Artists artists={artists} />;
 };
 
 export const pageQuery = graphql`
