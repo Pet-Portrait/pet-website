@@ -7,6 +7,9 @@
   grid-row: 3;
   border-radius: 25px;
   color: $text-color--light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include breakpoint--tablet {
     grid-column-end: span 2;
