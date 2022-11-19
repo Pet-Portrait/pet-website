@@ -24,7 +24,7 @@ const AdoptionDogs: FC = () => (
         <StaticImage alt="TEMP" className={classes.image} src="../../../images/dog-wip.png" />
       }
       text={
-        <div className={classes.text}>
+        <div>
           <h2 className={classes.heading}>Psiaki adopcyjne</h2>
           <p className={classes.description}>
             Cały dochód z akcji przejdzie na fundacje Rasowy Kundel.

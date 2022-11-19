@@ -24,7 +24,7 @@ const AboutUs: FC = () => (
         <StaticImage alt="TEMP" className={classes.image} src="../../../images/dog-wip.png" />
       }
       text={
-        <div className={classes.text}>
+        <div>
           <h2 className={classes.heading}>O nas</h2>
           <p className={classes.description}>
             Pet Portrait to inicjatywa stworzona z pasji do sztuki i miłości do zwierząt. Pomaganie
