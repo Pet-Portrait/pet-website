@@ -49,7 +49,7 @@ const Footer: FC = () => (
           </li>
           <li className={classes.listItem}>
             <Link className={classes.link} to="/artysci">
-              Artyści i artystki
+              Artystki i Artyści
             </Link>
           </li>
           <li className={classes.listItem}>

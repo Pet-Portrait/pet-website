@@ -44,7 +44,7 @@ const Menu: FC = () => {
             activeClassName={classes.activeLink}
             className={classes.link}
             tabIndex={isActive || isDesktop ? 0 : -1}
-            to="/temp-home"
+            to="/"
           >
             Strona główna
           </Link>
