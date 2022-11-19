@@ -1,0 +1,30 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.root {
+  background-color: $accent-color-3;
+  padding: $spacing--2;
+  grid-row: 3;
+  border-radius: 25px;
+  color: $text-color--light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint--tablet {
+    grid-column-end: span 2;
+  }
+}
+
+.heading {
+  margin-bottom: $spacing--2;
+}
+
+.button {
+  margin-top: $spacing--8;
+  background-color: $accent-color-1;
+
+  &:hover {
+    background-color: darken($accent-color-1, 10%);
+  }
+}

@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 
-import BidsList from 'components/bids/BidsList/BidsList';
-import HeroImage from 'components/bids/HeroImage/HeroImage';
 import Layout from 'components/Layout/Layout';
 import { Artist } from 'types/artist';
 import { Bid } from 'types/bid';
+
+import HeroImage from './ArtistHeroImage/HeroImage';
+import BidsList from './ArtistList/ArtistList';
 
 interface Props {
   artists: Artist[];

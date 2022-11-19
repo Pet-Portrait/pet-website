@@ -1,36 +1,69 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import sanitizeHtml from 'sanitize-html';
 
-import { Artist } from 'types/artist';
-import filterNullishImages from 'utils/filterNullishImages';
+import { Bid } from 'types/bid';
+
+import * as classes from './ArtistItem.module.scss';
 
 interface Props {
-  artist: Artist;
+  bid: Bid;
+  onOpenModal?: (id: string) => void;
+  isArtistsPage?: boolean;
 }
 
-const ArtistItem = ({ artist }: Props) => {
-  const images = filterNullishImages(artist.images?.map((image) => getImage(image.image)) || []);
-  const avatar = getImage(artist.avatar);
+const BidItem = ({ bid, onOpenModal, isArtistsPage }: Props) => {
+  const image = getImage(bid.image);
+  const imageRatio = image ? image.height / image.width : 0;
+  const isSquare = imageRatio > 0.9 && imageRatio < 1.1;
+  const isVertical = imageRatio >= 1.1;
+  const isHorizontal = imageRatio <= 0.9;
 
   return (
-    <li>
-      <h2>{artist.name}</h2>
-      <div
-        dangerouslySetInnerHTML={{ __html: sanitizeHtml(artist.description) }}
-        data-testid="artist-item-description"
-      />
-      {avatar && <GatsbyImage alt={artist.name} image={avatar} />}
-
-      {images?.map((image, index) => (
-        <GatsbyImage key={index} alt={`Praca ${artist.name} ${index + 1}`} image={image} />
-      ))}
-      {artist.facebook && <a href={artist.facebook}>Facebook</a>}
-      {artist.instagram && <a href={artist.instagram}>Instagram</a>}
-      {artist.behance && <a href={artist.behance}>Behance</a>}
-      {artist.web && <a href={artist.web}>Web</a>}
+    <li
+      className={`${classes.root} ${isSquare ? classes.square : ''} ${
+        isHorizontal ? classes.horizontal : ''
+      } ${isVertical ? classes.vertical : ''}`}
+    >
+      {isArtistsPage ? (
+        <button className={classes.artistButton} onClick={() => onOpenModal?.(bid.id)}>
+          <figure className={classes.content}>
+            {image && (
+              <div className={classes.imageWrapper}>
+                <GatsbyImage
+                  alt={`Praca ${bid.artist} "${bid.title}"`}
+                  className={classes.image}
+                  image={image}
+                />
+              </div>
+            )}
+            <figcaption className={classes.caption}>
+              <p className={classes.artist}>{bid.artist}</p>
+              <p className={classes.title}>{bid.title}</p>
+            </figcaption>
+          </figure>
+        </button>
+      ) : (
+        <OutboundLink href={bid.url} rel="noopener noreferrer" target="_blank">
+          <figure className={classes.content}>
+            {image && (
+              <div className={classes.imageWrapper}>
+                <GatsbyImage
+                  alt={`Praca ${bid.artist} "${bid.title}"`}
+                  className={classes.image}
+                  image={image}
+                />
+              </div>
+            )}
+            <figcaption className={classes.caption}>
+              <p className={classes.artist}>{bid.artist}</p>
+              <p className={classes.title}>{bid.title}</p>
+            </figcaption>
+          </figure>
+        </OutboundLink>
+      )}
     </li>
   );
 };
 
-export default ArtistItem;
+export default BidItem;
