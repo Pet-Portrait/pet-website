@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import { graphql, PageProps } from 'gatsby';
+import { graphql, HeadFC, PageProps } from 'gatsby';
 
 import Bids from 'components/bids/Bids';
+import Seo from 'components/shared/Seo/Seo';
 import { Bid } from 'types/bid';
 import { WithNodes } from 'types/utils';
 
@@ -42,3 +44,7 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head: HeadFC = ({ location }) => (
+  <Seo pathname={location.pathname} title="pet portrait | licytacje" />
+);

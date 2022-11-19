@@ -2,8 +2,11 @@ import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'pet-portrait',
-    siteUrl: 'https://www.yourdomain.tld',
+    title: `pet portrait`,
+    // TODO
+    description: `Example project for the Gatsby Head API`,
+    image: `/gatsby-icon.png`,
+    siteUrl: `https://petportrait.pl/`,
   },
   graphqlTypegen: true,
   plugins: [

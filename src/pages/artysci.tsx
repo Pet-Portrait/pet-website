@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import { graphql, PageProps } from 'gatsby';
+import { graphql, HeadFC, PageProps } from 'gatsby';
 import { ArtistQuery } from 'queries/artist';
 
 import ArtistsList from 'components/artists/ArtistsList/ArtistsList';
+import Seo from 'components/shared/Seo/Seo';
 import { WithNodes } from 'types/utils';
 
 interface Query {
@@ -30,3 +32,7 @@ export const pageQuery = graphql`
 `;
 
 export default ArtistsPage;
+
+export const Head: HeadFC = ({ location }) => (
+  <Seo pathname={location.pathname} title="pet portrait | artyści" />
+);
