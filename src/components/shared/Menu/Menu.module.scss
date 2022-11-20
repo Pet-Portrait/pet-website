@@ -12,7 +12,7 @@
   z-index: 2;
 
   @include breakpoint--desktop {
-    width: 100%;
+    width: unset;
     display: flex;
     align-items: center;
     height: 68px;
