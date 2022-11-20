@@ -46,6 +46,16 @@ const AboutUs: FC = () => (
           a patronują honorowo Loesje, Targi Plakatu i Prêt-à-create.
         </p>
       </section>
+      <section>
+        <h2 className={classes.subheading}>Nasz zespół</h2>
+        <div className={classes.imageWrapper}>
+          <StaticImage
+            alt="Zespół pet portrait"
+            placeholder="blurred"
+            src="../../images/team.png"
+          />
+        </div>
+      </section>
     </div>
   </Layout>
 );
