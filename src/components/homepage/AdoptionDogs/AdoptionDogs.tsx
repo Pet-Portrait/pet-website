@@ -21,7 +21,12 @@ const AdoptionDogs: FC = () => (
       }
       desktopContentClass={classes.desktopContent}
       images={
-        <StaticImage alt="TEMP" className={classes.image} src="../../../images/dog-wip.png" />
+        <StaticImage
+          alt="Logo fundacji Rasowy Kundel"
+          className={classes.image}
+          objectFit="contain"
+          src="../../../images/rasowy-kundel.jpg"
+        />
       }
       text={
         <div>
