@@ -1,0 +1,70 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: transparent;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal {
+  background-color: rgba(#000, 0.5);
+  position: absolute;
+  bottom: calc($spacing--8 + $spacing--1);
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: $spacing--1;
+  border-radius: 25px;
+  width: 340px;
+  max-width: calc(100% - $spacing--1);
+
+  @include breakpoint--desktop {
+    bottom: calc($spacing--8 + $spacing--2);
+    width: 660px;
+  }
+}
+
+.content {
+  background-color: $accent-color--dark;
+  padding: $spacing--2;
+  color: $text-color--light;
+  border-radius: 25px;
+}
+
+.heading {
+  margin-bottom: $spacing--2;
+}
+
+.link {
+  color: $accent-color-3;
+  text-decoration: none;
+  margin-top: $spacing--2;
+  display: block;
+}
+
+.buttons {
+  margin-top: $spacing--1;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing--1;
+
+  @include breakpoint--desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.reject {
+  background-color: $accent-color--dark;
+  width: 100%;
+
+  &:hover {
+    background-color: darken($accent-color--dark, 10%);
+  }
+}
+
+.accept {
+  width: 100%;
+}

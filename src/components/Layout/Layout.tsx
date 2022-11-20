@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 
+import CookieBanner from 'components/shared/CookieBanner/CookieBanner';
 import Menu from 'components/shared/Menu/Menu';
 
 import Footer from './Footer/Footer';
@@ -17,6 +18,7 @@ const Layout: FC<Props> = ({ children }) => (
     <Menu />
     {children}
     <Footer />
+    <CookieBanner />
   </main>
 );
 
