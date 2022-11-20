@@ -1,15 +1,11 @@
-import React, { FC, forwardRef, Ref, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import * as classes from './ImageFactory.module.scss';
 
-interface Props {
-  ref: Ref<HTMLDivElement>;
-}
-
 const HERO_IMAGE_ID = 'HERO_IMAGE_ID';
 
-const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
+const ImageFactory: FC = () => {
   const [imageId, setImageId] = useState('');
 
   useEffect(() => {
@@ -27,7 +23,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     case '1':
       return (
         <>
-          <div ref={ref} className={classes.imageWrapper}>
+          <div className={classes.imageWrapper}>
             <StaticImage
               alt='Klaudia Polak - "Bugs"'
               objectFit="contain"
@@ -42,7 +38,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     case '2':
       return (
         <>
-          <div ref={ref} className={classes.imageWrapper}>
+          <div className={classes.imageWrapper}>
             <StaticImage
               alt='Dorota Piechocińska - "Jo ma chart"'
               objectFit="contain"
@@ -57,7 +53,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     case '3':
       return (
         <>
-          <div ref={ref} className={classes.imageWrapper}>
+          <div className={classes.imageWrapper}>
             <StaticImage
               alt='Dorota Piechocińska - "Chart ducha"'
               objectFit="contain"
@@ -72,7 +68,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     case '4':
       return (
         <>
-          <div ref={ref} className={`${classes.imageWrapper} ${classes.cat}`}>
+          <div className={`${classes.imageWrapper} ${classes.cat}`}>
             <StaticImage
               alt='Klaudia Polak - "Fioletowy Ocelot"'
               objectFit="contain"
@@ -87,7 +83,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     case '5':
       return (
         <>
-          <div ref={ref} className={classes.imageWrapper}>
+          <div className={classes.imageWrapper}>
             <StaticImage
               alt='Małgorzata Nowak - "Gwizdna Kicia"'
               objectFit="contain"
@@ -102,7 +98,7 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     case '6':
       return (
         <>
-          <div ref={ref} className={classes.imageWrapper}>
+          <div className={classes.imageWrapper}>
             <StaticImage
               alt='Małgorzata Nowak - "Kicia z Muchomorem"'
               objectFit="contain"
@@ -117,8 +113,6 @@ const ImageFactory: FC<Props> = forwardRef<HTMLDivElement>((_props, ref) => {
     default:
       return null;
   }
-});
-
-ImageFactory.displayName = 'ImageFactory';
+};
 
 export default ImageFactory;
