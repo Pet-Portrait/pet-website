@@ -1,5 +1,5 @@
 ---
-title: Żurawie - Czarka
+title: Żuraw
 artist: Sisterhood
 image: ../images/_dsc1465-aleksandra-tomczyk.jpg
 type: Ceramika
