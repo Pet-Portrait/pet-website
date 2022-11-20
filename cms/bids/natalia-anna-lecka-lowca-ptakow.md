@@ -1,9 +1,9 @@
 ---
-title: "Łowca ptaków"
-artist: "Natalia Anna Łęcka"
-image:
-type: "Grafika"
-url:
-format: "50x70cm"
+title: Łowca ptaków
+artist: "Natalia Anna Łęcka "
+image: ../images/natalia-anna-łęcka-łowca-ptaków-natalia-łęcka.png
+type: Grafika
+url: null
+format: 50x70 cm
 featured: false
 ---
