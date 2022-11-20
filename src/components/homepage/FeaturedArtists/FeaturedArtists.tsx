@@ -4,6 +4,7 @@ import ArtistModal from 'components/shared/ArtistModal/ArtistModal';
 import Button from 'components/shared/Button/Button';
 import ResponsiveContainer from 'components/shared/ResponsiveContainer/ResponsiveContainer';
 import { Artist } from 'types/artist';
+import { sendArtistModalClick } from 'utils/analytics';
 
 import ArtistsGrid from './ArtistsGrid/ArtistsGrid';
 import ArtistsSlider from './ArtistsSlider/ArtistsSlider';
@@ -21,7 +22,8 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
   const [artistIdInModal, setArtistIdInModal] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const artistInModal = artists.find((artist) => artist.id === artistIdInModal);
+  const findArtistById = (id: string) => artists.find((artist) => artist.id === id);
+  const artistInModal = findArtistById(artistIdInModal);
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -34,6 +36,10 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
   const handleOpenModal = (id: string) => {
     setArtistIdInModal(id);
     setIsModalOpen(true);
+    const artist = findArtistById(id);
+    if (artist) {
+      sendArtistModalClick(artist.name);
+    }
   };
 
   return (
