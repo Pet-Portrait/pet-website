@@ -17,7 +17,7 @@ const HeroImage: FC = () => (
             schroniska dla zwierząt
           </p>
           <p>
-            <strong>Licytuj</strong> prace XXX polskich Artystów i Artystek na Allegro Charytatywni
+            <strong>Licytuj</strong> prace 107 polskich Artystów i Artystek na Allegro Charytatywni
             | 21 XI - 26 XI 2022
           </p>
           <p>

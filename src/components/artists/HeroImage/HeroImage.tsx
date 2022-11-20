@@ -11,7 +11,7 @@ const HeroImage: FC = () => (
       <div className={classes.content}>
         <h1 className={classes.heading}>Poznaj naszych artystów</h1>
         <p>
-          Poznajcie naszych tegorocznych Artystów i Artystki - XXX osób o wielkich sercach i
+          Poznajcie naszych tegorocznych Artystów i Artystki - 107 osób o wielkich sercach i
           prawdziwym morzu talentu.
         </p>
       </div>
