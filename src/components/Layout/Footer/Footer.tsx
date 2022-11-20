@@ -29,7 +29,9 @@ const Footer: FC = () => (
     </div>
     <footer className={classes.root}>
       <div className={classes.container}>
-        <LogoIcon className={classes.logo} />
+        <Link to="/">
+          <LogoIcon className={classes.logo} />
+        </Link>
         <ul className={classes.list}>
           <li className={classes.heading}>Nawigacja</li>
           <li className={classes.listItem}>

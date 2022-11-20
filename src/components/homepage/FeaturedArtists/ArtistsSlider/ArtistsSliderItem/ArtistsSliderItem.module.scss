@@ -9,6 +9,8 @@
 
 .image {
   border-radius: 25px;
+  mask-image: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   max-width: 155px;
   // TODO: Check perfect ratio
   aspect-ratio: 9/16;

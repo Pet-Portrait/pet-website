@@ -3,6 +3,8 @@
 .image {
   margin: auto;
   border-radius: 25px;
+  mask-image: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .imageWrapper {

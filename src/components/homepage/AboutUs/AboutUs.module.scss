@@ -58,6 +58,8 @@
 .image {
   width: 100%;
   border-radius: 25px;
+  mask-image: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .desktopContent {
