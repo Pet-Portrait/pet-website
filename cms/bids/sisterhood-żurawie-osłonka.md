@@ -1,5 +1,5 @@
 ---
-title: Żurawie - Osłonka
+title: Żuraw
 artist: Sisterhood
 image: ../images/_dsc1475-aleksandra-tomczyk-1-.jpg
 type: Ceramika
