@@ -15,7 +15,7 @@ const AdoptionDogs: FC = () => (
     <img alt="" className={classes.backgroundDesktop} src={blobDesktop} />
     <ResponsiveContainer
       button={
-        <Button className={classes.button} to="/psiaki-adopcyjne">
+        <Button className={classes.button} href="https://rasowykundel.org/" isExternal>
           Zaadoptuj psiaka
         </Button>
       }
@@ -27,7 +27,7 @@ const AdoptionDogs: FC = () => (
         <div>
           <h2 className={classes.heading}>Psiaki adopcyjne</h2>
           <p className={classes.description}>
-            Cały dochód z akcji przejdzie na fundacje Rasowy Kundel.
+            Cały dochód z akcji przejdzie na fundację Rasowy Kundel.
           </p>
         </div>
       }

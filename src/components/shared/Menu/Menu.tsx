@@ -79,16 +79,6 @@ const Menu: FC = () => {
             Kim jesteśmy
           </Link>
         </li>
-        <li className={classes.listItem}>
-          <Link
-            activeClassName={classes.activeLink}
-            className={classes.link}
-            tabIndex={isActive || isDesktop ? 0 : -1}
-            to="/psiaki-adopcyjne"
-          >
-            Psiaki adopcyjne
-          </Link>
-        </li>
       </ul>
     </div>
   );

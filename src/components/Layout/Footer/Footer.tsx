@@ -54,19 +54,9 @@ const Footer: FC = () => (
               Artystki i Artyści
             </Link>
           </li>
-          <li className={classes.listItem}>
-            <Link className={classes.link} to="/psiaki-adopcyjne">
-              Psiaki adopcyjne
-            </Link>
-          </li>
         </ul>
         <ul className={classes.list}>
           <li className={classes.heading}>Inne</li>
-          <li className={classes.listItem}>
-            <Link className={classes.link} to="/polityka-prywatnosci">
-              Polityka prywatności
-            </Link>
-          </li>
           <li className={classes.listItem}>
             <OutboundLink
               className={classes.link}
@@ -76,11 +66,6 @@ const Footer: FC = () => (
             >
               Strona fundacji
             </OutboundLink>
-          </li>
-          <li className={classes.listItem}>
-            <Link className={classes.link} to="/TODO">
-              Dla mediów
-            </Link>
           </li>
         </ul>
         <ul className={classes.list}>
