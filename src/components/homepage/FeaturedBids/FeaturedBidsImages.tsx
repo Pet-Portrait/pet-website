@@ -1,4 +1,5 @@
 import React, { FC, useCallback, useRef } from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { BidImages } from 'queries/bid';
 
@@ -64,7 +65,7 @@ const FeaturedBidsImages: FC<Props> = ({ bids }) => {
   return (
     <div ref={wrapperRef} className={classes.images}>
       {images.map((image) => (
-        <a
+        <OutboundLink
           key={image.title}
           className={`${classes.link} ${
             image.orientation === Orientation.HORIZONTAL ? classes.imageHorizontal : ''
@@ -74,7 +75,7 @@ const FeaturedBidsImages: FC<Props> = ({ bids }) => {
           target="_blank"
         >
           {image.image && <GatsbyImage alt={image.title} image={image.image} />}
-        </a>
+        </OutboundLink>
       ))}
     </div>
   );

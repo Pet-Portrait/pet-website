@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import Modal from 'react-modal';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import sanitizeHtml from 'sanitize-html';
 
@@ -66,24 +67,44 @@ const ArtistModal: FC<Props> = ({ artist, isOpen, setIsOpen, ...props }) => {
       </div>
       <div className={classes.socials}>
         {artist.facebook && (
-          <a aria-label="Facebook" href={artist.facebook}>
+          <OutboundLink
+            aria-label="Facebook"
+            href={artist.facebook}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FacebookIcon className={classes.socialIcon} />
-          </a>
+          </OutboundLink>
         )}
         {artist.instagram && (
-          <a aria-label="Instagram" href={artist.instagram}>
+          <OutboundLink
+            aria-label="Instagram"
+            href={artist.instagram}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <InstagramIcon className={classes.socialIcon} />
-          </a>
+          </OutboundLink>
         )}
         {artist.behance && (
-          <a aria-label="Behanace" href={artist.behance}>
+          <OutboundLink
+            aria-label="Behanace"
+            href={artist.behance}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <BehanceIcon className={classes.socialIcon} />
-          </a>
+          </OutboundLink>
         )}
         {artist.web && (
-          <a aria-label="Strona internetowa" href={artist.web}>
+          <OutboundLink
+            aria-label="Strona internetowa"
+            href={artist.web}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <WebIcon className={classes.socialIcon} />
-          </a>
+          </OutboundLink>
         )}
       </div>
       <Button className={classes.button} onClick={handleClose}>
