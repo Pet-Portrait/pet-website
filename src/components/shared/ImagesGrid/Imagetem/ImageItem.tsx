@@ -42,7 +42,12 @@ const ImageItem = ({ onClick, item }: Props) => {
           {innerContent}
         </button>
       ) : (
-        <OutboundLink href={item.url} rel="noopener noreferrer" target="_blank">
+        <OutboundLink
+          className={classes.link}
+          href={item.url}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           {innerContent}
         </OutboundLink>
       )}
