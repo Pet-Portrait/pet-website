@@ -11,7 +11,11 @@ const AllBidsText: FC = () => (
       konkretnym dziele możesz kliknąć na któreś z powyższych dzieł lub kliknąć poniższy przycisk,
       aby sprawdzić wszystkie nasze aukcje na Allegro Charytatywni.
     </p>
-    <Button className={classes.button} href="https://allegro.pl/uzytkownik/KundelRasowy" isExternal>
+    <Button
+      className={classes.button}
+      href="https://allegro.pl/charytatywni/fundacja-rasowy-kundel/cele/pet-portrait-x-rasowy-kundel"
+      isExternal
+    >
       Zobacz wszystkie licytacje
     </Button>
   </div>
