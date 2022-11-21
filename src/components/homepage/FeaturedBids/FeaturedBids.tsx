@@ -32,7 +32,7 @@ const FeaturedBids: FC<Props> = ({ bids }) => (
         <>
           <h2 className={classes.heading}>Licytacje</h2>
           <p className={classes.description}>
-            XXX - tyle dzieł polskich Artystów i Artystek znajdziesz na tegorocznym Pet Portrait.
+            132 - tyle dzieł polskich Artystów i Artystek znajdziesz na tegorocznym Pet Portrait.
             Grafiki, ilustracje, obrazy, hafty, ceramiki - psygarnij coś dla siebie!
           </p>
         </>

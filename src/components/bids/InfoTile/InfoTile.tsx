@@ -17,7 +17,7 @@ const InfoTile: FC = () => (
       </p>
     </div>
     <Button className={classes.button} href="https://allegro.pl" isExternal>
-      Kup cegiełkę i wybuduj dom! (nie wiem nie znam się na allegro)
+      Kup cegiełkę i wybuduj &quot;dom&quot;!
     </Button>
   </section>
 );

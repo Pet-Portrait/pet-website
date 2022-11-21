@@ -67,6 +67,16 @@ const Footer: FC = () => (
               Strona fundacji
             </OutboundLink>
           </li>
+          <li className={classes.listItem}>
+            <OutboundLink
+              className={classes.link}
+              href="https://allegro.pl/uzytkownik/KundelRasowy"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Allegro Charytatywni
+            </OutboundLink>
+          </li>
         </ul>
         <ul className={classes.list}>
           <li className={classes.heading}>Kontakt</li>
