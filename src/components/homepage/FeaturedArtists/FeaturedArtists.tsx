@@ -49,7 +49,7 @@ const FeaturedArtists: FC<Props> = ({ artists }) => {
       <ResponsiveContainer
         button={
           <Button className={classes.button} to="/artysci">
-            Sprawdź wszystkich artystów
+            Poznaj naszych Artystów i Artystki
           </Button>
         }
         desktopClass={classes.desktopContainer}
