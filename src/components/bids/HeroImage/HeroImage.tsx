@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
+import Button from 'components/shared/Button/Button';
 import blob from 'images/backgrounds/background-bids-hero.svg';
 
 import * as classes from './HeroImage.module.scss';
@@ -14,6 +15,13 @@ const HeroImage: FC = () => (
           132 - tyle dzieł polskich Artystów i Artystek znajdziesz na tegorocznym Pet Portrait.
           Grafiki, ilustracje, obrazy, hafty, ceramiki - psygarnij coś dla siebie!
         </p>
+        <Button
+          className={classes.button}
+          href="https://allegro.pl/uzytkownik/KundelRasowy"
+          isExternal
+        >
+          Zobacz wszystkie licytacje
+        </Button>
       </div>
       <StaticImage
         alt="Kot w okularach przeciwsłonecznych"

@@ -70,3 +70,11 @@
     display: none;
   }
 }
+
+.button {
+  margin: $spacing--4 auto 0;
+
+  @include breakpoint--desktop {
+    margin: $spacing--4 0 0;
+  }
+}
