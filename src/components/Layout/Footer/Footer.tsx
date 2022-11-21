@@ -70,7 +70,7 @@ const Footer: FC = () => (
           <li className={classes.listItem}>
             <OutboundLink
               className={classes.link}
-              href="https://allegro.pl/uzytkownik/KundelRasowy"
+              href="https://allegro.pl/charytatywni/fundacja-rasowy-kundel/cele/pet-portrait-x-rasowy-kundel"
               rel="noopener noreferrer"
               target="_blank"
             >

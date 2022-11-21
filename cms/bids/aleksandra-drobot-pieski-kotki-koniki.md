@@ -5,5 +5,5 @@ image: ../images/pieski-kotki-koniki_aleksandra-drobot-ola-“love_me_2times”-
 type: Grafika
 url: https://allegro.pl/oferta/12902420477
 format: 50x70 cm
-featured: true
+featured: false
 ---

@@ -17,7 +17,7 @@ const HeroImage: FC = () => (
         </p>
         <Button
           className={classes.button}
-          href="https://allegro.pl/uzytkownik/KundelRasowy"
+          href="https://allegro.pl/charytatywni/fundacja-rasowy-kundel/cele/pet-portrait-x-rasowy-kundel"
           isExternal
         >
           Zobacz wszystkie licytacje
