@@ -21,12 +21,19 @@ const AdoptionDogs: FC = () => (
       }
       desktopContentClass={classes.desktopContent}
       images={
-        <StaticImage
-          alt="Logo fundacji Rasowy Kundel"
-          className={classes.image}
-          objectFit="contain"
-          src="../../../images/rasowy-kundel.jpg"
-        />
+        <a
+          className={classes.link}
+          href="https://rasowykundel.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <StaticImage
+            alt="Logo fundacji Rasowy Kundel"
+            className={classes.image}
+            objectFit="contain"
+            src="../../../images/rasowy-kundel.jpg"
+          />
+        </a>
       }
       text={
         <div>

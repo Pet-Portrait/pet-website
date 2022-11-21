@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Button from 'components/shared/Button/Button';
@@ -21,7 +22,14 @@ const AboutUs: FC = () => (
       }
       desktopContentClass={classes.desktopContent}
       images={
-        <StaticImage alt="TEMP" className={classes.image} src="../../../images/dog-wip.png" />
+        <Link className={classes.link} to="/o-nas">
+          <StaticImage
+            alt="4 psy na wystawie Pet Portrait"
+            className={classes.image}
+            src="../../../images/dogs.jpg"
+            width={700}
+          />
+        </Link>
       }
       text={
         <div>

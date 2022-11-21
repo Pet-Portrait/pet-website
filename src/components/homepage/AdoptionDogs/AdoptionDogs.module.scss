@@ -1,5 +1,6 @@
 @import 'styles/variables';
 @import 'styles/breakpoints';
+@import 'styles/mixins';
 
 .root {
   padding: $spacing--8 $spacing--2 $spacing--4;
@@ -65,10 +66,17 @@
   border-radius: 25px;
   mask-image: none;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
-  margin: auto;
-  display: block;
 }
 
 .desktopContent {
   justify-self: start;
+}
+
+.link {
+  @include zoom-image;
+  border-radius: 25px;
+  mask-image: none;
+  display: block;
+  background-color: #fff;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
