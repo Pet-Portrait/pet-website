@@ -20,10 +20,12 @@ fs.readdir(path.resolve(__dirname, '..', 'cms', 'bids'), function (err, filename
         }
 
         const newLink = links.find(
-          (link) => content.includes(link.artist) && content.includes(link.title),
+          (link) =>
+            RegExp(`title: ${link.title}\n`, 'i').test(content) &&
+            RegExp(`artist: ${link.artist}\n`, 'i').test(content),
         );
         if (!newLink) return;
-        const withNewLink = content.replace(/^url/, `url: ${newLink.href}`);
+        const withNewLink = content.replace(/(url:) (null|"")/g, `url: ${newLink.href}`);
 
         fs.writeFile(path.resolve(__dirname, '..', 'cms', 'bids', filename), withNewLink, (err) => {
           if (err) {
