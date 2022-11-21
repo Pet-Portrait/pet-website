@@ -16,7 +16,7 @@ const AdoptionDogs: FC = () => (
     <ResponsiveContainer
       button={
         <Button className={classes.button} href="https://rasowykundel.org/" isExternal>
-          Zaadoptuj psiaka
+          Psygarnij Rasowego zwierzaka
         </Button>
       }
       desktopContentClass={classes.desktopContent}
@@ -32,7 +32,9 @@ const AdoptionDogs: FC = () => (
         <div>
           <h2 className={classes.heading}>Psiaki adopcyjne</h2>
           <p className={classes.description}>
-            Cały dochód z akcji przejdzie na fundację Rasowy Kundel.
+            Trzecia edycja Pet Portrait jest realizowana we współpracy z Fundacją Rasowy Kundel.
+            Chociaż od 2020 Fundacja skupia się przede wszystkim na działaniach prewencyjnych w
+            walce z bezdomnością, to kilku jej podopiecznych wciąż czeka na nowy dom.
           </p>
         </div>
       }

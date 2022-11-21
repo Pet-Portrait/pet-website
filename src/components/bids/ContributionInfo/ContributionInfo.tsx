@@ -15,12 +15,12 @@ const ContributionInfo: FC = () => (
         </h2>
         <p className="text--large">
           Możesz kupić specjalnie zaprojektowaną, na taką okazję, wirtualną cegiełkę i wspomóc los
-          zwierzaków w schroniskach. Po wpłaciekilku złotych na cel naszej akcjoi otrzymasz
-          specjalnie zaprojektowany przez Nas Planer, który może ci pomóc w rozplanowywaniu twojego
+          zwierzaków w schroniskach. Po wpłacie kilku złotych na cel naszej akcji otrzymasz
+          specjalnie zaprojektowany przez Nas Planer, który może Ci pomóc w rozplanowywaniu twojego
           tygodnia.
         </p>
         <Button className={classes.button} to="">
-          Czasem to wielki pech być nieboszczykiem.
+          Kup cegiełkę
         </Button>
       </section>
     </div>
