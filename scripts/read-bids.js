@@ -56,6 +56,7 @@ format: "${bid.format}"
 featured: false
 ---
 `,
+        { flag: 'wx' },
         (err) => {
           if (err) {
             console.error(err);
