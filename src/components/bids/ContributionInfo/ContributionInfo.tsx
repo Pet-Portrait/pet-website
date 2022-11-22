@@ -19,7 +19,11 @@ const ContributionInfo: FC = () => (
           specjalnie zaprojektowany przez Nas Planer, który może Ci pomóc w rozplanowywaniu twojego
           tygodnia.
         </p>
-        <Button className={classes.button} to="">
+        <Button
+          className={classes.button}
+          href="https://allegro.pl/oferta/planer-czern-biel-muflon-studio-12905031541"
+          isExternal
+        >
           Kup cegiełkę
         </Button>
       </section>

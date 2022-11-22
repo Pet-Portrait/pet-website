@@ -5,6 +5,7 @@ import { Bid } from 'types/bid';
 
 import AllBidsText from './AllBidsText/AllBidsText';
 import BidsList from './BidsList/BidsList';
+import ContributionInfo from './ContributionInfo/ContributionInfo';
 import HeroImage from './HeroImage/HeroImage';
 
 interface Props {
@@ -16,6 +17,7 @@ const Bids: FC<Props> = ({ bids }) => (
     <HeroImage />
     <BidsList bids={bids} />
     <AllBidsText />
+    <ContributionInfo />
   </Layout>
 );
 
