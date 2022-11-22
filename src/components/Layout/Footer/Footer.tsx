@@ -3,8 +3,11 @@ import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
 
+import EnvelopeIcon from 'components/icons/EnvelopeIcon';
 import FacebookIcon from 'components/icons/FacebookIcon';
 import InstagramIcon from 'components/icons/InstagramIcon';
+import LinkedinIcon from 'components/icons/LinkedinIcon';
+import TiktokIcon from 'components/icons/TiktokIcon';
 import LogoIcon from 'components/shared/LogoIcon/LogoIcon';
 
 import * as classes from './Footer.module.scss';
@@ -108,12 +111,26 @@ const Footer: FC = () => (
               </OutboundLink>
             </li>
             <li className={classes.listItem}>
+              <OutboundLink
+                href="https://www.linkedin.com/company/petxportrait/about/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <LinkedinIcon className={classes.socialIcon} />
+              </OutboundLink>
+            </li>
+            <li className={classes.listItem}>
+              <OutboundLink
+                href="https://www.tiktok.com/@petxportrait"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <TiktokIcon className={classes.socialIcon} />
+              </OutboundLink>
+            </li>
+            <li className={classes.listItem}>
               <OutboundLink href="mailto:petxportrait@gmail.com">
-                <StaticImage
-                  alt="Facebook"
-                  placeholder="tracedSVG"
-                  src="../../../images/envelope.png"
-                />
+                <EnvelopeIcon className={classes.socialIcon} />
               </OutboundLink>
             </li>
           </ul>
