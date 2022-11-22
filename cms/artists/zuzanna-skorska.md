@@ -1,5 +1,5 @@
 ---
-name: "Zuzanna Skórska "
+name: "Zuzanna Skórska"
 avatar: ../images/_zuzanna-skórska.jpeg
 featured: false
 facebook: https://www.facebook.com/skorskazuzanna

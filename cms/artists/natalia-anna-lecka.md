@@ -1,5 +1,5 @@
 ---
-name: "Natalia Anna Łęcka "
+name: "Natalia Anna Łęcka"
 avatar: ../images/natalia-łęcka-prof.jpeg
 featured: false
 facebook: null

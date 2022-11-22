@@ -1,5 +1,5 @@
 ---
-name: "SOIL "
+name: "SOIL"
 avatar: ../images/marta-cylwik-soil-ceramicsp.jpg
 featured: false
 facebook: null

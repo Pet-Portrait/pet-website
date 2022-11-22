@@ -1,5 +1,5 @@
 ---
-name: "Dorota Bujak "
+name: "Dorota Bujak"
 avatar: ../images/dorota-bujak.jpg
 featured: false
 facebook: null

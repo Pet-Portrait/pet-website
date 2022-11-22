@@ -1,5 +1,5 @@
 ---
-name: "Dziki las collages "
+name: "Dziki las collages"
 avatar: ../images/magda-kubiak-prof.jpeg
 featured: false
 facebook: null

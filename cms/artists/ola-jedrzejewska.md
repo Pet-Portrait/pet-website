@@ -1,5 +1,5 @@
 ---
-name: "Ola Jędrzejewska "
+name: "Ola Jędrzejewska"
 avatar: ../images/aleksandra-jędrzejewskap.jpg
 featured: false
 facebook: null
