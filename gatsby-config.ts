@@ -3,7 +3,7 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `pet portrait`,
-    description: `Weź udział w III edycji Pet Portrait  III edycji Pet Portrait i pomóż nam wesprzeć schroniska dla zwierząt Rasowe Kundle`,
+    description: `Weź udział w III edycji Pet Portrait i pomóż nam wesprzeć schroniska dla zwierząt Rasowe Kundle`,
     image: `/og-image.jpg`,
     siteUrl: `https://petportrait.pl`,
   },
