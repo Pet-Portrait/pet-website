@@ -1,0 +1,13 @@
+.ReactModal {
+  &__Overlay {
+    transform: translateY(100%);
+
+    &--after-open {
+      transform: translateY(0);
+    }
+
+    &--before-close {
+      transform: translateY(100%);
+    }
+  }
+}
