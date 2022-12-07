@@ -13,7 +13,7 @@ const AllBidsText: FC = () => (
     </p>
     <Button
       className={classes.button}
-      href="https://allegro.pl/charytatywni/fundacja-rasowy-kundel/cele/pet-portrait-x-rasowy-kundel"
+      href="https://allegro.pl/charytatywni/fundacja-rasowy-kundel/cele/pet-portrait-x-rasowy-kundel-2"
       isExternal
     >
       Zobacz wszystkie licytacje
