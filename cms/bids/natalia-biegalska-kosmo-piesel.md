@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12905166279
 format: 50 x 70 cm
 featured: false
+secondRound: false
 ---

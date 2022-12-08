@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12902470672
 format: A3
 featured: false
+secondRound: false
 ---

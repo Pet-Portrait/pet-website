@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12902393499
 format: 253 x 253 mm
 featured: false
+secondRound: false
 ---

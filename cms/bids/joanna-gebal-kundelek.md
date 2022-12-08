@@ -6,5 +6,6 @@
     url: https://allegro.pl/oferta/12900492509
     format: "30x40"
     featured: false
+secondRound: false
 ---
     

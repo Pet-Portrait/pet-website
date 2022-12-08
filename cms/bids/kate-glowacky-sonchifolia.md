@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900415207
 format: 50x70 cm
 featured: false
+secondRound: false
 ---

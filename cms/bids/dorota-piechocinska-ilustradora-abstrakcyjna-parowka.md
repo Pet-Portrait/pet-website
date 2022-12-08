@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900555593
 format: 50x70
 featured: true
+secondRound: false
 ---

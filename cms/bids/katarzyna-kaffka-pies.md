@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12902501526
 format: 50x70 cm
 featured: false
+secondRound: false
 ---

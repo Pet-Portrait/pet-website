@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12905038164
 format: 14x14x2cm
 featured: false
+secondRound: false
 ---

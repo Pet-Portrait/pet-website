@@ -6,4 +6,5 @@ type: Fotografia
 url: https://allegro.pl/oferta/12905098847
 format: 10x15 cm
 featured: false
+secondRound: false
 ---

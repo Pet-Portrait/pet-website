@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900509005
 format: A3 / 297 x 420 cm
 featured: true
+secondRound: false
 ---

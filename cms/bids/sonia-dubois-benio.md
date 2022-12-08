@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904303117
 format: "rama: 36x46 cm, druk: 30x40 cm"
 featured: false
+secondRound: false
 ---

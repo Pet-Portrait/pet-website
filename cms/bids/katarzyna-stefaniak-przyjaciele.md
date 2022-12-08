@@ -6,4 +6,5 @@ type: Ceramika
 url: https://allegro.pl/oferta/12905006562
 format: 19x10x5,5
 featured: false
+secondRound: false
 ---

@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904347285
 format: A4 - 297x210 mm
 featured: false
+secondRound: false
 ---

@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12905081213
 format: 40x60 cm
 featured: false
+secondRound: false
 ---

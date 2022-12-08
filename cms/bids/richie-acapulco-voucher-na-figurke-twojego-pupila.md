@@ -6,4 +6,5 @@ type: Ceramika
 url: https://allegro.pl/oferta/12905135997
 format: "-"
 featured: false
+secondRound: false
 ---

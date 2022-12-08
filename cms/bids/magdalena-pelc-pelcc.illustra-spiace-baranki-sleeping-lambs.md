@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904968014
 format: 30x40 cm
 featured: false
+secondRound: false
 ---

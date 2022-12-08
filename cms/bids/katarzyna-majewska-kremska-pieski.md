@@ -6,4 +6,5 @@ type: Malarstwo
 url: https://allegro.pl/oferta/12904208095
 format: A3
 featured: false
+secondRound: false
 ---

@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904977410
 format: 100x70 cm
 featured: false
+secondRound: false
 ---

@@ -6,4 +6,5 @@ type: Ceramika
 url: https://allegro.pl/oferta/12905140187
 format: wys. 3 cm, szer. 4 cm
 featured: false
+secondRound: false
 ---

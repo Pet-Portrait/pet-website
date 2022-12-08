@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12902489219
 format: 50x70cm
 featured: false
+secondRound: false
 ---

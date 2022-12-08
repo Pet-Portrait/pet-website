@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904162204
 format: A3
 featured: false
+secondRound: false
 ---

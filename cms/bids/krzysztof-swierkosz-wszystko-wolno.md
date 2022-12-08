@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12901832145
 format: 30x40cm
 featured: true
+secondRound: false
 ---

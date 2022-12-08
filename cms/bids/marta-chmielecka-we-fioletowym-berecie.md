@@ -6,4 +6,5 @@ type: Malarstwo
 url: https://allegro.pl/oferta/12900558849
 format: 30x40 cm
 featured: false
+secondRound: false
 ---
