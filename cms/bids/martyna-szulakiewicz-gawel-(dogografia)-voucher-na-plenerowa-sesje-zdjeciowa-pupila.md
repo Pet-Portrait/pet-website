@@ -5,6 +5,6 @@ image: ../images/dogografia.jpg
 type: Fotografia
 url: https://allegro.pl/oferta/12975011604
 format: 10x15 cm
-featured: false
+featured: true
 secondRound: true
 ---
