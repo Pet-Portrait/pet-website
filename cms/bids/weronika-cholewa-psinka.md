@@ -6,4 +6,5 @@ type: Grafika, Inne
 url: https://allegro.pl/oferta/12900562851
 format: 30cm x 40cm
 featured: false
+secondRound: false
 ---

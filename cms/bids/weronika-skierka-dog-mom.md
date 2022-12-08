@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904995123
 format: 30x30 cm
 featured: false
+secondRound: false
 ---

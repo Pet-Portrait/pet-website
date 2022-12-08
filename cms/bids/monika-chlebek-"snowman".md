@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12905128284
 format: A3
 featured: false
+secondRound: false
 ---

@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12901747161
 format: 40×30 cm
 featured: false
+secondRound: false
 ---

@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12900595505
 format: 50x70
 featured: false
+secondRound: false
 ---

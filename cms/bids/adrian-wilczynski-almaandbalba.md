@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900372967
 format: A2
 featured: false
+secondRound: false
 ---

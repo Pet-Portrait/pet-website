@@ -18,7 +18,7 @@ const InfoTile: FC = () => (
     </div>
     <Button
       className={classes.button}
-      href="https://allegro.pl/oferta/planer-czern-biel-muflon-studio-12905031541"
+      href="https://allegro.pl/oferta/planer-czern-biel-muflon-studio-12983464640"
       isExternal
     >
       Kup cegiełkę i &quot;wybuduj dom&quot;!

@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12900432134
 format: 45x49 cm
 featured: false
+secondRound: false
 ---

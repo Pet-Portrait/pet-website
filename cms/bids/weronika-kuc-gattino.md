@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12900570759
 format: A4
 featured: false
+secondRound: false
 ---

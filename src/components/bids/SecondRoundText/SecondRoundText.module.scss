@@ -1,0 +1,11 @@
+@import 'styles/variables';
+
+.root {
+  max-width: $max-container-width;
+  margin: $spacing--4 auto (-$spacing--6);
+  padding: $spacing--2;
+}
+
+.heading {
+  margin: $spacing--2 0;
+}

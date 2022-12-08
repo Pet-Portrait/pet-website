@@ -6,4 +6,5 @@ type: Grafika, Inne
 url: https://allegro.pl/oferta/12905028675
 format: 40x50 cm
 featured: false
+secondRound: false
 ---

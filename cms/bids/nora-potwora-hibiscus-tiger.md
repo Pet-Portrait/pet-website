@@ -6,4 +6,5 @@ type: Inne
 url: https://allegro.pl/oferta/12900423678
 format: 40x50 cm
 featured: false
+secondRound: false
 ---

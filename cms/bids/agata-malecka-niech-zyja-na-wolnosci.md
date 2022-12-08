@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900546681
 format: 500x700 mm
 featured: false
+secondRound: false
 ---

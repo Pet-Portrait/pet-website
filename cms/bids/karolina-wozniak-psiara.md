@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900573374
 format: 30x35cm
 featured: false
+secondRound: false
 ---

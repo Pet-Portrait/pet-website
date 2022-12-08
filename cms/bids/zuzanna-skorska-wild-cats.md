@@ -6,4 +6,5 @@ type: Malarstwo, Grafika
 url: https://allegro.pl/oferta/12905173761
 format: 50x70 cm
 featured: false
+secondRound: false
 ---

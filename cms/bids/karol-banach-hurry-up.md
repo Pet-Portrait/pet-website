@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900538498
 format: b2
 featured: false
+secondRound: false
 ---

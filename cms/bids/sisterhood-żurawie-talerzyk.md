@@ -6,4 +6,5 @@ type: Ceramika
 url: https://allegro.pl/oferta/zuraw-sisterhood-12904938815
 format: średnica 14 cm
 featured: false
+secondRound: false
 ---

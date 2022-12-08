@@ -6,4 +6,5 @@ type: Malarstwo
 url: https://allegro.pl/oferta/12904878103
 format: 80/60 cm
 featured: false
+secondRound: false
 ---

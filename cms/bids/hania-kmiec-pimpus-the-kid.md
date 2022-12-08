@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12900411392
 format: 30 cm x 30 cm
 featured: false
+secondRound: false
 ---

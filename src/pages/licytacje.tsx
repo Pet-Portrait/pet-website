@@ -33,6 +33,7 @@ export const pageQuery = graphql`
           type
           url
           format
+          secondRound
           image {
             childImageSharp {
               # TODO: For further investigation. Quick fix to not fetch huge images

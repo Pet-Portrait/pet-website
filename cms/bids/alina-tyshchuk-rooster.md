@@ -6,4 +6,5 @@ type: Grafika
 url: https://allegro.pl/oferta/12904689164
 format: 210x297 cm
 featured: false
+secondRound: false
 ---
