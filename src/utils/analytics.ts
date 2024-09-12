@@ -9,3 +9,7 @@ const sendEvent = (event: string, data: Record<string, unknown>) => {
 export const sendArtistModalClick = (artistName: string) => {
   sendEvent('artist_modal_click', { artistName });
 };
+
+export const sendCookiesDecision = (accepted: boolean) => {
+  sendEvent('cookies', { accepted });
+};
